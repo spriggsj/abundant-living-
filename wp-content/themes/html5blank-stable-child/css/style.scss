@@ -1,5 +1,14 @@
-@import 'reset';
-
+/*
+1.0 reset
+2.0 bootstrap
+3.0
+4.0
+5.0
+6.0
+(add in style.scss)
+*/
+@import 'base/reset';
+@import 'base/bootstrap';
 body {
 	background-color: orange;
 }
