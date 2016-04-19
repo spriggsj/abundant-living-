@@ -61,6 +61,9 @@ if (function_exists('add_theme_support'))
 /*------------------------------------*\
 	Functions
 \*------------------------------------*/
+// Register Custom Navigation Walker
+ require_once('wp_bootstrap_navwalker.php');
+
 
 // HTML5 Blank navigation
 function html5blank_nav()
