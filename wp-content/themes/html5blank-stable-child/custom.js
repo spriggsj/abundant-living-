@@ -6,11 +6,11 @@ $(document).ready(function(){
   $(window).on('scroll',function() {
     var scrolltop = $(this).scrollTop();
 
-    if(scrolltop >= 120) {
+    if(scrolltop >= 50) {
       $('#fixedbar').fadeIn(250);
     }
     
-    else if(scrolltop <= 120) {
+    else if(scrolltop <= 50) {
       $('#fixedbar').fadeOut(250);
     }
   });
