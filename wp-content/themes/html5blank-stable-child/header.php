@@ -19,57 +19,104 @@
 	<?php wp_head(); ?>
 </head>
 <body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+<nav class="navbar navbar-transparent navbar-static-top">
+                <div class="navbar  navbar-custom" style="border-radius:0px;"> 
+                    <!-- Brand and toggle get grouped for better mobile display --> 
+                        <div class="container"> 
+                            <div class="row">
+                                <div class="col-xs-12 col-md-5 main-img">
+                                    <a href="#" class="navbar-brand">
+                                      <?php include 'logo.php'?>
+                                      <p id="branding">Abundant Living Mommy</p>
+                                    </a>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+                                </div>
+
+                                <div class="col-xs-12 col-md-7">
+                                    <div class="row">
+                                        
+                                             <div class="col-xs-9 col-md-12">
+                                                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                                                <span class="icon-bar"></span> 
+                                                <span class="icon-bar"></span> 
+                                                <span class="icon-bar"></span> 
+                                                </button>
+                                            </div> 
+                                 
+                                        <!-- Collect the nav links, forms, and other content for toggling --> 
+                                            <div class="collapse navbar-collapse navHeaderCollapse pull-right"> 
+                                                <div class="col-xs-12 main-nav">
+                                                    <?php /* Primary navigation */
+                                                        wp_nav_menu( array(
+                                                        'menu' => 'primary',
+                                                        'theme-location' => 'primary',
+                                                        'depth' => 2,
+                                                        'menu_class' => 'nav navbar-nav ',
+                                                        'fallback-cb' => 'wp_bootstrap_navwalker::fallback',
+                                                        //Process nav menu using our custom nav walker
+                                                        'walker' => new wp_bootstrap_navwalker())
+                                                        );
+                                                    ?>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                </div><!--end div class collapse navbar-collapse navHeaderCollapse -->
+                            </div>
+            
+                        </div><!--end div class container-fluid-->
+                    </div><!--end div class navbar  navbar-static-top navbar-custom-->
+                </nav> 
+                <nav class="navbar navbar-default"id="fixedbar" >
+                 <div class="navbar  navbar-custom" style="border-radius:0px;"> 
+                    <!-- Brand and toggle get grouped for better mobile display --> 
+                        <div class="container"> 
+                            <div class="row">
+                                <div class="col-xs-12 col-md-5 main-img">
+                                    <a href="#" class="navbar-brand">
+                                      <?php include 'logo.php'?>
+                                      <p id="branding">Abundant Living Mommy</p>
+                                    </a>
+
+                                </div>
+                                
+
+                                <div class="col-xs-12 col-md-10">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-12 contact-img">
+                                            
+                                            
+                                        </div>
+                                              <div class="col-xs-9 col-md-12">
+                                                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                                                <span class="icon-bar"></span> 
+                                                <span class="icon-bar"></span> 
+                                                <span class="icon-bar"></span> 
+                                                </button>
+                                            </div>  
+                                 
+                                        <!-- Collect the nav links, forms, and other content for toggling --> 
+                                            <div class="collapse navbar-collapse navHeaderCollapse pull-right"> 
+                                                
+                                                    <?php /* Primary navigation */
+                                                        wp_nav_menu( array(
+                                                        'menu' => 'primary',
+                                                        'theme-location' => 'primary',
+                                                        'depth' => 2,
+                                                        'menu_class' => 'nav navbar-nav ',
+                                                        'fallback-cb' => 'wp_bootstrap_navwalker::fallback',
+                                                        //Process nav menu using our custom nav walker
+                                                        'walker' => new wp_bootstrap_navwalker())
+                                                        );
+                                                    ?>
+                                           
+                                            </div>
+                                    </div>
+
+                                </div><!--end div class collapse navbar-collapse navHeaderCollapse -->
+                             </div>
+                        </div> <!--end div class container-fluid-->
+                     </div> <!--end div class navbar  navbar-static-top navbar-custom-->
+                </nav> 
+
 	
