@@ -103,7 +103,7 @@
                                                         'menu' => 'primary',
                                                         'theme-location' => 'primary',
                                                         'depth' => 2,
-                                                        'menu_class' => 'nav navbar-nav ',
+                                                        'menu_class' => 'nav navbar-nav fixer',
                                                         'fallback-cb' => 'wp_bootstrap_navwalker::fallback',
                                                         //Process nav menu using our custom nav walker
                                                         'walker' => new wp_bootstrap_navwalker())
