@@ -1,2 +1,28 @@
+/*
+	Theme Name: HTML5 Blank Child
+	Theme URI: http://html5blank.com
+	Template: html5blank-stable
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Jason Roger
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
 body {
+  background-color: green; }
+
+.main-img {
   background-color: red; }
+
+.main-img .navbar-brand {
+  color: #777;
+  display: flex; }
+
+.navbar-brand svg, .navbar-brand #branding {
+  display: inline-block; }
+
+#branding {
+  display: inline-block; }
