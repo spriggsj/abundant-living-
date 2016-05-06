@@ -14,14 +14,14 @@ function rc_health_custom_post(){
 	register_post_type('health_post', 
 		[
 		'labels' => [
-			'name' => 'Health post',
+			'name' => 'Health',
 			'singular_name' => 'Health',
 			'edit_item' => 'Edit item',
 			'new_item' => 'New item',
 			'view_item' => 'View item',
 			'search_item' => 'Search health',
 			'not_found' => 'No items found',
-			'not_found_in_traash' => 'No items found in the trash',
+			'not_found_in_trash' => 'No items found in the trash',
 			'parent_item_colon' => 'Parent item'
 		],
 			'public' => true,
@@ -73,8 +73,8 @@ function include_health_function($template_path){
 	return $template_path;
 }
 
-function set_posts_per_page_for_health( $query ){
-	if($query -> is_post_type_archive('health_post') ) {
+function set_posts_per_page_for_health($query){
+	if($query -> is_post_type_archive('health_post')){
 		$query -> set('posts_per_page', '8');
 	}
 }
