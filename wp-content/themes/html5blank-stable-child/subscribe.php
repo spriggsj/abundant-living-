@@ -1,4 +1,3 @@
-
 <?php get_header(); ?>
 
 <div class="container">
@@ -13,26 +12,31 @@
 
 				<?php 
 					if (have_posts()) : while (have_posts()) : the_post(); // start of the loop
+				
+					$content = '';
+					$content .= '<div class="member-title">';
+						$content .= get_the_title();
+					$content .= '</div>';
+
+					$content .= '<div class="col-sm-6 col-md-6 col-center main-img">';
+						$content .= get_the_post_thumbnail();
+					$content .= '</div>';
+
+					$content .= '<div class="member-content">';
+						$content .= get_the_content();
+						$content .= 'test';
+					$content .= '</div>';
+
+					echo do_shortcode('[restricted]' . $content . '[/restricted]');
+					?>
 					
-					echo '<div class="membertitle">';
-					 the_title() ; 
-					echo'</div>';
-					
 
-					echo '<div class="col-sm-6 col-md-6 col-center main-img">' ;
-						the_post_thumbnail() ;
-					echo '</div>';
-
-					
-
-					echo '<div class="membercontent">';
-					 the_content();
-					echo '</div>';
-						  
-
+				
+		
 						
 					
-					
+				<?php	
+				
 
 				endwhile; endif;
 

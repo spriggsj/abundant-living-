@@ -25,6 +25,7 @@
 
 					$content .= '<div class="member-content">';
 						$content .= the_content();
+						$content .= 'test';
 					$content .= '</div>';
 
 					echo do_shortcode('[restricted]' . $content . '[/restricted]');
