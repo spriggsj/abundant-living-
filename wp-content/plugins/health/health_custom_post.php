@@ -49,6 +49,20 @@ function health_post(){
 	);
 }
 
+function js_excerpt_length($length){
+	return 20;
+}
+add_filter('excerpt_length', 'js_excerpt_length', 999);
+
+
+function js_excerpt_more($more){
+	return 'Read More';
+}
+
+add_filter('excerpt_more', 'js_excerpt_more');
+
+
+
 add_action('save_post', 'add_health_fields', 10, 2);
 
 function add_health_fields($health_info_id, $health){
@@ -80,5 +94,71 @@ function set_posts_per_page_for_health($query){
 }
 
 add_action('pre_get_posts', 'set_posts_per_page_for_health');
+
+
+
+
+/*/////////////////////////short code/////////////////////////////////////*/
+
+function custom_loop_shortcode( $atts ) {
+    $output = '';
+    $custom_loop_atts = shortcode_atts(
+      [
+        'type' => 'health_post',
+      ], $atts
+
+      );
+    $post_type = $custom_loop_atts['type'];
+    $args = array(
+        'post_type' => $post_type,
+        'post_status' => 'publish',
+        'order' => 'date',
+        'post_per_page' => 4
+
+      );
+
+
+
+    $the_query = new WP_Query($args);
+        $output .= '<section>';
+          $output .= '<div class="container-fluid">';
+            $output .= '<div class="row">';
+
+            $i = 0; 
+		    while ($the_query->have_posts()) : $the_query->the_post();
+		      $post_id = get_the_ID();
+
+
+		      if ($i == 0 ){
+		      	$output .= '<div class="col-sm-6 col-md-3 image--margin highlighted">';
+		      } else {
+		      	$output .= '<div class="col-sm-6 col-md-3 image--margin">';
+		      }
+		        // $output .= '<a href="'. get_permalink() . '">';
+		        $output .= get_the_post_thumbnail($post_id, 'full');
+		        // $output .= the_content($post_id);
+		        $output .= get_the_excerpt($post_id);
+		             
+		              
+		          $output .= '</a>';
+		        $output .= '</div>';
+				$output .= get_post_meta($post->ID,'incr_number',true);  
+				$i++;
+		      endwhile;
+
+            $output .= '</div>';
+           $output .= '</div>';
+          $output .= '</section>'; 
+
+      return $output;
+
+      wp_reset_postdata();
+
+    }
+
+    add_shortcode('custom-loop', 'custom_loop_shortcode');
+
+
+
 
 ?>
