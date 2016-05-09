@@ -2,19 +2,18 @@
 <html lang="en">
     <head>
     	<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="<?php bloginfo('description'); ?>">
     	<title>Abundant Living Mamma</title>
     	<link href="//www.google-analytics.com" rel="dns-prefetch">
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Noto+Serif:700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        
-    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    		
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<meta name="description" content="<?php bloginfo('description'); ?>">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     	<?php wp_head(); ?>
     </head>
@@ -26,9 +25,9 @@
                 <div class="container"> 
                     <div class="row">
                         <div class="col-xs-12 col-md-5 main-img">
-                            <a href="#" class="navbar-brand">
+                            <a href="<?php echo home_url(); ?>" class="main-logo">
                                 <?php include 'logo.php'; ?>
-                                <p id="branding">Abundant Living Mommy</p>
+                                <h1 class="main-name"><?php bloginfo('name'); ?></h1>
                             </a>
                         </div>
 
@@ -36,9 +35,9 @@
                             <div class="row">
                                 <div class="col-xs-9 col-md-12">
                                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                                    <span class="icon-bar"></span> 
-                                    <span class="icon-bar"></span> 
-                                    <span class="icon-bar"></span> 
+                                        <span class="icon-bar"></span> 
+                                        <span class="icon-bar"></span> 
+                                        <span class="icon-bar"></span> 
                                     </button>
                                 </div> 
                      
@@ -73,9 +72,9 @@
                 <div class="container"> 
                     <div class="row">
                         <div class="col-xs-12 col-md-5 main-img">
-                            <a href="#" class="navbar-brand">
-                              <?php include 'logo.php'; ?>
-                              <p id="branding">Abundant Living Mommy</p>
+                            <a href="<?php echo home_url(); ?>" class="main-logo">
+                                <?php include 'logo.php'; ?>
+                                <h1 class="main-name"><?php bloginfo('name'); ?></h1>
                             </a>
                         </div>
                                 
@@ -83,9 +82,9 @@
                             <div class="row">
                                 <div class="col-xs-9 col-md-12">
                                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                                    <span class="icon-bar"></span> 
-                                    <span class="icon-bar"></span> 
-                                    <span class="icon-bar"></span> 
+                                        <span class="icon-bar"></span> 
+                                        <span class="icon-bar"></span> 
+                                        <span class="icon-bar"></span> 
                                     </button>
                                 </div>  
                          

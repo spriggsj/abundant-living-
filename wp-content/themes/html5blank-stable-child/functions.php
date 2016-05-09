@@ -17,4 +17,4 @@ function my_method() {
 	wp_register_script('custom-script', get_stylesheet_directory_uri() . '/scripts/custom.js', true );
 	// fires it
 	wp_enqueue_script('custom-script'); //enqueue it
-	}
+}
