@@ -11,7 +11,7 @@
 add_action('init', 'rc_health_custom_post');
 
 function rc_health_custom_post(){
-	register_post_type('health_post', 
+	register_post_type('health_post',
 		[
 		'labels' => [
 			'name' => 'Health',
