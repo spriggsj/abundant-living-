@@ -40,7 +40,7 @@
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 
 			<?php comments_template(); ?>
-
+				
 		</article>
 		<!-- /article -->
 
@@ -50,7 +50,7 @@
 
 		<!-- article -->
 		<article>
-
+				
 			<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
 
 		</article>
