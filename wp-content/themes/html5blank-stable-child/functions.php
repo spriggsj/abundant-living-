@@ -12,7 +12,7 @@ function my_style_method() {
 add_action('wp_enqueue_scripts', 'my_method');
 function my_method() {
     //sets it
-	// wp_register_script('custom-script', get_stylesheet_directory_uri() . '/html5blank-stable-child/scripts/bootstrap.min.js', array('jquery'), true );
+	 wp_register_script('custom-script', get_stylesheet_directory_uri() . '/min/custom-min.js', true );
 	
 	wp_register_script('custom-script', get_stylesheet_directory_uri() . '/scripts/custom.js', true );
 	// fires it
