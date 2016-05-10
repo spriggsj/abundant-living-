@@ -120,35 +120,36 @@ function custom_loop_shortcode( $atts ) {
 
 
     $the_query = new WP_Query($args);
-        $output .= '<section>';
-          $output .= '<div class="container-fluid">';
+          $output .= '<div class="container">';
+          	$output .= '<h2>';
+          		$output .= 'Hello World';
+          	$output .= '</h2>';
             $output .= '<div class="row">';
 
             $i = 0; 
 		    while ($the_query->have_posts()) : $the_query->the_post();
 		      $post_id = get_the_ID();
-
-
+		      
 		      if ($i == 0 ){
-		      	$output .= '<div class="col-sm-6 col-md-3 image--margin highlighted">';
+		      	$output .= '<div class="col-sm-6   highlighted">';
+		      		$output .= get_the_post_thumbnail($post_id, 'full');
+		      		$output .= get_the_excerpt($post_id);
+		      	$output .= '</div>';
+
 		      } else {
-		      	$output .= '<div class="col-sm-6 col-md-3 image--margin">';
-		      }
-		        // $output .= '<a href="'. get_permalink() . '">';
-		        $output .= get_the_post_thumbnail($post_id, 'full');
-		        // $output .= the_content($post_id);
-		        $output .= get_the_excerpt($post_id);
-		             
-		              
-		          $output .= '</a>';
-		        $output .= '</div>';
-				$output .= get_post_meta($post->ID,'incr_number',true);  
+
+		      	 $output .= '<div class="col-sm-5 pull-right ">';
+		      	 $output .= '<div class="row">';
+		         $output .= get_the_post_thumbnail($post_id, 'medium');   
+		         $output .= get_the_excerpt($post_id);
+		           $output .= '</div>';
+		           $output .= '</div>';
+		       }       
 				$i++;
 		      endwhile;
-
-            $output .= '</div>';
-           $output .= '</div>';
-          $output .= '</section>'; 
+		      $output .= '</div>';
+       		$output .= '</div>';
+          $output .= '</div>'; 
 
       return $output;
 
