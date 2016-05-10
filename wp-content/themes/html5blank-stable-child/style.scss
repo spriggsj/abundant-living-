@@ -13,64 +13,21 @@
 */
 
 
+/*
+1.0 reset
+2.0 bootstrap
+3.0 fontface
+4.0 header
+5.0 footer
+6.0 health
+(add in style.scss)
+*/
 
-.main-img .navbar-brand {
-    color: #777;
-    display: flex;
-    align-items:flex-start;
-}
+@import 'css/base/_reset.scss';
+@import 'css/base/_bootstrap.scss';
+@import 'css/fonts/_fontface.scss';
+@import 'css/layout/_header.scss';
+@import 'css/layout/_footer.scss';
+@import 'css/layout/_health.scss';
 
-.navbar-brand svg, .navbar-brand #branding {
-	display: inline-block;
-}
 
-#branding {
-	padding:10px 0px 0px 10px;
-	color: blue;
-}
-/* fixed navbar styling */
-
-#fixedbar { 
-  display: none;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 80px;
-  background: rgb(0,255,239);
-  z-index: 1;
-  color:white;
-}
-#fixednav { 
-  display: block;
-  width: 710px;
-  margin: 0 auto;
-  padding: 0px 25px;
-  font-family: 'Libre Baskerville', serif;
-  color:white;
-}
-#fixednav li a {
-  display: block;
-  float: left;
-  font-size: 1.75em;
-  font-weight: bold;
-  color: #fff;
-  line-height: 80px;
-  text-decoration: none;
-  padding: 0px 8px;
-  margin-right: 6px; 
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  transition: all 0.2s linear; 
-}
-
-#fixednav li a:hover {
-  color: #fff;
-  background: rgba(0,0,0,0.3);
-}
-.fixer{
-	margin-top:-40px;
-}
-
-body {
-  background-color: red;
-}

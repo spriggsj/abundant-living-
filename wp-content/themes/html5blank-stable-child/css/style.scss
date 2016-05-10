@@ -23,12 +23,12 @@
 (add in style.scss)
 */
 
-@import 'base/reset';
-@import 'base/bootstrap';
-@import 'fonts/fontface';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/health';
+@import 'css/base/_reset.scss';
+@import 'css/base/_bootstrap.scss';
+@import 'css/fonts/_fontface.scss';
+@import 'css/layout/_header.scss';
+@import 'css/layout/_footer.scss';
+@import 'css/layout/_health.scss';
 
 
 
