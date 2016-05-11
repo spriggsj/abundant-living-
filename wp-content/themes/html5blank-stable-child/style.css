@@ -6667,6 +6667,13 @@ button.close {
   background-repeat: no-repeat;
   background-position: 50% 50%; }
 
+#ewd_feup_login_logout_toggle_widget-4 {
+  float: left;
+  position: absolute; }
+
+.ewd-feup-widget-title {
+  display: none; }
+
 /*
 	6.0 health
 */
