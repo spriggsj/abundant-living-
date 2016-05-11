@@ -11,7 +11,7 @@
 add_action('init', 'rc_meal_plans_custom_post');
 
 function rc_meal_plans_custom_post(){
-	register_post_type('health post',
+	register_post_type('meal_post',
 		[
 		'labels' => [
 			'name' => 'Meal Planner',
@@ -80,5 +80,56 @@ function set_posts_per_page_for_meal($query){
 }
 
 add_action('pre_get_posts', 'set_posts_per_page_for_meal');
+
+/*/////////////////////////short code/////////////////////////////////////*/
+
+function meal_loop_shortcode( $atts ) {
+    $output = '';
+    $meal_loop_atts = shortcode_atts(
+      [
+        'type' => 'meal_post',
+      ], $atts
+
+      );
+    $post_type = $meal_loop_atts['type'];
+    $args = array(
+        'post_type' => $post_type,
+        'post_status' => 'publish',
+        'order' => 'date',
+        'post_per_page' => 4
+
+      );
+
+
+
+    $the_query = new WP_Query($args);
+          $output .= '<div class="container">';
+          	$output .= '<h2>';
+          		$output .= 'Healthy Meals';
+          	$output .= '</h2>';
+            $output .= '<div class="row">';
+            $output .= '<div class="col-sm-5 author pull-right">';
+					$output .= '<img src="http://placehold.it/350x350">';
+				$output .= '</div>';
+
+		    while ($the_query->have_posts()) : $the_query->the_post();
+		        $post_id = get_the_ID();
+		      	$output .= '<div class="col-sm-7   recipe">';
+		      		$output .= get_the_post_thumbnail($post_id, 'medium');
+		      		$output .= get_the_excerpt($post_id);
+		      	$output .= '</div>'; 
+		    endwhile;
+				
+       		$output .= '</div>';
+          $output .= '</div>'; 
+
+      return $output;
+
+      wp_reset_postdata();
+
+    }
+
+    add_shortcode('meal-loop', 'meal_loop_shortcode');
+
 
 ?>

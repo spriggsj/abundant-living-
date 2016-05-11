@@ -122,14 +122,14 @@ function custom_loop_shortcode( $atts ) {
     $the_query = new WP_Query($args);
           $output .= '<div class="container">';
           	$output .= '<h2>';
-          		$output .= 'Hello World';
+          		$output .= 'Recent Posts';
           	$output .= '</h2>';
             $output .= '<div class="row">';
 
             $i = 0; 
 		    while ($the_query->have_posts()) : $the_query->the_post();
 		      $post_id = get_the_ID();
-		      
+
 		      if ($i == 0 ){
 		      	$output .= '<div class="col-sm-6   highlighted">';
 		      		$output .= get_the_post_thumbnail($post_id, 'full');
@@ -147,7 +147,7 @@ function custom_loop_shortcode( $atts ) {
 		       }       
 				$i++;
 		      endwhile;
-		      $output .= '</div>';
+		      //$output .= '</div>';
        		$output .= '</div>';
           $output .= '</div>'; 
 
