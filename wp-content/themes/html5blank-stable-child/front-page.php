@@ -7,5 +7,7 @@
 			<input type="submit" value="submit">
 		</div>
 	</header>
-
+	
+	<div><?php echo do_shortcode( '[custom-loop]' ); ?></div>
+	<div><?php echo do_shortcode( '[meal-loop]' ); ?></div>
 <?php get_footer(); ?>
