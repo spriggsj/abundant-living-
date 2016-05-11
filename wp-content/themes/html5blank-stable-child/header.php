@@ -24,16 +24,16 @@
                 <!-- Brand and toggle get grouped for better mobile display --> 
                 <div class="container"> 
                     <div class="row">
-                        <div class="col-xs-12 col-md-5 main-img">
+                        <div class="col-xs-6 col-sm-4 col-md-6 main-img">
                             <a href="<?php echo home_url(); ?>" class="main-logo">
                                 <?php include 'logo.php'; ?>
-                                <h1 class="main-name"><?php bloginfo('name'); ?></h1>
+                                <h1 class="main-name">Abundant Living <span>Mommy</span></h1>
                             </a>
                         </div>
 
-                        <div class="col-xs-12 col-md-7">
+                        <div class="col-xs-6 col-sm-8 col-md-6">
                             <div class="row">
-                                <div class="col-xs-9 col-md-12">
+                                <div class="col-xs-12">
                                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
                                         <span class="icon-bar"></span> 
                                         <span class="icon-bar"></span> 
@@ -71,16 +71,16 @@
                 <!-- Brand and toggle get grouped for better mobile display --> 
                 <div class="container"> 
                     <div class="row">
-                        <div class="col-xs-12 col-md-5 main-img">
+                        <div class="col-xs-5 col-md-5 main-img">
                             <a href="<?php echo home_url(); ?>" class="main-logo">
                                 <?php include 'logo.php'; ?>
-                                <h1 class="main-name"><?php bloginfo('name'); ?></h1>
+                                <h1 class="main-name">Abundant Living <span>Mommy</span></h1>
                             </a>
                         </div>
                                 
-                        <div class="col-xs-12 col-md-10">
+                        <div class="col-xs-7 col-sm-7">
                             <div class="row">
-                                <div class="col-xs-9 col-md-12">
+                                <div class="col-xs-12">
                                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
                                         <span class="icon-bar"></span> 
                                         <span class="icon-bar"></span> 

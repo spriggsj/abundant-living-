@@ -26,8 +26,9 @@
 @import 'css/base/_reset.scss';
 @import 'css/base/_bootstrap.scss';
 @import 'css/fonts/_fontface.scss';
+@import 'css/variables/_variables.scss';
 @import 'css/layout/_header.scss';
 @import 'css/layout/_footer.scss';
 @import 'css/layout/_health.scss';
-
-
+@import 'css/media-query/_media-query.scss';
+@import 'css/global/_global.scss';
