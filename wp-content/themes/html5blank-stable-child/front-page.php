@@ -9,5 +9,15 @@
 	</header>
 	
 	<div><?php echo do_shortcode( '[custom-loop]' ); ?></div>
+	<section id="buffer">
+	
+		<h1 class="name-title"><?php include 'logo.php'; ?>Abundant Living <span>Mommy</span> E Books</h1>
+		<ul id="books">
+			<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+			<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+			<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+			<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+		</ul>
+	</section>
 	<div><?php echo do_shortcode( '[meal-loop]' ); ?></div>
 <?php get_footer(); ?>

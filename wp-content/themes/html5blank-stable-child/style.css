@@ -6677,6 +6677,27 @@ button.close {
 /*
 	6.0 health
 */
+#buffer {
+  background-color: #BEEB9F;
+  text-align: center;
+  height: 390px; }
+
+ul#books li {
+  display: inline;
+  padding: 30px 30px;
+  text-align: center;
+  margin: 0 auto; }
+
+h1.name-title {
+  padding-top: 30px;
+  color: #FF6138; }
+
+h1.name-title span {
+  color: #00a388; }
+
+footer {
+  background-color: #BEEB9F; }
+
 html, body {
   width: 100%;
   margin: 0;

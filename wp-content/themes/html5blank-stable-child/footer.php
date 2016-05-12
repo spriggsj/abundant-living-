@@ -1,5 +1,5 @@
 	<footer>
-		<div class="container">
+		<div class="container footer">
 			<h2>Find Me Here</h2>
 			<div class="row">
 				<div class="col-xs-12 col-sm-5">
