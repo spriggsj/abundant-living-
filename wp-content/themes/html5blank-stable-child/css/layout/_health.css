@@ -1,5 +1,7 @@
 /*
 	6.0 health
 */
-.highlighted {
-  background-color: yellow; }
+
+.col-md-12.bio {
+    font-size: 30px;
+}

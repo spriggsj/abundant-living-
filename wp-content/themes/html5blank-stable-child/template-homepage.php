@@ -8,6 +8,16 @@
 		</div>
 	</header>
 	
-	<div><?php echo do_shortcode( '[custom-loop]' ); ?></div>
-	<div><?php echo do_shortcode( '[meal-loop]' ); ?></div>
+	<div class="recentpost"><?php echo do_shortcode( '[custom-loop]' ); ?></div>
+	<section id="buffer">
+		<div class="col-sm-12"><?php include 'logo.php'; ?>Abundant Living <span>Mommy</span> E Books</div>
+		
+		<ul id="books">
+			<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+			<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+			<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+			<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+		</ul>
+	</section>
+	<div class="recentpost"><?php echo do_shortcode( '[meal-loop]' ); ?></div>
 <?php get_footer(); ?>
