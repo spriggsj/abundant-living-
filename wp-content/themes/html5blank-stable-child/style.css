@@ -6675,6 +6675,12 @@ button.close {
   display: none; }
 
 /*
+	7.0 footer
+*/
+div.footer_image {
+  width: 400px; }
+
+/*
 	6.0 health
 */
 #buffer {
@@ -6697,6 +6703,15 @@ h1.name-title span {
 
 footer {
   background-color: #BEEB9F; }
+
+div.recentpost {
+  background-color: #ffff9d; }
+
+.col-md-12.bio {
+  font-size: 24px; }
+
+.member-content {
+  font-size: 14px; }
 
 html, body {
   width: 100%;

@@ -1,10 +1,11 @@
 	<footer>
 		<div class="container footer">
 			<h2>Find Me Here</h2>
+
 			<div class="row">
 				<div class="col-xs-12 col-sm-5">
 					<!-- image of wendy -->
-					<img src="">
+					<img src="http://placehold.it/200x200">
 				</div>
 				<div class="col-xs-12 col-sm-7">
 					<div class="row">
@@ -13,6 +14,7 @@
 						</div>
 						<div class="col-xs-12">
 							<h3>Follow Me</h3>
+
 							<aside>
 								<i class="fa fa-facebook" aria-hidden="true"></i>
 								<i class="fa fa-google-plus" aria-hidden="true"></i>

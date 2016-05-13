@@ -471,5 +471,4 @@ $pageposts = $wpdb->get_results($querystr, OBJECT);
 add_action ( 'publish_post', 'updateNumbers' );
 add_action ( 'deleted_post', 'updateNumbers' );
 add_action ( 'edit_post', 'updateNumbers' );
-
 ?>
