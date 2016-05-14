@@ -131,19 +131,23 @@ function custom_loop_shortcode( $atts ) {
 		      $post_id = get_the_ID();
 
 		      if ($i == 0 ){
-		      	$output .= '<div class="col-sm-6   highlighted">';
+		      	$output .= '<div class="col-sm-6 newest-recent-post">';
 		      		$output .= get_the_post_thumbnail($post_id, 'full');
-		      		$output .= get_the_excerpt($post_id);
+		      		$output .= '<p>';
+		      			$output .= get_the_excerpt($post_id);
+		      		$output .= '</p>';
 		      	$output .= '</div>';
 
 		      } else {
 
-		      	 $output .= '<div class="col-sm-5 pull-right ">';
-		      	 $output .= '<div class="row">';
-		         $output .= get_the_post_thumbnail($post_id, 'medium');   
-		         $output .= get_the_excerpt($post_id);
-		           $output .= '</div>';
-		           $output .= '</div>';
+					$output .= '<div class="col-sm-5 pull-right older-recent-post">';
+						$output .= '<div class="row older-post-container">';
+							$output .= get_the_post_thumbnail($post_id, 'medium'); 
+							$output .= '<p>';  
+								$output .= get_the_excerpt($post_id);
+							$output .= '<p>';
+						$output .= '</div>';
+					$output .= '</div>';
 		       }       
 				$i++;
 		      endwhile;

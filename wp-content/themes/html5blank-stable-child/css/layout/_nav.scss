@@ -1,0 +1,78 @@
+/* Navigation Link */
+
+.main-img {
+   .main-logo {
+      display: flex;
+      align-items: flex-start;
+      text-decoration: none;
+      svg {
+         transform: rotate(35deg);
+      }
+      h1 {
+      font-size: 2.5em;
+         span {
+            color: $torquise;
+         }
+      }
+   }
+}
+
+.main-nav {
+   padding: 0;
+   li {
+      a {
+         &:hover {
+            background-color: transparent;
+            color: red;
+         }
+      }
+   }
+}
+
+// Bootstrap Css
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+   padding: 0;
+}
+
+.navbar-static-top {
+   margin-bottom: 0;
+}
+
+.navbar-custom {
+   margin-bottom: 0;
+}
+
+.navbar-default {
+   border-radius: 0;
+   background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, {
+   color: red;
+   background-color: transparent;
+}
+
+.navbar-toggle {
+   border: 1px solid black;
+   margin-right: 0;
+   margin-bottom: 0;
+   .icon-bar {
+      border-top: 2px solid black;
+   }
+}
+
+/* fixed navbar styling */
+
+#fixedbar { 
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid $torquise;
+}
+#fixednav { 
+  display: block;
+}
