@@ -7,25 +7,29 @@
 		margin-bottom: 1em;
 	}
 	.view-article {
-		color: $light-green;
+		color: $orange;
+	}
+	img {
+		box-shadow: 0 0 5px #000000;
 	}
 	.newest-recent-post {
-		padding: 2em 0;
+		background-color: transparentize($orange, .3);
+		color: #ffffff;
+		padding: 2em;
 		img {
-			height: 300px;
 			margin-bottom: 2em;
 		}
-		p {
-
+		.view-article {
+			color: $lime-green;
 		}
 	}
 	.older-recent-post {
-		border-bottom: 2px dotted $light-green;
+		background-color: transparentize($torquise, .4);
+		color: #ffffff;
 		.older-post-container {
 			display: flex;
-			padding: 2.2em 0;
+			padding: 2.2em 1em;
 			img {
-				height: 150px;
 				margin-right: 2em;
 			}
 		}
