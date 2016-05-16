@@ -16,10 +16,10 @@
 		<div class="container">
 			<h2 class="name-title">Abundant Living <span>Mommy</span> E Books</h2>
 			<ul id="books">
-				<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
-				<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
-				<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
-				<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+				<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/detoxyourhomehandbook.jpg" class="img-responsive"></a></li>
+				<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/healthy-pregnancy-guide.jpg" class="img-responsive"></a></li>
+				<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-remedies-handbook.jpg" class="img-responsive"></a></li>
+				<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/natural-beauty-guide.jpg" class="img-responsive"></a></li>
 			</ul>
 		</div>
 	</section>

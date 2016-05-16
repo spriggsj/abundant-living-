@@ -140,7 +140,7 @@ function custom_loop_shortcode( $atts ) {
 
 		      } else {
 
-					$output .= '<div class="col-sm-5 pull-right older-recent-post">';
+					$output .= '<div class="col-sm-6 older-recent-post">';
 						$output .= '<div class="row older-post-container">';
 							$output .= get_the_post_thumbnail($post_id, 'medium'); 
 							$output .= '<p>';  

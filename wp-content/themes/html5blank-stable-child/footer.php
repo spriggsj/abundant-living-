@@ -2,13 +2,13 @@
 		<div class="container footer">
 			<div class="row">
 				<div class="col-xs-12 col-sm-4">
-					<!-- image of wendy -->
+					<!-- image of wendy maybe -->
 					<img src="http://placehold.it/200x200">
 				</div>
 				<div class="col-xs-12 col-sm-8">
 					<div class="row">
 						<div class="col-xs-12">
-							<h2>Find Me Here</h2>
+							 <h2>Find Me Here</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis adipisci suscipit quod quaerat, doloribus quo hic, tempora a rerum, possimus nisi alias illum ipsam sit!</p>
 						</div>
 						<div class="col-xs-12 social-links">

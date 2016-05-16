@@ -105,7 +105,7 @@ function meal_loop_shortcode( $atts ) {
     $the_query = new WP_Query($args);
           $output .= '<div class="container">';
           	$output .= '<h2>';
-          		$output .= 'Healthy Meals';
+          		$output .= 'Meal Planner';
           	$output .= '</h2>';
             $output .= '<div class="row">';
             $output .= '<div class="col-sm-5 author pull-right">';
