@@ -96,7 +96,7 @@ function meal_loop_shortcode( $atts ) {
         'post_type' => $post_type,
         'post_status' => 'publish',
         'order' => 'date',
-        'post_per_page' => 4
+        'post_per_page' => 8
 
       );
 
@@ -115,6 +115,9 @@ function meal_loop_shortcode( $atts ) {
 		        $post_id = get_the_ID();
 		      	$output .= '<div class="col-sm-7 recipe">';
 		      		$output .= get_the_post_thumbnail($post_id, 'medium');
+		      		$output .= '<p>';
+		        	$output .= get_the_title();
+		        $output .= '</p>';
 		      		$output .= get_the_excerpt($post_id);
 		      	$output .= '</div>'; 
 		    endwhile;

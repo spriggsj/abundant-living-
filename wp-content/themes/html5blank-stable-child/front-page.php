@@ -4,7 +4,7 @@
 		<div class="container">
 			<h1>living <span>healthy</span> should be easy</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolores harum fugiat praesentium corrupti illo ducimus, velit non! Quod dolores harum fugiat praesentium corrupti illo ducimus, velit non! Quod dolores harum fugiat praesentium corrupti illo ducimus, velit non!</p>
-			<a href="http://localhost:8080/registration/">Let's Get Started</a>
+			<a href="http://localhost:8080/register/">Let's Get Started</a>
 		</div>
 	</header>
 	
@@ -26,6 +26,7 @@
 
 	<section class="meal-post">
 		<?php echo do_shortcode( '[meal-loop]' ); ?>
+		
 	</section>
 
 <?php get_footer(); ?>
