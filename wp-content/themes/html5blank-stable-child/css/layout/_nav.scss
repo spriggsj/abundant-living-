@@ -23,6 +23,7 @@
 .main-nav {
    padding: 0;
    ul {
+      margin-right: 2em;
       li {
          &:last-of-type a {
             background-color: $torquise;
@@ -91,6 +92,7 @@
    border: none;
    border-bottom: 2px solid $torquise;
    ul {
+      margin-right: 2em;
       li {
          &:last-of-type a {
          background-color: $torquise;

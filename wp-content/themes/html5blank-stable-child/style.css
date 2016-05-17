@@ -27,7 +27,7 @@
 @import url(https://fonts.googleapis.com/css?family=Great+Vibes);
 @import url(https://fonts.googleapis.com/css?family=Cabin);
 @import url(https://fonts.googleapis.com/css?family=Bitter);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -8035,13 +8035,15 @@ h2 {
   font-family: 'bitter';
 }
 
-h3, p, li, a {
+h3, li, a {
   font-family: 'cabin';
 }
 
 p {
+  font-family: 'raleway';
   font-size: 1.5em;
-  line-height: 1.6em;
+  font-weight: 100;
+  line-height: 1.4em;
 }
 
 a {
@@ -8072,6 +8074,10 @@ a {
 
 .main-nav {
   padding: 0;
+}
+
+.main-nav ul {
+  margin-right: 2em;
 }
 
 .main-nav ul li:last-of-type a {
@@ -8140,6 +8146,10 @@ a {
   border-bottom: 2px solid #00a388;
 }
 
+#fixedbar ul {
+  margin-right: 2em;
+}
+
 #fixedbar ul li:last-of-type a {
   background-color: #00a388;
   color: #ffffff;
@@ -8195,7 +8205,6 @@ a {
 }
 
 .hero-banner p {
-  font-size: 1.7em;
   line-height: 27px;
   margin: 1em 0;
 }
@@ -8229,24 +8238,24 @@ a {
 
 .recent-post {
   padding: 3em 0;
+  background-image: url(img/texture.jpg);
 }
 
 .recent-post h2 {
   text-align: center;
-  margin-bottom: 1em;
+  font-size: 3.5em;
 }
 
 .recent-post .view-article {
   color: #ff5138;
+  text-decoration: none;
 }
 
 .recent-post img {
-  box-shadow: 0 0 5px #000000;
+  box-shadow: 0 0 10px #000000;
 }
 
 .recent-post .newest-recent-post {
-  background-color: rgba(255, 81, 56, 0.7);
-  color: #ffffff;
   padding: 2em;
 }
 
@@ -8254,22 +8263,15 @@ a {
   margin-bottom: 2em;
 }
 
-.recent-post .newest-recent-post .view-article {
-  color: #beeb9f;
-}
-
-.recent-post .older-recent-post {
-  background-color: rgba(0, 163, 136, 0.6);
-  color: #ffffff;
-}
-
 .recent-post .older-recent-post .older-post-container {
   display: flex;
-  padding: 2.2em 1em;
+  padding: 2em;
 }
 
 .recent-post .older-recent-post .older-post-container img {
   margin-right: 2em;
+  width: 175px;
+  height: 175px;
 }
 
 #buffer {
@@ -8306,6 +8308,28 @@ a {
 
 .health-post h2 {
   margin: 0;
+}
+
+.meal-post {
+  padding: 3em 0;
+}
+
+.meal-post h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.meal-post .recipe {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.meal-post .recipe img {
+  margin-right: 1em;
+}
+
+.meal-post .recipe article h3 {
+  margin-top: 0;
 }
 
 /*

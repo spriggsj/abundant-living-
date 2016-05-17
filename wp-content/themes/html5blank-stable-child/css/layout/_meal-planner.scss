@@ -1,0 +1,19 @@
+.meal-post {
+	padding: 3em 0;
+	h2 {
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.recipe {
+		display: flex;
+		margin-bottom: 2em;
+		img {
+			margin-right: 1em;
+		}
+		article {
+			h3 {
+				margin-top: 0;
+			}
+		}
+	}
+}
