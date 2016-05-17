@@ -66,7 +66,7 @@ function include_meal_function($template_path){
 			if($theme_file = locate_template(['meal_planner.php'])){
 				$template_path == $theme_file;
 			} else {
-				$template_path = plugin_dir_path(__FILE__) . '/meal-planner.php';
+				$template_path = plugin_dir_path(__FILE__) . '/meal_planner.php';
 			}
 		}
 	}
