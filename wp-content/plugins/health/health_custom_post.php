@@ -133,6 +133,9 @@ function custom_loop_shortcode( $atts ) {
 		        if ($i == 0 ){
 			      	$output .= '<div class="col-sm-6 newest-recent-post">';
 			      		$output .= get_the_post_thumbnail($post_id, 'full');
+			      		$output .= '<h3>';
+				      				$output .= get_the_title();
+				      			$output .= '</h3>';
 			      		$output .= '<p>';
 			      			$output .= get_the_excerpt($post_id);
 			      		$output .= '</p>';
@@ -143,14 +146,20 @@ function custom_loop_shortcode( $atts ) {
 					$output .= '<div class="col-sm-6 older-recent-post">';
 						$output .= '<div class="row older-post-container">';
 							$output .= get_the_post_thumbnail($post_id, 'medium'); 
+							$output .= '<aside>';	
+							$output .= '<h3>';
+				      				$output .= get_the_title();
+				      			$output .= '</h3>';
 							$output .= '<p>';  
 								$output .= get_the_excerpt($post_id);
 							$output .= '<p>';
+							$output .= '</aside>';
 						$output .= '</div>';
 					$output .= '</div>';
 		        }       
 				$i++;
 		    endwhile;
+
 		      //$output .= '</div>';
        		$output .= '</div>';
         $output .= '</div>'; 
@@ -160,6 +169,9 @@ function custom_loop_shortcode( $atts ) {
       	wp_reset_postdata();
 
     }
+    ?>
+    <script async defer data-pin-hover="true" data-pin-color="red" data-pin-tall="true" src="//assets.pinterest.com/js/pinit.js"></script>
+    <?php
 
     add_shortcode('custom-loop', 'custom_loop_shortcode');
 
