@@ -8060,12 +8060,12 @@ a {
 }
 
 .main-img .main-logo h1 {
-  font-size: 2.6em;
+  font-size: 2.8em;
   font-weight: 700;
   letter-spacing: 2px;
   display: inline-block;
   vertical-align: top;
-  margin: 9px 0 0 5px;
+  margin: 11px 0 0 5px;
 }
 
 .main-img .main-logo h1 span {
@@ -8321,7 +8321,13 @@ a {
 
 .meal-post .recipe {
   display: flex;
-  margin-bottom: 2em;
+  padding: 0 0 1em 0;
+  margin-bottom: 1em;
+  border-bottom: 1px dashed #cccccc;
+}
+
+.meal-post .recipe:last-of-type {
+  border-bottom: none;
 }
 
 .meal-post .recipe img {
@@ -8330,6 +8336,12 @@ a {
 
 .meal-post .recipe article h3 {
   margin-top: 0;
+  color: #00a388;
+}
+
+.meal-post .recipe article .view-article {
+  color: #00a388;
+  text-decoration: none;
 }
 
 /*
@@ -8340,21 +8352,18 @@ footer {
   color: white;
 }
 
+footer .footer {
+  padding: 3em 0;
+}
+
 footer h2 {
   margin: 0 0 .4em;
   text-transform: capitalize;
+  color: #007562;
 }
 
 footer h2 span {
   color: rgba(255, 81, 56, 0.8);
-}
-
-footer .wendy-img, footer .footer-about {
-  margin: 3em 0;
-}
-
-footer .wendy-img {
-  text-align: center;
 }
 
 footer .wendy-img img {
@@ -8367,7 +8376,7 @@ footer .wendy-img img {
 }
 
 .footer-about .social-links {
-  margin-top: 2em;
+  margin-top: 3em;
   display: flex;
   justify-content: space-around;
 }
@@ -8376,8 +8385,8 @@ footer .wendy-img img {
   background-color: rgba(0, 163, 136, 0.5);
   border-radius: 3px;
   border: 1px solid rgba(230, 230, 230, 0.4);
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   transform: rotate(45deg);
   transition: .3s ease-in-out;
 }
@@ -8390,6 +8399,17 @@ footer .wendy-img img {
 .footer-about .social-links a i {
   font-size: 2em;
   color: #007562;
-  line-height: 50px;
+  line-height: 45px;
   transform: rotate(-45deg);
+}
+
+.copyright {
+  padding: 1em 0;
+  border-top: 1px solid rgba(230, 230, 230, 0.4);
+}
+
+.copyright p {
+  margin: 0;
+  text-align: center;
+  color: #007562;
 }

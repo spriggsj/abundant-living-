@@ -5,18 +5,18 @@
 footer {
 	background-image: linear-gradient(to right,rgba(0,163,136,.5),#00a388);
 	color: white;
+	.footer {
+		padding: 3em 0;
+	}
 	h2 {
 		margin: 0 0 .4em;
 		text-transform: capitalize;
+		color: #007562;
 		span {
 			color: transparentize($orange, .2);
 		}
 	}
-	.wendy-img, .footer-about {
-		margin: 3em 0;
-	}
 	.wendy-img {
-		text-align: center;
 		img {
 			width: 145px;
 			border-radius: 100%;
@@ -29,15 +29,15 @@ footer {
 .footer-about {
 	text-align: center;
 	.social-links {
-		margin-top: 2em;
+		margin-top: 3em;
 		display: flex;
 		justify-content: space-around;
 		a {
 			background-color: transparentize($torquise, .5);
 			border-radius: 3px;
 			border: 1px solid hsla(0, 0%, 90%, .4);
-			width: 50px;
-			height: 50px;
+			width: 45px;
+			height: 45px;
 			transform: rotate(45deg);
 			transition: .3s ease-in-out;
 			&:hover i {
@@ -47,7 +47,7 @@ footer {
 			i {
 				font-size: 2em;
 				color: #007562;
-				line-height: 50px;
+				line-height: 45px;
 				transform: rotate(-45deg);
 			}
 		}
@@ -58,4 +58,16 @@ footer {
 
 .footer-logo-img {
 	
+}
+
+// copyright
+
+.copyright {
+	padding: 1em 0;
+	border-top: 1px solid hsla(0, 0%, 90%, .4);
+	p {
+		margin: 0;
+		text-align: center;
+		color: #007562;
+	}
 }
