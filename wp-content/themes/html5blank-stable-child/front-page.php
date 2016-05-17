@@ -3,21 +3,29 @@
 	<header class="hero-banner">
 		<div class="container">
 			<h1>living <span>healthy</span> should be easy</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolores harum fugiat praesentium corrupti illo ducimus, velit non!</p>
-			<input type="submit" value="submit">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolores harum fugiat praesentium corrupti illo ducimus, velit non! Quod dolores harum fugiat praesentium corrupti illo ducimus, velit non! Quod dolores harum fugiat praesentium corrupti illo ducimus, velit non!</p>
+			<a href="#">Let's Get Started</a>
 		</div>
 	</header>
 	
-	<div class="recentpost"><?php echo do_shortcode( '[custom-loop]' ); ?></div>
-	<section id="buffer">
-
-		<h1 class="name-title"><?php include 'logo.php'; ?>Abundant Living <span>Mommy</span> E Books</h1>
-		<ul id="books">
-			<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
-			<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
-			<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
-			<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
-		</ul>
+	<section class="recent-post">
+		<?php echo do_shortcode( '[custom-loop]' ); ?>
 	</section>
-	<div class="recentpost"><?php echo do_shortcode( '[meal-loop]' ); ?></div>
+
+	<section id="buffer">
+		<div class="container">
+			<h2 class="name-title">Abundant Living <span>Mommy</span> E Books</h2>
+			<ul id="books">
+				<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/detoxyourhomehandbook.jpg" class="img-responsive"></a></li>
+				<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/healthy-pregnancy-guide.jpg" class="img-responsive"></a></li>
+				<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-remedies-handbook.jpg" class="img-responsive"></a></li>
+				<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/natural-beauty-guide.jpg" class="img-responsive"></a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="health-post">
+		<?php echo do_shortcode( '[meal-loop]' ); ?>
+	</section>
+
 <?php get_footer(); ?>

@@ -1,0 +1,37 @@
+// Recent Post
+
+.recent-post {
+	padding: 3em 0;
+	h2 {
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.view-article {
+		color: $orange;
+	}
+	img {
+		box-shadow: 0 0 5px #000000;
+	}
+	.newest-recent-post {
+		background-color: transparentize($orange, .3);
+		color: #ffffff;
+		padding: 2em;
+		img {
+			margin-bottom: 2em;
+		}
+		.view-article {
+			color: $lime-green;
+		}
+	}
+	.older-recent-post {
+		background-color: transparentize($torquise, .4);
+		color: #ffffff;
+		.older-post-container {
+			display: flex;
+			padding: 2.2em 1em;
+			img {
+				margin-right: 2em;
+			}
+		}
+	}
+}
