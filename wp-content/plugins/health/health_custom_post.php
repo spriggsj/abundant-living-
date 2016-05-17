@@ -120,7 +120,7 @@ function custom_loop_shortcode( $atts ) {
 
 
     $the_query = new WP_Query($args);
-          $output .= '<div class="container">';
+        $output .= '<div class="container">';
           	$output .= '<h2>';
           		$output .= 'Recent Posts';
           	$output .= '</h2>';
@@ -130,15 +130,15 @@ function custom_loop_shortcode( $atts ) {
 		    while ($the_query->have_posts()) : $the_query->the_post();
 		      $post_id = get_the_ID();
 
-		      if ($i == 0 ){
-		      	$output .= '<div class="col-sm-6 newest-recent-post">';
-		      		$output .= get_the_post_thumbnail($post_id, 'full');
-		      		$output .= '<p>';
-		      			$output .= get_the_excerpt($post_id);
-		      		$output .= '</p>';
-		      	$output .= '</div>';
+		        if ($i == 0 ){
+			      	$output .= '<div class="col-sm-6 newest-recent-post">';
+			      		$output .= get_the_post_thumbnail($post_id, 'full');
+			      		$output .= '<p>';
+			      			$output .= get_the_excerpt($post_id);
+			      		$output .= '</p>';
+			      	$output .= '</div>';
 
-		      } else {
+		        } else {
 
 					$output .= '<div class="col-sm-6 older-recent-post">';
 						$output .= '<div class="row older-post-container">';
@@ -148,16 +148,16 @@ function custom_loop_shortcode( $atts ) {
 							$output .= '<p>';
 						$output .= '</div>';
 					$output .= '</div>';
-		       }       
+		        }       
 				$i++;
-		      endwhile;
+		    endwhile;
 		      //$output .= '</div>';
        		$output .= '</div>';
-          $output .= '</div>'; 
+        $output .= '</div>'; 
 
-      return $output;
+      	return $output;
 
-      wp_reset_postdata();
+      	wp_reset_postdata();
 
     }
 
