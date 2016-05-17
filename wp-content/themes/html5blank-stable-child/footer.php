@@ -1,5 +1,5 @@
 	<footer>
-		<div class="container-fluid footer">
+		<div class="container footer">
 			<div class="row">
 				<div class="col-xs-12 col-sm-3 wendy-img">
 					<!-- image of wendy maybe -->
@@ -22,6 +22,9 @@
 					
 				</div>
 			</div>
+		</div>
+		<div class="copyright">
+			<p>Copyright &copy; 2016 Abundant Living Mommy &reg;</p>
 		</div>
 	</footer>
 
