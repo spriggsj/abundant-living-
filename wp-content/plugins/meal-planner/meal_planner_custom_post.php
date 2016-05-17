@@ -100,30 +100,34 @@ function meal_loop_shortcode( $atts ) {
 
       );
 
-
-
     $the_query = new WP_Query($args);
-          $output .= '<div class="container">';
+        $output .= '<div class="container">';
           	$output .= '<h2>';
           		$output .= 'Meal Planner';
           	$output .= '</h2>';
             $output .= '<div class="row">';
-            $output .= '<div class="col-sm-5 author pull-right">';
-				$output .= '<img src="http://placehold.it/350x350">';
-			$output .= '</div>';
-		    while ($the_query->have_posts()) : $the_query->the_post();
-		        $post_id = get_the_ID();
-		      	$output .= '<div class="col-sm-7 recipe">';
-		      		$output .= get_the_post_thumbnail($post_id, 'medium');
-		      		$output .= '<p>';
-		        	$output .= get_the_title();
-		        $output .= '</p>';
-		      		$output .= get_the_excerpt($post_id);
-		      	$output .= '</div>'; 
-		    endwhile;
+	            $output .= '<div class="col-sm-8 recipe-container">';
+				    while ($the_query->have_posts()) : $the_query->the_post();
+				        $post_id = get_the_ID();
+				      	$output .= '<div class="col-sm-12 recipe">';
+				      		$output .= get_the_post_thumbnail($post_id, 'small');
+				      		$output .= '<article>';
+				      			$output .= '<h3>';
+				      				$output .= get_the_title();
+				      			$output .= '</h3>';
+					      		$output .= '<p>';
+					        		$output .= get_the_excerpt($post_id);
+					        	$output .= '</p>';
+				        	$output .= '</article>';
+				      	$output .= '</div>'; 
+				    endwhile;
+			    $output .= '</div>'; 
+		    	$output .= '<div class="col-sm-4 author">';
+					$output .= '<img src="http://placehold.it/250x250">';
+				$output .= '</div>';
 				
        		$output .= '</div>';
-          $output .= '</div>'; 
+        $output .= '</div>'; 
 
       return $output;
 
@@ -132,6 +136,5 @@ function meal_loop_shortcode( $atts ) {
     }
 
     add_shortcode('meal-loop', 'meal_loop_shortcode');
-
 
 ?>
