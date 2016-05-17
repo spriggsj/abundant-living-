@@ -26,7 +26,6 @@
 
 	<section class="meal-post">
 		<?php echo do_shortcode( '[meal-loop]' ); ?>
-		
 	</section>
 
 <?php get_footer(); ?>
