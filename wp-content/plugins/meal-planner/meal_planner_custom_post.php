@@ -66,7 +66,7 @@ function include_meal_function($template_path){
 			if($theme_file = locate_template(['meal_planner.php'])){
 				$template_path == $theme_file;
 			} else {
-				$template_path = plugin_dir_path(__FILE__) . '/meal-planner.php';
+				$template_path = plugin_dir_path(__FILE__) . '/meal_planner.php';
 			}
 		}
 	}
@@ -109,12 +109,11 @@ function meal_loop_shortcode( $atts ) {
           	$output .= '</h2>';
             $output .= '<div class="row">';
             $output .= '<div class="col-sm-5 author pull-right">';
-					$output .= '<img src="http://placehold.it/350x350">';
-				$output .= '</div>';
-
+				$output .= '<img src="http://placehold.it/350x350">';
+			$output .= '</div>';
 		    while ($the_query->have_posts()) : $the_query->the_post();
 		        $post_id = get_the_ID();
-		      	$output .= '<div class="col-sm-7   recipe">';
+		      	$output .= '<div class="col-sm-7 recipe">';
 		      		$output .= get_the_post_thumbnail($post_id, 'medium');
 		      		$output .= get_the_excerpt($post_id);
 		      	$output .= '</div>'; 
