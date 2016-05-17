@@ -22,7 +22,7 @@
         <nav class="navbar navbar-transparent navbar-static-top">
             <div class="navbar  navbar-custom" style="border-radius:0px;"> 
                 <!-- Brand and toggle get grouped for better mobile display --> 
-                <div class="container"> 
+                <div class="container-fluid"> 
                     <div class="row">
                         <div class="col-xs-7 col-sm-6 col-md-6 main-img">
                             <a href="<?php echo home_url(); ?>" class="main-logo">
@@ -69,7 +69,7 @@
         <nav class="navbar navbar-default"id="fixedbar" >
             <div class="navbar  navbar-custom" style="border-radius:0px;"> 
                 <!-- Brand and toggle get grouped for better mobile display --> 
-                <div class="container"> 
+                <div class="container-fluid"> 
                     <div class="row">
                         <div class="col-xs-7 col-sm-6 col-md-6 main-img">
                             <a href="<?php echo home_url(); ?>" class="main-logo">
