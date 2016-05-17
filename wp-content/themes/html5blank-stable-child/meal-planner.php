@@ -4,7 +4,7 @@
 		<div class="row main-content">
 			<div class="col-md-12 meal">
 				
-				<?php $loop = new WP_Query( array( 'post_type' => 'health_posts', 'posts_per_page' => 10 ) ); ?> 
+				<?php $loop = new WP_Query( array( 'post_type' => 'meal_post', 'posts_per_page' => 10 ) ); ?> 
 
 				<?php 
 					if (have_posts()) : while (have_posts()) : the_post();
@@ -24,7 +24,7 @@
 					endwhile; endif;
 
 				?>
-
+					
 			</div>				
 		</div>
 	</div>
