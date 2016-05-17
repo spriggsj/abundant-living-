@@ -24,7 +24,7 @@
 		</div>
 	</section>
 
-	<section class="health-post">
+	<section class="meal-post">
 		<?php echo do_shortcode( '[meal-loop]' ); ?>
 	</section>
 

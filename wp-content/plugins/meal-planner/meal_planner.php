@@ -8,7 +8,7 @@
 
 				<?php 
 					if (have_posts()) : while (have_posts()) : the_post();
-					
+			
 						echo '<div class="meal-title">';
 							the_title(); 
 						echo'</div>';
