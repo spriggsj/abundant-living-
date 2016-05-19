@@ -1,5 +1,5 @@
-	<footer>
-		<div class="container footer">
+	<footer class="footer">
+		<div class="container foot">
 			<div class="row">
 				<div class="col-xs-12 col-sm-3 wendy-img">
 					<!-- image of wendy maybe -->
@@ -13,13 +13,12 @@
 						<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 						<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 						<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
 						<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 					</aside>
 				</div>
 				<div class="col-xs-12 col-sm-3 footer-logo-img">
-					
+					<p>side footer</p>
 				</div>
 			</div>
 		</div>
