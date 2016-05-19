@@ -8043,7 +8043,7 @@ p {
   font-family: 'raleway';
   font-size: 1.5em;
   font-weight: 100;
-  line-height: 1.4em;
+  line-height: 1.5em;
 }
 
 a {
@@ -8306,12 +8306,21 @@ a {
 /*
 	6.0 health
 */
-.health-post {
-  padding: 3em 0;
+.health-tip-post {
+  width: 850px;
+  margin: 0 auto;
+  padding: 2em 0 4em;
+  text-align: center;
+  max-width: 90%;
 }
 
-.health-post h2 {
-  margin: 0;
+.health-tip-post h3 {
+  margin: 1em 0 .7em;
+}
+
+.health-tip-post .view-article {
+  text-decoration: none;
+  color: #ff5138;
 }
 
 .meal-post {
@@ -8351,30 +8360,31 @@ a {
 /*
 	7.0 footer
 */
-footer {
+.footer {
   background-image: linear-gradient(to right, rgba(0, 163, 136, 0.5), #00a388);
   color: white;
+  padding: 3em 0 0;
 }
 
-footer .footer {
-  padding: 3em 0;
+.footer .foot {
+  padding-bottom: 3em;
 }
 
-footer h2 {
+.footer h2 {
   margin: 0 0 .4em;
   text-transform: capitalize;
   color: #007562;
 }
 
-footer h2 span {
+.footer h2 span {
   color: rgba(255, 81, 56, 0.8);
 }
 
-footer .wendy-img {
+.footer .wendy-img {
   padding: 0;
 }
 
-footer .wendy-img img {
+.footer .wendy-img img {
   width: 145px;
   border-radius: 100%;
 }
@@ -8418,6 +8428,7 @@ footer .wendy-img img {
 
 .copyright {
   padding: 1em 0;
+  margin-top: 1em;
   border-top: 1px solid rgba(230, 230, 230, 0.4);
 }
 
@@ -8428,7 +8439,7 @@ footer .wendy-img img {
 }
 
 .meal {
-  width: 500px;
+  width: 750px;
   margin: 0 auto;
   padding-bottom: 4em;
   max-width: 90%;
@@ -8439,5 +8450,20 @@ footer .wendy-img img {
 }
 
 .meal .meal-img img {
+  margin-bottom: 2em;
+}
+
+.health {
+  width: 750px;
+  margin: 0 auto;
+  padding-bottom: 4em;
+  max-width: 90%;
+}
+
+.health .health-title h2 {
+  margin-bottom: .8em;
+}
+
+.health .health-img img {
   margin-bottom: 2em;
 }

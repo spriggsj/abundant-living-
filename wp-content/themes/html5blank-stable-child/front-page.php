@@ -7,6 +7,10 @@
 			<a href="http://localhost:8080/register/">Let's Get Started</a>
 		</div>
 	</header>
+
+	<section class="health-tip-post">
+		<?php echo do_shortcode( '[tip-custom-loop]' ); ?>
+	</section>
 	
 	<section class="recent-post">
 		<?php echo do_shortcode( '[custom-loop]' ); ?>

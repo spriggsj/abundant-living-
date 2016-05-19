@@ -74,10 +74,10 @@ add_filter('template_include', 'include_health_function', 1);
 function include_health_tip_function($template_path){
 	if(get_post_type() == 'health_tip_post'){
 		if(is_single()){
-			if($theme_file = locate_template(['health-tip.php'])){
+			if($theme_file = locate_template(['health_tip_post.php'])){
 				$template_path = $theme_file;
 			} else {
-				$template_path = plugin_dir_path(__FILE__) . 'health-tip.php';
+				$template_path = plugin_dir_path(__FILE__) . 'health_tip_post.php';
 			}
 		}
 	}
@@ -91,5 +91,52 @@ function set_post_per_page_health_tip($query){
 }
 
 add_action('pre_get_posts', 'set_posts_per_page_for_health');
+
+
+// SHORT CODE 
+
+
+function tip_custom_loop_shortcode( $atts ) {
+	
+	$output = '';
+	$custom_loop_atts = shortcode_atts(
+	[
+		'type' => 'health_tip_post',
+	], $atts
+
+	);
+	$post_type = $custom_loop_atts['type'];
+	$args = array(
+		'post_type' => $post_type,
+		'post_status' => 'publish',
+		'order' => 'date',
+		'post_per_page' => 1
+
+	);
+
+	$the_query = new WP_Query($args);
+		$output .= '<div class="health-tip">';
+			$output .= '<h2>';
+          		$output .= 'Health Tip of the Month';
+          	$output .= '</h2>';
+
+			while ($the_query->have_posts()) : $the_query->the_post(); $post_id = get_the_ID();
+				$output .= '<h3>';
+      				$output .= get_the_title();
+      			$output .= '</h3>';
+	      		$output .= '<p>';
+	      			$output .= get_the_excerpt($post_id);
+	      		$output .= '</p>';
+			endwhile;
+
+		$output .= '</div>';
+
+		return $output;
+
+      	wp_reset_postdata();
+
+}
+
+  add_shortcode('tip-custom-loop', 'tip_custom_loop_shortcode');
 
 ?>
