@@ -169,9 +169,7 @@ function custom_loop_shortcode( $atts ) {
       	wp_reset_postdata();
 
     }
-    ?>
-    <script async defer data-pin-hover="true" data-pin-color="red" data-pin-tall="true" src="//assets.pinterest.com/js/pinit.js"></script>
-    <?php
+    
 
     add_shortcode('custom-loop', 'custom_loop_shortcode');
 
