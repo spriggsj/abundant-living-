@@ -18,7 +18,7 @@
 						<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 					</aside>
 				</div>
-				<div class="col-sm-3 footer-logo-img">
+				<div class="col-xs-12 col-sm-3 footer-logo-img">
 					
 				</div>
 			</div>
