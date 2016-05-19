@@ -1,15 +1,34 @@
 /*
+	Theme Name: HTML5 Blank Child
+	Theme URI: http://html5blank.com
+	Template: html5blank-stable
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Jason Roger
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+
+/*
 1.0 reset
 2.0 bootstrap
 3.0 fontface
 4.0 header
-5.0 
-6.0
+5.0 footer
+6.0 health
 (add in style.scss)
 */
-@import 'base/reset';
-@import 'base/bootstrap';
-@import 'fonts/fontface';
-@import 'layout/header';
+
+@import 'css/base/_reset.scss';
+@import 'css/base/_bootstrap.scss';
+@import 'css/fonts/_fontface.scss';
+@import 'css/layout/_header.scss';
+@import 'css/layout/_footer.scss';
+@import 'css/layout/_health.scss';
+
 
 

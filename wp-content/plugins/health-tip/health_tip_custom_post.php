@@ -1,0 +1,95 @@
+<?php 
+/*
+*Plugin Name: Health Tip Custom Post
+*Plugin URI:
+*Description: Health Tip Custom Post
+*Version 1.0
+*Author: Roger Chang
+*/
+
+add_action('init', 'rc_health_tip_custom_post');
+
+function rc_health_tip_custom_post(){
+	register_post_type('health_tip_post',
+		[
+		'labels' => [
+			'name' => 'Health Tip',
+			'singular_name' => 'Health Tip',
+			'edit_item' => 'Edit item',
+			'new_item' => 'New item',
+			'view_item' => 'View item',
+			'search_item' => 'Search health tip',
+			'not_found' => 'No items found',
+			'not_found_in_trash' => 'No items found in the trash',
+			'parent_item_colon' => 'Parent items'
+		],
+			'public' => true,
+			'has_archive' => true,
+			'menu_icon' => 'dashicons-thumbs-up',
+			'rewrite' => array('slug' => 'health tip'),
+			'publicly_queryable' => true,
+			'query_var' => true,
+			'supports' => [
+				'title', 'editor', 'thumbnail'
+			],
+				'taxonomies' => ['catagory'],
+		]
+	);
+}
+
+add_action('admin_init', 'health_tip_post');
+
+function health_tip_post(){
+	add_meta_box(
+		'Health Tip Info',
+		'health_tip_post',
+		'normal',
+		'high'
+	);
+}
+
+function rc_excerpt_length($length){
+	return 35;
+}
+
+add_filter('except_length', 'js_except_length', 999);
+
+function rc_excerpt_more($more){
+	return 'Read More';
+}
+
+add_filter('excerpt_more', 'rc_excerpt_more');
+
+add_action('save_post', 'add_health_tip_fields', 10, 2);
+
+function add_health_tip_fields($health_tip_info_id, $health_tip){
+	if($health_tip->post_type == 'health_tip_post'){
+		if(!current_user_can('edit_post', $health_tip_info_id))
+			return $health_tip_info_id;
+	}
+}
+
+add_filter('template_include', 'include_health_function', 1);
+
+function include_health_tip_function($template_path){
+	if(get_post_type() == 'health_tip_post'){
+		if(is_single()){
+			if($theme_file = locate_template(['health-tip.php'])){
+				$template_path = $theme_file;
+			} else {
+				$template_path = plugin_dir_path(__FILE__) . 'health-tip.php';
+			}
+		}
+	}
+	return $template_path;
+}
+
+function set_post_per_page_health_tip($query){
+	if($query -> is_post_type_archive('health_tip_post')){
+		$query -> set('post_per_page', '8');
+	}
+}
+
+add_action('pre_get_posts', 'set_posts_per_page_for_health');
+
+?>

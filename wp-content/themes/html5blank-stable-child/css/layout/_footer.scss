@@ -1,0 +1,75 @@
+/*
+	7.0 footer
+*/
+
+footer {
+	background-image: linear-gradient(to right,rgba(0,163,136,.5),#00a388);
+	color: white;
+	.footer {
+		padding: 3em 0;
+	}
+	h2 {
+		margin: 0 0 .4em;
+		text-transform: capitalize;
+		color: #007562;
+		span {
+			color: transparentize($orange, .2);
+		}
+	}
+	.wendy-img {
+		padding: 0;
+		img {
+			width: 145px;
+			border-radius: 100%;
+		}
+	}
+}
+
+// middle footer section
+
+.footer-about {
+	text-align: center;
+	padding: 0;
+	.social-links {
+		margin-top: 3em;
+		display: flex;
+		justify-content: space-around;
+		a {
+			background-color: transparentize($torquise, .5);
+			border-radius: 3px;
+			border: 1px solid hsla(0, 0%, 90%, .4);
+			width: 45px;
+			height: 45px;
+			transform: rotate(45deg);
+			transition: .3s ease-in-out;
+			&:hover i {
+				transition: .4s linear;
+				color: white;
+			}
+			i {
+				font-size: 2em;
+				color: #007562;
+				line-height: 45px;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+
+// right footer section
+
+.footer-logo-img {
+	padding: 0;
+}
+
+// copyright
+
+.copyright {
+	padding: 1em 0;
+	border-top: 1px solid hsla(0, 0%, 90%, .4);
+	p {
+		margin: 0;
+		text-align: center;
+		color: #007562;
+	}
+}

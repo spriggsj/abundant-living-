@@ -4,10 +4,36 @@
 	Template: html5blank-stable
 	Description: HTML5 Blank WordPress Theme
 	Version: 1.4.3
-	Author: Jason Rodger
+	Author: Jason Roger
 	Author URI: http://toddmotto.com
 	Tags: Blank, HTML5, CSS3
 
 	License: MIT
 	License URI: http://opensource.org/licenses/mit-license.php
 */
+
+
+/*
+1.0 reset
+2.0 bootstrap
+3.0 fontface
+4.0 header
+5.0 footer
+6.0 health
+(add in style.scss)
+*/
+
+@import 'css/base/_reset.scss';
+@import 'css/base/_bootstrap.scss';
+@import 'css/fonts/_fontface.scss';
+@import 'css/variables/_variables.scss';
+@import 'css/global/_global.scss';
+@import 'css/layout/_nav.scss';
+@import 'css/layout/_header.scss';
+@import 'css/layout/_recent-post.scss';
+@import 'css/layout/_ebook.scss';
+@import 'css/layout/_health.scss';
+@import 'css/layout/_meal-planner.scss';
+@import 'css/layout/_footer.scss';
+@import 'css/media-query/_media-query.scss';
+@import 'css/layout/_meal-blog-page.scss';

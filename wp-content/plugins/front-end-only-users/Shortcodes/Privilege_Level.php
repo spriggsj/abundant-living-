@@ -8,7 +8,7 @@ function Privilege_Level($atts, $content = null) {
 	
 	$Payment_Types = get_option("EWD_FEUP_Payment_Types");
 	$feup_Label_Require_Login_Message =  get_option("EWD_FEUP_Label_Require_Login_Message");
-	if ($feup_Label_Require_Login_Message == "") {$feup_Label_Require_Login_Message =  __('You must be logged in to access this page.', 'EWD_FEUP');}
+	if ($feup_Label_Require_Login_Message == "") {$feup_Label_Require_Login_Message =  __('Sorry. You must become a member to access this page. Please Sign up.', 'EWD_FEUP');}
 	$feup_Label_Please =  get_option("EWD_FEUP_Label_Please");
 	if ($feup_Label_Please == "") {$feup_Label_Please = __("Please", 'EWD_FEUP');}
 	$feup_Label_To_Continue =  get_option("EWD_FEUP_Label_To_Continue");

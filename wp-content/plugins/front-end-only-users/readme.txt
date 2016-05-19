@@ -244,6 +244,9 @@ Video 7 - One-Click Installer
 11. The "Basic" section of the "Options" admin screen
 
 == Changelog ==
+= 2.8.7 =
+- Fixed an error where Facebook emails weren't being collected anymore after a Facebook API update
+
 = 2.8.6 =
 - Minor CSS update
 
@@ -661,4 +664,3 @@ Video 7 - One-Click Installer
 = 1.1 = 
 - Fixed an error with sign-up e-mails
 - Fixed an error with "Admin Approval"
-

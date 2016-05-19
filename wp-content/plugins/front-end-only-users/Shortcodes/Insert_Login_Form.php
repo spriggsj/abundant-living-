@@ -121,6 +121,8 @@ function Insert_Login_Form($atts) {
 add_shortcode("login", "Insert_Login_Form");
 
 function EWD_FEUP_Get_External_Login() {
+	$Username_Is_Email = get_option("EWD_FEUP_Username_Is_Email");
+	
 	$Login_Options = get_option("EWD_FEUP_Login_Options");
 	if (!is_array($Login_Options)) {$Login_Options = array();}
 
@@ -131,6 +133,7 @@ function EWD_FEUP_Get_External_Login() {
 	$facebook = EWD_FEUP_Facebook_Config();
 	$fbuser = $facebook->getUser();
 	$fbPermissions = 'public_profile';  //Required facebook permissions
+	if ($Username_Is_Email == "Yes") {$fbPermissions .= ",email";}
 
 	if (isset($_GET['Run_Login']) and $_GET['Run_Login'] == "Twitter" or isset($_GET['oauth_token'])) {EWD_FEUP_Twitter_Login($PageLink);}
 
