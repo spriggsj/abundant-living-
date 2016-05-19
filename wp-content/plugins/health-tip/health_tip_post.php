@@ -17,7 +17,7 @@
 							the_post_thumbnail();
 						echo '</div>';
 
-						echo '<div class="health-ip-content">';
+						echo '<div class="health-tip-content">';
 							the_content();
 						echo '</div>';
 
