@@ -17,6 +17,7 @@ footer {
 		}
 	}
 	.wendy-img {
+		padding: 0;
 		img {
 			width: 145px;
 			border-radius: 100%;
@@ -28,6 +29,7 @@ footer {
 
 .footer-about {
 	text-align: center;
+	padding: 0;
 	.social-links {
 		margin-top: 3em;
 		display: flex;
@@ -57,7 +59,7 @@ footer {
 // right footer section
 
 .footer-logo-img {
-	
+	padding: 0;
 }
 
 // copyright
