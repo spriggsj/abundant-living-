@@ -15,7 +15,7 @@
 	<div class="health-content">
 		<?php echo the_content(); ?> <!-- this is the media insert and content -->
 	</div>
-
+	
 <?php endwhile; endif; ?>
 
 			</div>				
