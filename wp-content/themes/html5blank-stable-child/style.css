@@ -8246,6 +8246,10 @@ a {
   font-size: 3.5em;
 }
 
+.recent-post h3 {
+  margin-top: 0;
+}
+
 .recent-post .view-article {
   color: #ff5138;
   text-decoration: none;
@@ -8366,6 +8370,10 @@ footer h2 span {
   color: rgba(255, 81, 56, 0.8);
 }
 
+footer .wendy-img {
+  padding: 0;
+}
+
 footer .wendy-img img {
   width: 145px;
   border-radius: 100%;
@@ -8373,6 +8381,7 @@ footer .wendy-img img {
 
 .footer-about {
   text-align: center;
+  padding: 0;
 }
 
 .footer-about .social-links {
@@ -8403,6 +8412,10 @@ footer .wendy-img img {
   transform: rotate(-45deg);
 }
 
+.footer-logo-img {
+  padding: 0;
+}
+
 .copyright {
   padding: 1em 0;
   border-top: 1px solid rgba(230, 230, 230, 0.4);
@@ -8412,4 +8425,19 @@ footer .wendy-img img {
   margin: 0;
   text-align: center;
   color: #007562;
+}
+
+.meal {
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 4em;
+  max-width: 90%;
+}
+
+.meal .meal-title h2 {
+  margin-bottom: .8em;
+}
+
+.meal .meal-img img {
+  margin-bottom: 2em;
 }
