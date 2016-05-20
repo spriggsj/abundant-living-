@@ -91,7 +91,7 @@ function include_health_function($template_path){
 
 function set_posts_per_page_for_health($query){
 	if($query -> is_post_type_archive('health_post')){
-		$query -> set('posts_per_page', '8');
+		$query -> set('posts_per_page', '3');
 	}
 }
 
@@ -115,7 +115,7 @@ function custom_loop_shortcode( $atts ) {
         'post_type' => $post_type,
         'post_status' => 'publish',
         'order' => 'date',
-        'post_per_page' => 4
+        'post_per_page' => 3
 
       );
 

@@ -127,11 +127,11 @@ function include_health_tip_function($template_path){
 
 function set_post_per_page_health_tip($query){
 	if($query -> is_post_type_archive('health_tip_post')){
-		$query -> set('post_per_page', '8');
+		$query -> set('post_per_page', '1');
 	}
 }
 
-add_action('pre_get_posts', 'set_posts_per_page_for_health');
+add_action('pre_get_posts', 'set_post_per_page_health_tip');
 
 
 // SHORT CODE 

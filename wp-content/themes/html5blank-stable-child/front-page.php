@@ -11,12 +11,6 @@
 	<section class="health-tip-post">
 		<?php echo do_shortcode( '[tip-custom-loop]' ); ?>
 	</section>
-
-		<!-- <section class="menu">
-				<?php wp_nav_menu([
-               //'menu' => 'sub_nav'
-                ]); ?>
-		</section> -->
 	
 	<section class="recent-post">
 		<?php echo do_shortcode( '[custom-loop]' ); ?>
