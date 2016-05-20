@@ -14,8 +14,8 @@ function rc_health_custom_post(){
 	register_post_type('health_post',
 		[
 		'labels' => [
-			'name' => 'Health',
-			'singular_name' => 'Health',
+			'name' => 'Health Custom Post',
+			'singular_name' => 'Health Custom Post',
 			'edit_item' => 'Edit item',
 			'new_item' => 'New item',
 			'view_item' => 'View item',
@@ -48,7 +48,42 @@ function health_post(){
 		'high'
 	);
 }
+/* Taxonomy for catagories */
+//hook into the init action and call create_book_taxonomies when it fires
+add_action( 'init', 'js_health_taxonomy', 0 );
 
+//create a custom taxonomy name it topics for your posts
+
+ function js_health_taxonomy() {
+
+ // Add new taxonomy, make it hierarchical like categories
+ //first do the translations part for GUI
+$labels = [
+	'name' => 'Health Catagories',
+	'singular_name' => 'Health Catagories',
+	'search_item' => 'Search Health Catagories',
+	'all_items' => 'All Health Catagories',
+	'parent_item' => 'Parent Health',
+	'parent_item_colon' => 'Parent Health:',
+	'edit_item' => 'Edit Health Catagories',
+	'update_item' => 'Update Health',
+	'add_new_item' => 'Add New Health Catagories',
+	'new_item_name' => 'New Health Name',
+	'menu_name' => 'Health Catagories'
+];
+
+$args = [
+	'hierarchical' => true,
+	'labels' => $labels,
+	'show_ui' => true,
+	'show_admin_column' => true,
+	'query_var' => true,
+];
+
+register_taxonomy('health', 'health_post', $args);
+
+}
+/* End of Taxonomy */
 
 
 function js_excerpt_length($length){
