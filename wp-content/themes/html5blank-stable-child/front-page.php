@@ -12,11 +12,11 @@
 		<?php echo do_shortcode( '[tip-custom-loop]' ); ?>
 	</section>
 
-		<section class="menu">
+		<!-- <section class="menu">
 				<?php wp_nav_menu([
-               'menu' => 'sub_nav'
+               //'menu' => 'sub_nav'
                 ]); ?>
-	</section>
+		</section> -->
 	
 	<section class="recent-post">
 		<?php echo do_shortcode( '[custom-loop]' ); ?>
