@@ -32,7 +32,7 @@ function rc_health_tip_custom_post(){
 			'supports' => [
 				'title', 'editor', 'thumbnail'
 			],
-				'taxonomies' => ['Tip catagory','post_tag'],
+				'taxonomies' => ['Tip Catagories','post_tag'],
 		]
 	);
 }
@@ -93,7 +93,7 @@ function rc_excerpt_length($length){
 	return 35;
 }
 
-add_filter('except_length', 'js_except_length', 999);
+add_filter('excerpt_length', 'rc_excerpt_length', 999);
 
 function rc_excerpt_more($more){
 	return 'Read More';
@@ -127,11 +127,11 @@ function include_health_tip_function($template_path){
 
 function set_post_per_page_health_tip($query){
 	if($query -> is_post_type_archive('health_tip_post')){
-		$query -> set('post_per_page', '8');
+		$query -> set('posts_per_page', '1');
 	}
 }
 
-add_action('pre_get_posts', 'set_posts_per_page_for_health');
+add_action('pre_get_posts', 'set_post_per_page_health_tip');
 
 
 // SHORT CODE 
@@ -140,13 +140,13 @@ add_action('pre_get_posts', 'set_posts_per_page_for_health');
 function tip_custom_loop_shortcode( $atts ) {
 	
 	$output = '';
-	$custom_loop_atts = shortcode_atts(
+	$custom_tip_loop_atts = shortcode_atts(
 	[
 		'type' => 'health_tip_post',
 	], $atts
 
 	);
-	$post_type = $custom_loop_atts['type'];
+	$post_type = $custom_tip_loop_atts['type'];
 	$args = array(
 		'post_type' => $post_type,
 		'post_status' => 'publish',
