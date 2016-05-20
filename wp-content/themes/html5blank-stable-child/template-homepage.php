@@ -8,7 +8,8 @@
 		</div>
 	</header>
 	
-	<div class="recentpost"><?php echo do_shortcode( '[custom-loop]' ); ?></div>
+	<div class="recentpost"><?php echo do_shortcode( '[custom-loop]' ); ?>
+	</div>
 	<section id="buffer">
 		<div class="col-sm-12"><?php include 'logo.php'; ?>Abundant Living <span>Mommy</span> E Books</div>
 		

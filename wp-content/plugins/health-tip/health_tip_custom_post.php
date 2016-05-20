@@ -26,13 +26,13 @@ function rc_health_tip_custom_post(){
 			'public' => true,
 			'has_archive' => true,
 			'menu_icon' => 'dashicons-thumbs-up',
-			'rewrite' => array('slug' => 'health tip'),
+			'rewrite' => array('slug' => 'health-tip'),
 			'publicly_queryable' => true,
 			'query_var' => true,
 			'supports' => [
 				'title', 'editor', 'thumbnail'
 			],
-				'taxonomies' => ['catagory'],
+				'taxonomies' => ['Tip catagory','post_tag'],
 		]
 	);
 }
@@ -47,6 +47,47 @@ function health_tip_post(){
 		'high'
 	);
 }
+
+/* Taxonomy for catagories */
+//hook into the init action and call create_book_taxonomies when it fires
+add_action( 'init', 'create_tip_hierarchical_taxonomy', 0 );
+
+//create a custom taxonomy name it topics for your posts
+
+function create_tip_hierarchical_taxonomy() {
+
+// Add new taxonomy, make it hierarchical like categories
+//first do the translations part for GUI
+
+  $labels = array(
+    'name' =>  'Tip',
+    'singular_name' => 'Tip',
+    'search_items' =>  'Search Tips',
+    'all_items' => 'All Tips' ,
+    'parent_item' => 'Parent Tips',
+    'parent_item_colon' => 'Parent Tips:',
+    'edit_item' => 'Edit Tips', 
+    'update_item' => 'Update Tips',
+    'add_new_item' => 'Add New Tips',
+    'new_item_name' => 'New Health Tips',
+    'menu_name' => 'Tip Catagories',
+  ); 	
+
+// Now register the taxonomy
+
+  register_taxonomy('Tip Catagories','health_tip_post', array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'Tips' ),
+  ));
+
+}
+
+
+/* End of Taxonomy */
 
 function rc_excerpt_length($length){
 	return 35;
@@ -69,7 +110,7 @@ function add_health_tip_fields($health_tip_info_id, $health_tip){
 	}
 }
 
-add_filter('template_include', 'include_health_function', 1);
+add_filter('template_include', 'include_health_tip_function', 1);
 
 function include_health_tip_function($template_path){
 	if(get_post_type() == 'health_tip_post'){
@@ -77,7 +118,7 @@ function include_health_tip_function($template_path){
 			if($theme_file = locate_template(['health_tip_post.php'])){
 				$template_path = $theme_file;
 			} else {
-				$template_path = plugin_dir_path(__FILE__) . 'health_tip_post.php';
+				$template_path = plugin_dir_path(__FILE__) . '/health_tip_post.php';
 			}
 		}
 	}
