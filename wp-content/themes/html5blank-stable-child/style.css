@@ -8258,6 +8258,7 @@ a {
 .recent-post {
   padding: 3em 0;
   background-image: url(img/crossword.png);
+  border-top: 1px solid #e6e6e6;
 }
 
 .recent-post h2 {
@@ -8293,7 +8294,7 @@ a {
 }
 
 #buffer {
-  padding: 1em 0 4em;
+  padding: 3em 0 6em;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -8320,7 +8321,7 @@ a {
 .health-tip-post {
   width: 850px;
   margin: 0 auto;
-  padding-top: 2em;
+  padding: 4em 0 1em;
   text-align: center;
   max-width: 90%;
 }
@@ -8330,7 +8331,7 @@ a {
 }
 
 .meal-post {
-  padding: 3em 0;
+  padding: 3em 0 5em;
   background-image: url(img/crossword.png);
 }
 
@@ -8367,10 +8368,6 @@ a {
   padding: 3em 0 0;
 }
 
-.footer .foot {
-  padding-bottom: 3em;
-}
-
 .footer h2 {
   margin: 0 0 .4em;
   text-transform: capitalize;
@@ -8393,6 +8390,10 @@ a {
 .footer-about {
   text-align: center;
   padding: 0;
+  width: 750px;
+  margin: 0 auto;
+  padding-bottom: 4em;
+  max-width: 90%;
 }
 
 .footer-about .social-links {
