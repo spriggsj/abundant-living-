@@ -32,7 +32,7 @@ function rc_health_tip_custom_post(){
 			'supports' => [
 				'title', 'editor', 'thumbnail'
 			],
-				'taxonomies' => ['Tip catagory','post_tag'],
+				'taxonomies' => ['Tip Catagories','post_tag'],
 		]
 	);
 }
@@ -140,13 +140,13 @@ add_action('pre_get_posts', 'set_post_per_page_health_tip');
 function tip_custom_loop_shortcode( $atts ) {
 	
 	$output = '';
-	$custom_loop_atts = shortcode_atts(
+	$custom_tip_loop_atts = shortcode_atts(
 	[
 		'type' => 'health_tip_post',
 	], $atts
 
 	);
-	$post_type = $custom_loop_atts['type'];
+	$post_type = $custom_tip_loop_atts['type'];
 	$args = array(
 		'post_type' => $post_type,
 		'post_status' => 'publish',
