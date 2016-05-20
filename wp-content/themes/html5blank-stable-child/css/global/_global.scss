@@ -4,6 +4,19 @@ html, body {
 	padding: 0;
 }
 
+.view-article {
+	color: $torquise;
+	text-decoration: none;
+	font-weight: 700;
+	font-family: 'bitter';
+	letter-spacing: 1px;
+	transition: .2s ease-in-out;
+	&:hover {
+		color: $orange;
+		text-decoration: none;
+	}
+}
+
 h1 {
 	font-family: 'great vibes';
 }
@@ -13,7 +26,12 @@ h2 {
 	font-family: 'bitter';
 }
 
-h3, li, a {
+h3 {
+	color: $torquise;
+	font-family: 'bitter';
+}
+
+li, a {
 	font-family: 'cabin';
 }
 

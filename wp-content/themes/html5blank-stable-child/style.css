@@ -8026,6 +8026,20 @@ html, body {
   padding: 0;
 }
 
+.view-article {
+  color: #00a388;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'bitter';
+  letter-spacing: 1px;
+  transition: .2s ease-in-out;
+}
+
+.view-article:hover {
+  color: #ff5138;
+  text-decoration: none;
+}
+
 h1 {
   font-family: 'great vibes';
 }
@@ -8035,7 +8049,12 @@ h2 {
   font-family: 'bitter';
 }
 
-h3, li, a {
+h3 {
+  color: #00a388;
+  font-family: 'bitter';
+}
+
+li, a {
   font-family: 'cabin';
 }
 
@@ -8094,7 +8113,7 @@ a {
 .main-nav ul li a {
   text-transform: uppercase;
   font-family: 'cabin';
-  font-size: 1.05em;
+  font-size: 1.3em;
   letter-spacing: 1px;
 }
 
@@ -8165,7 +8184,7 @@ a {
 #fixedbar ul li a {
   text-transform: uppercase;
   font-family: 'cabin';
-  font-size: 1.05em;
+  font-size: 1.3em;
   letter-spacing: 1px;
   color: #000000;
 }
@@ -8238,7 +8257,7 @@ a {
 
 .recent-post {
   padding: 3em 0;
-  background-image: url(img/texture.jpg);
+  background-image: url(img/crossword.png);
 }
 
 .recent-post h2 {
@@ -8248,11 +8267,6 @@ a {
 
 .recent-post h3 {
   margin-top: 0;
-}
-
-.recent-post .view-article {
-  color: #ff5138;
-  text-decoration: none;
 }
 
 .recent-post img {
@@ -8274,8 +8288,8 @@ a {
 
 .recent-post .older-recent-post .older-post-container img {
   margin-right: 2em;
-  width: 175px;
-  height: 175px;
+  width: 180px;
+  height: 180px;
 }
 
 #buffer {
@@ -8303,9 +8317,6 @@ a {
   border: 6px solid #ff5138;
 }
 
-/*
-	6.0 health
-*/
 .health-tip-post {
   width: 850px;
   margin: 0 auto;
@@ -8318,13 +8329,9 @@ a {
   margin: 1em 0 .7em;
 }
 
-.health-tip-post .view-article {
-  text-decoration: none;
-  color: #ff5138;
-}
-
 .meal-post {
   padding: 3em 0;
+  background-image: url(img/crossword.png);
 }
 
 .meal-post h2 {
@@ -8349,12 +8356,6 @@ a {
 
 .meal-post .recipe article h3 {
   margin-top: 0;
-  color: #00a388;
-}
-
-.meal-post .recipe article .view-article {
-  color: #00a388;
-  text-decoration: none;
 }
 
 /*
