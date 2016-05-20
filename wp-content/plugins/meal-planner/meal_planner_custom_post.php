@@ -75,7 +75,7 @@ function include_meal_function($template_path){
 
 function set_posts_per_page_for_meal($query){
 	if($query -> is_post_type_archive('meal_post')){
-		$query -> set('post_per_page', '8');
+		$query -> set('posts_per_page', '3');
 	}
 }
 
@@ -96,7 +96,7 @@ function meal_loop_shortcode( $atts ) {
         'post_type' => $post_type,
         'post_status' => 'publish',
         'order' => 'date',
-        'post_per_page' => 8
+        'post_per_page' => 3
 
       );
 
