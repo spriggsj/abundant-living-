@@ -1,9 +1,9 @@
 <?php /* Template Name: Registration Template */ get_header(); ?>
 	<main role="main">
 		<!-- section -->
-		<section>
+		<section id="registration">
 
-			<h1><?php the_title(); ?></h1>
+			<h2><?php the_title(); ?></h2>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -15,11 +15,7 @@
 				<?php comments_template( '', true ); // Remove if you don't want comments ?>
 
 				<br class="clear">
-
-				<?php edit_post_link(); ?>
 				
-
-
 			</article>
 			<!-- /article -->
 
