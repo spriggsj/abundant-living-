@@ -1,0 +1,77 @@
+// LOGIN PAGE AND REGISTRATION PAGE
+
+// CENTER LOGIN PAGE
+
+#login {
+	padding: 4em 0;
+	width: 750px;
+	margin: 0 auto;
+	max-width: 90%;
+	h2 {
+		margin-bottom: 1em;
+		letter-spacing: 1px;
+		font-weight: 600;
+	}
+}
+
+// LOGIN NAME FOR INPUT BOX
+
+.feup-pure-form-aligned .feup-pure-control-group label {
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+// LOGIN INPUT BOX
+
+.ewd-feup-text-input {
+	display: inline-block;
+	font-size: 1.5em;
+	border: 1px solid hsla(0, 0%, 80%, 1);
+	border-radius: 3px;
+	width: 65%;
+	&:focus {
+		border-color: hsla(0, 0%, 55%, 1);
+	}
+}
+
+// LOGIN BUTTON
+
+input[type="button"], input[type="reset"], input[type="submit"] {
+	background-color: $torquise;
+	padding: 15px 25px;
+	border-radius: 3px;
+	border: none;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	transition: .3s ease-in-out;
+	&:hover {
+		background-color: #029078;
+	}
+}
+
+// REGISTRATION PAGE
+
+#registration {
+	padding: 4em 0;
+	width: 750px;
+	margin: 0 auto;
+	max-width: 90%;
+	h2 {
+		margin-bottom: 1em;
+		letter-spacing: 1px;
+		font-weight: 600;
+	}
+}
+
+// REGISTRATION INPUTS 
+
+.feup-pure-form input[type=text], .feup-pure-form input[type=password] {
+	width: 65%;
+}
+
+// INDICATES IF PASSWORD IS TOO SHORT OR PASSWORD IS GOOD
+
+#ewd-feup-password-result {
+	font-size: 1.5em;
+	border-radius: 3px;
+}

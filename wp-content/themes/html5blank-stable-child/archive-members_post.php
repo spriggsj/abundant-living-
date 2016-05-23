@@ -2,9 +2,9 @@
 
 	<main role="main">
 		<!-- section -->
-		<section>
+		<section id="red">
 
-			<h1><?php _e( 'Members only', 'html5blank' ); ?></h1>
+			<h2><?php _e( 'Members only', 'html5blank' ); ?></h2>
 
 			<?php get_template_part('loop'); ?>
 
@@ -13,7 +13,5 @@
 		</section>
 		<!-- /section -->
 	</main>
-
-
 
 <?php get_footer(); ?>
