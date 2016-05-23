@@ -8484,3 +8484,6 @@ a {
 .health-tip .health-tip-img img {
   margin-bottom: 2em;
 }
+.fa-heart:before {
+  color:red;
+}
