@@ -7,18 +7,24 @@
 	}
 	.recipe {
 		display: flex;
-		padding: 0 0 1em 0;
-		margin-bottom: 1em;
+		align-items: flex-start;
+		padding: 0 0 2em 0;
+		margin-bottom: 2em;
 		border-bottom: 1px dashed hsla(0, 0%, 80%, 1);
 		&:last-of-type {
 			border-bottom: none;
 		}
 		img {
 			margin-right: 1em;
+			width: 200px;
+			height: auto;
 		}
 		article {
 			h3 {
 				margin-top: 0;
+			}
+			p {
+				margin-bottom: 0;
 			}
 		}
 	}

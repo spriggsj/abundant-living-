@@ -110,7 +110,7 @@ function meal_loop_shortcode( $atts ) {
 				    while ($the_query->have_posts()) : $the_query->the_post();
 				        $post_id = get_the_ID();
 				      	$output .= '<div class="col-sm-12 recipe">';
-				      		$output .= get_the_post_thumbnail($post_id, 'small');
+				      		$output .= get_the_post_thumbnail($post_id, 'medium');
 				      		$output .= '<article>';
 				      			$output .= '<h3>';
 				      				$output .= get_the_title();
