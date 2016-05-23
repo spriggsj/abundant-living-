@@ -8045,13 +8045,14 @@ h1 {
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 3.5em;
   font-family: 'bitter';
 }
 
 h3 {
   color: #00a388;
   font-family: 'bitter';
+  font-size: 2.5em;
 }
 
 li, a {
@@ -8346,8 +8347,9 @@ a {
 
 .meal-post .recipe {
   display: flex;
-  padding: 0 0 1em 0;
-  margin-bottom: 1em;
+  align-items: flex-start;
+  padding: 0 0 2em 0;
+  margin-bottom: 2em;
   border-bottom: 1px dashed #cccccc;
 }
 
@@ -8357,10 +8359,16 @@ a {
 
 .meal-post .recipe img {
   margin-right: 1em;
+  width: 200px;
+  height: auto;
 }
 
 .meal-post .recipe article h3 {
   margin-top: 0;
+}
+
+.meal-post .recipe article p {
+  margin-bottom: 0;
 }
 
 /*
@@ -8487,6 +8495,33 @@ a {
 
 .health-tip .health-tip-img img {
   margin-bottom: 2em;
+}
+
+.members-page {
+  padding: 3em 0;
+}
+
+.members-page h2 {
+  margin-bottom: 1em;
+}
+
+.members-page .members-container {
+  display: flex;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 2px dotted #e6e6e6;
+}
+
+.members-page .members-container img {
+  margin-right: 3em;
+}
+
+.members-page .members-container article h3 {
+  margin-top: 0;
+}
+
+.members-page .members-container article p {
+  margin-bottom: 0;
 }
 
 .members-single-page {
