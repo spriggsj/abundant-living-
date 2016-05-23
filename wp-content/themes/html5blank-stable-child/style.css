@@ -8045,7 +8045,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3.5em;
+  font-size: 3.2em;
   font-family: 'bitter';
 }
 
@@ -8603,4 +8603,17 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 #ewd-feup-password-result {
   font-size: 1.5em;
   border-radius: 3px;
+}
+
+#profile {
+  padding: 4em 0;
+  width: 750px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+#profile h2 {
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
