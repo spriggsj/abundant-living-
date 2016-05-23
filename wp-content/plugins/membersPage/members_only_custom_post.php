@@ -129,15 +129,14 @@ function members_custom_loop_shortcode( $atts ) {
 
 
     $the_query = new WP_Query($args);
-    	$output .= '<div class="container">';
+    	$output .= '<article class="container">';
     		$output .= '<h2>';
           		$output .= 'Members';
           	$output .= '</h2>';
-            $output .= '<div class="row">';
 
 		    while ($the_query->have_posts()) : $the_query->the_post();
 		      $post_id = get_the_ID();
-						$output .= '<div class="col-sm-12 members-container">';
+						$output .= '<div class="members-container">';
 				      		$output .= get_the_post_thumbnail($post_id, 'medium');
 				      		$output .= '<article>';
 				      			$output .= '<h3>';
@@ -152,7 +151,7 @@ function members_custom_loop_shortcode( $atts ) {
 		      endwhile;
 
             $output .= '</div>';
-        $output .= '</div>';
+        $output .= '</article>';
 
       return $output;
       wp_reset_postdata();

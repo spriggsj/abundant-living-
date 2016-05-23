@@ -75,3 +75,17 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 	font-size: 1.5em;
 	border-radius: 3px;
 }
+
+// PROFILE PAGE
+
+#profile {
+	padding: 4em 0;
+	width: 750px;
+	margin: 0 auto;
+	max-width: 90%;
+	h2 {
+		margin-bottom: 1em;
+		letter-spacing: 1px;
+		font-weight: 600;
+	}
+}
