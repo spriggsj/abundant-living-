@@ -1,0 +1,39 @@
+#meal-blog-page {
+	padding: 3.5em 0;
+	h2 {
+		margin-bottom: 1em;
+	}
+	.meal-planner {
+		padding: 0 0 2em 0;
+		margin-bottom: 2em;
+		border-bottom: 2px dotted hsla(0, 0%, 90%, 1);
+		display: flex;
+		img {
+			margin-right: 3em;
+		}
+		article {
+			h3 {
+				margin-top: 0;
+			}
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.pagination {
+		display: block;
+		text-align: right;
+		span, a {
+			font-size: 2em;
+			margin: 0 .5em;
+			transition: .2s ease-in-out;
+		}
+		span {
+			color: red;
+		}
+		a:hover {
+			color: $torquise;
+			text-decoration: none;
+		}
+	}
+}
