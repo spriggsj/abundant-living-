@@ -8497,7 +8497,6 @@ a {
   margin-bottom: 2em;
 }
 
-
 .members-page {
   padding: 3em 0;
 }
@@ -8511,6 +8510,10 @@ a {
   padding-bottom: 2em;
   margin-bottom: 2em;
   border-bottom: 2px dotted #e6e6e6;
+}
+
+.members-page .members-container:last-of-type {
+  border: none;
 }
 
 .members-page .members-container img {
@@ -8617,5 +8620,49 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   margin-bottom: 1em;
   letter-spacing: 1px;
   font-weight: 600;
+}
 
+.archive-post {
+  padding: 3.5em 0;
+}
+
+.archive-post h2 {
+  margin-bottom: 1em;
+}
+
+.archive-post section {
+  display: flex;
+  padding: 0 0 2em 0;
+  margin-bottom: 2em;
+  border-bottom: 2px dotted #cccccc;
+}
+
+.archive-post section img {
+  width: 300px;
+}
+
+.archive-post section .archive-blog-post-page {
+  margin-left: 2em;
+}
+
+.archive-post section .archive-blog-post-page h3 {
+  margin-top: 0;
+}
+
+.archive-post .pagination {
+  display: block;
+  text-align: right;
+}
+
+.archive-post .pagination span, .archive-post .pagination a {
+  font-size: 1.5em;
+  margin: 0 .3em;
+}
+
+.archive-post .pagination span {
+  color: #00a388;
+}
+
+.archive-post .pagination a:hover {
+  text-decoration: none;
 }

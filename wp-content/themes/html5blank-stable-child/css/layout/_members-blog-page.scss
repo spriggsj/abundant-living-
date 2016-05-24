@@ -8,6 +8,9 @@
 		padding-bottom: 2em;
 		margin-bottom: 2em;
 		border-bottom: 2px dotted hsla(0, 0%, 90%, 1);
+		&:last-of-type {
+			border: none;
+		}
 		img {
 			margin-right: 3em;
 		}
