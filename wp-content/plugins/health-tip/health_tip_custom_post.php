@@ -90,7 +90,7 @@ function create_tip_hierarchical_taxonomy() {
 /* End of Taxonomy */
 
 function rc_excerpt_length($length){
-	return 35;
+	return 20;
 }
 
 add_filter('excerpt_length', 'rc_excerpt_length', 999);

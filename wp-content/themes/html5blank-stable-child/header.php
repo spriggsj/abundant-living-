@@ -8,8 +8,6 @@
     	<title>Abundant Living Mamma</title>
     	<link href="//www.google-analytics.com" rel="dns-prefetch">
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Noto+Serif:700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -27,7 +25,10 @@
                         <div class="col-xs-7 col-sm-6 col-md-6 main-img">
                             <a href="<?php echo home_url(); ?>" class="main-logo">
                                 <?php include 'logo.php'; ?>
-                                <h1 class="main-name">Abundant Living <span>Mommy</span></h1>
+                                <div>
+                                    <h1 class="main-name">Abundant Living <span>Mommy</span></h1>
+                                    <p>simple healthy tips, that will transform your family for the <span>abundant life</span></p>
+                                </div>
                             </a>
                         </div>
 
@@ -74,7 +75,10 @@
                         <div class="col-xs-7 col-sm-6 col-md-6 main-img">
                             <a href="<?php echo home_url(); ?>" class="main-logo">
                                 <?php include 'logo.php'; ?>
-                                <h1 class="main-name">Abundant Living <span>Mommy</span></h1>
+                                <div>
+                                    <h1 class="main-name">Abundant Living <span>Mommy</span></h1>
+                                    <p>simple healthy tips, that will transform your family for the <span>abundant life</span></p>
+                                </div>
                             </a>
                         </div>
                                 
