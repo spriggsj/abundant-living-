@@ -1,0 +1,16 @@
+.affiliate {
+	padding: 4em 0;
+	h2 {
+		text-align: center;
+		margin: 0 0 1em 0;
+	}
+	.affiliate-image {
+		text-align: center;
+		img {
+			transition: .3s ease-in-out;
+			&:hover {
+				transform: scale(1.15, 1.15);
+			}
+		}
+	}
+}

@@ -1,20 +1,35 @@
 /* Navigation Link */
 
+#Layer_1 {
+   width: 51px !important;
+}
+
 .main-img {
    .main-logo {
       text-decoration: none;
+      display: flex;
+      align-items: flex-start;
       svg {
          transform: rotate(35deg);
+         margin-right: 10px;
       }
-      h1 {
-      font-size: 2.8em;
-      font-weight: 700;
-      letter-spacing: 2px;
-      display: inline-block;
-      vertical-align: top;
-      margin: 11px 0 0 5px;
+      div {
          span {
             color: $torquise;
+         }
+         h1 {
+            font-size: 2.8em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 11px 0 0 0;
+         }
+         p {
+            font-size: 1.2em;
+            span {
+               font-weight: 600;
+            }
          }
       }
    }
@@ -23,7 +38,7 @@
 .main-nav {
    padding: 0;
    ul {
-      margin-right: 2em;
+      margin: .8em 2em 0 0;
       li {
          &:last-of-type a {
             background-color: $torquise;
@@ -60,7 +75,7 @@
 
 .navbar-custom {
    margin-bottom: 0;
-   padding: 9px 0;
+   padding: 4px 0;
 }
 
 .navbar-default {
@@ -93,7 +108,7 @@
    border: none;
    border-bottom: 2px solid $torquise;
    ul {
-      margin-right: 2em;
+      margin: .8em 2em 0 0;
       li {
          &:last-of-type a {
          background-color: $torquise;

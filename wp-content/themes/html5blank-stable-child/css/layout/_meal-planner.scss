@@ -1,6 +1,7 @@
 .meal-post {
 	padding: 3em 0 5em;
 	background-image: url(img/crossword.png);
+	border-bottom: 1px solid hsla(0, 0%, 92%, 1);
 	h2 {
 		text-align: center;
 		margin-bottom: 1em;
@@ -13,9 +14,11 @@
 		border-bottom: 1px dashed hsla(0, 0%, 80%, 1);
 		&:last-of-type {
 			border-bottom: none;
+			margin-botom: 0;
+			padding-bottom: 0;
 		}
 		img {
-			margin-right: 1em;
+			margin-right: 2em;
 			width: 200px;
 			height: auto;
 		}
