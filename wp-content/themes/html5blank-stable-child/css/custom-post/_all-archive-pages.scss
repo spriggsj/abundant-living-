@@ -1,0 +1,36 @@
+.archive-post {
+	padding: 3.5em 0;
+	h2 {
+		margin-bottom: 1em;
+	}
+	section {
+		display: flex;
+		padding: 0 0 2em 0;
+		margin-bottom: 2em;
+		border-bottom: 2px dotted hsla(0, 0%, 80%, 1);
+		img {
+			width: 300px;
+
+		}
+		.archive-blog-post-page {
+			margin-left: 2em;
+			h3 {
+				margin-top: 0;
+			}
+		}
+	}
+	.pagination {
+		display: block;
+		text-align: right;
+		span, a {
+			font-size: 1.5em;
+			margin: 0 .3em;
+		}
+		span {
+			color: $torquise;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+	}
+}

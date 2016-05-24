@@ -8622,49 +8622,47 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   font-weight: 600;
 }
 
-#meal-blog-page {
+.archive-post {
   padding: 3.5em 0;
 }
 
-#meal-blog-page h2 {
+.archive-post h2 {
   margin-bottom: 1em;
 }
 
-#meal-blog-page .meal-planner {
+.archive-post section {
+  display: flex;
   padding: 0 0 2em 0;
   margin-bottom: 2em;
-  border-bottom: 2px dotted #e6e6e6;
-  display: flex;
+  border-bottom: 2px dotted #cccccc;
 }
 
-#meal-blog-page .meal-planner img {
-  margin-right: 3em;
+.archive-post section img {
+  width: 300px;
 }
 
-#meal-blog-page .meal-planner article h3 {
+.archive-post section .archive-blog-post-page {
+  margin-left: 2em;
+}
+
+.archive-post section .archive-blog-post-page h3 {
   margin-top: 0;
 }
 
-#meal-blog-page .meal-planner article p {
-  margin-bottom: 0;
-}
-
-#meal-blog-page .pagination {
+.archive-post .pagination {
   display: block;
   text-align: right;
 }
 
-#meal-blog-page .pagination span, #meal-blog-page .pagination a {
-  font-size: 2em;
-  margin: 0 .5em;
-  transition: .2s ease-in-out;
+.archive-post .pagination span, .archive-post .pagination a {
+  font-size: 1.5em;
+  margin: 0 .3em;
 }
 
-#meal-blog-page .pagination span {
-  color: red;
-}
-
-#meal-blog-page .pagination a:hover {
+.archive-post .pagination span {
   color: #00a388;
+}
+
+.archive-post .pagination a:hover {
   text-decoration: none;
 }

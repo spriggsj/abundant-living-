@@ -1,15 +1,15 @@
 <?php get_header(); ?>
 
 	<main role="main">
-		<section class="members-page">
-		
-			<?php 
-				echo do_shortcode( '[member-custom-loop]' );
-			?>
+		<div class="container archive-post">
+
+			<h2><?php _e( 'Members Only', 'html5blank' ); ?></h2>
+
+			<?php get_template_part('loop'); ?>
 
 			<?php get_template_part('pagination'); ?>
 
-		</section>
+		</div>
 	</main>
 
 <?php get_footer(); ?>
