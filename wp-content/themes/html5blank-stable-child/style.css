@@ -8497,7 +8497,6 @@ a {
   margin-bottom: 2em;
 }
 
-
 .members-page {
   padding: 3em 0;
 }
@@ -8511,6 +8510,10 @@ a {
   padding-bottom: 2em;
   margin-bottom: 2em;
   border-bottom: 2px dotted #e6e6e6;
+}
+
+.members-page .members-container:last-of-type {
+  border: none;
 }
 
 .members-page .members-container img {
@@ -8617,5 +8620,51 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   margin-bottom: 1em;
   letter-spacing: 1px;
   font-weight: 600;
+}
 
+#meal-blog-page {
+  padding: 3.5em 0;
+}
+
+#meal-blog-page h2 {
+  margin-bottom: 1em;
+}
+
+#meal-blog-page .meal-planner {
+  padding: 0 0 2em 0;
+  margin-bottom: 2em;
+  border-bottom: 2px dotted #e6e6e6;
+  display: flex;
+}
+
+#meal-blog-page .meal-planner img {
+  margin-right: 3em;
+}
+
+#meal-blog-page .meal-planner article h3 {
+  margin-top: 0;
+}
+
+#meal-blog-page .meal-planner article p {
+  margin-bottom: 0;
+}
+
+#meal-blog-page .pagination {
+  display: block;
+  text-align: right;
+}
+
+#meal-blog-page .pagination span, #meal-blog-page .pagination a {
+  font-size: 2em;
+  margin: 0 .5em;
+  transition: .2s ease-in-out;
+}
+
+#meal-blog-page .pagination span {
+  color: red;
+}
+
+#meal-blog-page .pagination a:hover {
+  color: #00a388;
+  text-decoration: none;
 }
