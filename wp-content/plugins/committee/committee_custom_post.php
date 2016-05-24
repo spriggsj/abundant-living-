@@ -139,7 +139,9 @@ function js_loop_shortcode( $atts ) {
         $output .= '<section>';
           $output .= '<div class="container-fluid">';
             $output .= '<div class="row">';
-
+              $output .= '<p id="slogan">';
+                $output .= 'Products I love';
+                  $output .= '</p>';
 
     while ($the_query->have_posts()) : $the_query->the_post();
       $post_id = get_the_ID();
