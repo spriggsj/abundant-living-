@@ -53,7 +53,7 @@ function members_post(){
 }
 
 function js_excerpts_length($length){
-	return 28;
+	return 24;
 }
 add_filter('excerpt_length', 'js_excerpts_length', 999);
 

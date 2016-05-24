@@ -119,46 +119,43 @@ add_action( 'pre_get_posts', 'set_posts_per_page_for_people' );
 /*//////////////////////SHORT CODE /////////////////////////////////////////////*/
 
 function js_loop_shortcode( $atts ) {
-    $output = '';
-    $js_loop_atts = shortcode_atts(
+   $output = '';
+   $js_loop_atts = shortcode_atts(
       [
         'type' => 'people_custom_post',
       ], $atts
 
       );
-    $post_type = $js_loop_atts['type'];
-    $args = array(
-        'post_type' => $post_type,
-        'post_status' => 'publish',
-        'order' => 'date',
-        'post_per_page' => 4
+   $post_type = $js_loop_atts['type'];
+   $args = array(
+      'post_type' => $post_type,
+      'post_status' => 'publish',
+      'order' => 'date',
+      'post_per_page' => 4
+   );
 
-      );
+   $the_query = new WP_Query($args);
+      $output .= '<div class="container">';
+         $output .= '<div class="row">';
 
-    $the_query = new WP_Query($args);
-        $output .= '<section>';
-          $output .= '<div class="container-fluid">';
-            $output .= '<div class="row">';
+            while ($the_query->have_posts()) : $the_query->the_post();
+               $post_id = get_the_ID();
 
+               $output .= '<div class="col-xs-6 col-sm-3 affiliate-image">';
+                  $output .= get_post_meta($post_id, 'name_title', true);
+               $output .= '</div>';
 
-    while ($the_query->have_posts()) : $the_query->the_post();
-      $post_id = get_the_ID();
+            endwhile;
 
-        $output .= '<div class="col-sm-6 col-md-3 image--margin">';
-        
-           $output .= get_post_meta($post_id, 'name_title', true);
-        $output .= '</div>';
-
-      endwhile;
-
-            $output .= '</div>';
-           $output .= '</div>';
-          $output .= '</section>'; 
+         $output .= '</div>';
+      $output .= '</div>'; 
 
       return $output;
+      
       wp_reset_postdata();
 
-    }
+   }
     
+   add_shortcode('js-loop', 'js_loop_shortcode');
 
-    add_shortcode('js-loop', 'js_loop_shortcode');
+?>
