@@ -4,9 +4,7 @@
 
 .hero-banner {
    height:600px;
-   border-top: 3px solid $torquise;
    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('img/banner.jpg');
-   //background-image: url('img/banner.jpg');
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;

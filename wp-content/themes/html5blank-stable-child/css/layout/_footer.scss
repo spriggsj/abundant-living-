@@ -5,10 +5,7 @@
 .footer {
 	background-image: linear-gradient(to right,rgba(0,163,136,.5), #00a388);
 	color: white;
-	padding: 3em 0 0;
-	.foot {
-		padding-bottom: 3em;
-	}
+	padding: 3.5em 0 0;
 	h2 {
 		margin: 0 0 .4em;
 		text-transform: capitalize;
@@ -31,6 +28,10 @@
 .footer-about {
 	text-align: center;
 	padding: 0;
+	width: 750px;
+	margin: 0 auto;
+	padding-bottom: 4em;
+	max-width: 90%;
 	.social-links {
 		margin-top: 3em;
 		display: flex;

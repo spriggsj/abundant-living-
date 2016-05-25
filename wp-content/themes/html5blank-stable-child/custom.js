@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 $(document).ready(function(){
   $('#navigation a, #fixedbar a').on('click', function(e) {
     //e.preventDefault();

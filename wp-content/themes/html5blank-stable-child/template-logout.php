@@ -1,7 +1,7 @@
-<?php /* Template Name: Registration Template */ get_header(); ?>
+<?php /* Template Name: Log out Template */ get_header(); ?>
 	<main role="main">
 		<!-- section -->
-		<section id="registration">
+		<section id="login">
 
 			<h2><?php the_title(); ?></h2>
 
@@ -15,7 +15,8 @@
 				<?php comments_template( '', true ); // Remove if you don't want comments ?>
 
 				<br class="clear">
-				
+
+
 			</article>
 			<!-- /article -->
 

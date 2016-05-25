@@ -1,0 +1,26 @@
+.members-page {
+	padding: 3em 0;
+	h2 {
+		margin-bottom: 1em;
+	}
+	.members-container {
+		display: flex;
+		padding-bottom: 2em;
+		margin-bottom: 2em;
+		border-bottom: 2px dotted hsla(0, 0%, 90%, 1);
+		&:last-of-type {
+			border: none;
+		}
+		img {
+			margin-right: 3em;
+		}
+		article {
+			h3 {
+				margin-top: 0;
+			}
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

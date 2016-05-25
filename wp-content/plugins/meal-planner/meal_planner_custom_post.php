@@ -27,7 +27,6 @@ function rc_meal_plans_custom_post(){
 			'public' => true,
 			'has_archive' => true,
 			'menu_icon' => 'dashicons-carrot',
-			'rewrite' => array('slug' => 'meal'),
 			'publicly_queryable' => true,
 			'query_var' => true,
 			'supports' => [
@@ -48,7 +47,42 @@ function meal_post(){
 		'high'
 	);
 }
+/* Taxonomy for catagories */
+//hook into the init action and call create_book_taxonomies when it fires
+add_action( 'init', 'js_people_taxonomy', 0 );
 
+//create a custom taxonomy name it topics for your posts
+
+ function js_people_taxonomy() {
+
+ //Add new taxonomy, make it hierarchical like categories
+// first do the translations part for GUI
+$labels = [
+  'name' => 'Meal Catagories',
+  'singular_name' => 'Meal Catagories',
+  'search_item' => 'Search Meal Catagories',
+  'all_items' => 'All Meal Catagories',
+  'parent_item' => 'Parent Meal',
+  'parent_item_colon' => 'Parent Meal:',
+  'edit_item' => 'Edit Meal Catagories',
+  'update_item' => 'Update Meal',
+  'add_new_item' => 'Add New Meal Catagories',
+  'new_item_name' => 'New Meal Name',
+  'menu_name' => 'Meal Catagories'
+];
+
+$args = [
+  'hierarchical' => true,
+  'labels' => $labels,
+  'show_ui' => true,
+  'show_admin_column' => true,
+  'query_var' => true,
+];
+
+register_taxonomy('meal', 'meal_post', $args);
+
+}
+/* End of Taxonomy */
 add_action('save_post', 'add_meal_fields', 10, 2);
 
 function add_meal_fields($meal_info_id, $meal){
@@ -75,7 +109,7 @@ function include_meal_function($template_path){
 
 function set_posts_per_page_for_meal($query){
 	if($query -> is_post_type_archive('meal_post')){
-		$query -> set('post_per_page', '8');
+		$query -> set('posts_per_page', '3');
 	}
 }
 
@@ -96,7 +130,7 @@ function meal_loop_shortcode( $atts ) {
         'post_type' => $post_type,
         'post_status' => 'publish',
         'order' => 'date',
-        'post_per_page' => 8
+        'post_per_page' => 3
 
       );
 
@@ -110,7 +144,7 @@ function meal_loop_shortcode( $atts ) {
 				    while ($the_query->have_posts()) : $the_query->the_post();
 				        $post_id = get_the_ID();
 				      	$output .= '<div class="col-sm-12 recipe">';
-				      		$output .= get_the_post_thumbnail($post_id, 'small');
+				      		$output .= get_the_post_thumbnail($post_id, 'medium');
 				      		$output .= '<article>';
 				      			$output .= '<h3>';
 				      				$output .= get_the_title();

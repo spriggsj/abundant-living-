@@ -8026,16 +8026,36 @@ html, body {
   padding: 0;
 }
 
+.view-article {
+  color: #00a388;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'bitter';
+  letter-spacing: 1px;
+  transition: .2s ease-in-out;
+}
+
+.view-article:hover {
+  color: #ff5138;
+  text-decoration: none;
+}
+
 h1 {
   font-family: 'great vibes';
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 3.2em;
   font-family: 'bitter';
 }
 
-h3, li, a {
+h3 {
+  color: #00a388;
+  font-family: 'bitter';
+  font-size: 2.5em;
+}
+
+li, a {
   font-family: 'cabin';
 }
 
@@ -8051,25 +8071,40 @@ a {
 }
 
 /* Navigation Link */
+#Layer_1 {
+  width: 51px !important;
+}
+
 .main-img .main-logo {
   text-decoration: none;
+  display: flex;
+  align-items: flex-start;
 }
 
 .main-img .main-logo svg {
   transform: rotate(35deg);
+  margin-right: 10px;
 }
 
-.main-img .main-logo h1 {
+.main-img .main-logo div span {
+  color: #00a388;
+}
+
+.main-img .main-logo div h1 {
   font-size: 2.8em;
   font-weight: 700;
   letter-spacing: 2px;
   display: inline-block;
   vertical-align: top;
-  margin: 11px 0 0 5px;
+  margin: 11px 0 0 0;
 }
 
-.main-img .main-logo h1 span {
-  color: #00a388;
+.main-img .main-logo div p {
+  font-size: 1.2em;
+}
+
+.main-img .main-logo div p span {
+  font-weight: 600;
 }
 
 .main-nav {
@@ -8077,7 +8112,7 @@ a {
 }
 
 .main-nav ul {
-  margin-right: 2em;
+  margin: .8em 2em 0 0;
 }
 
 .main-nav ul li:last-of-type a {
@@ -8094,7 +8129,7 @@ a {
 .main-nav ul li a {
   text-transform: uppercase;
   font-family: 'cabin';
-  font-size: 1.05em;
+  font-size: 1.3em;
   letter-spacing: 1px;
 }
 
@@ -8108,11 +8143,12 @@ a {
 
 .navbar-static-top {
   margin-bottom: 0;
+  border-bottom: 3px solid #00a388;
 }
 
 .navbar-custom {
   margin-bottom: 0;
-  padding: 9px 0;
+  padding: 4px 0;
 }
 
 .navbar-default {
@@ -8147,7 +8183,7 @@ a {
 }
 
 #fixedbar ul {
-  margin-right: 2em;
+  margin: .8em 2em 0 0;
 }
 
 #fixedbar ul li:last-of-type a {
@@ -8165,7 +8201,7 @@ a {
 #fixedbar ul li a {
   text-transform: uppercase;
   font-family: 'cabin';
-  font-size: 1.05em;
+  font-size: 1.3em;
   letter-spacing: 1px;
   color: #000000;
 }
@@ -8179,7 +8215,6 @@ a {
 */
 .hero-banner {
   height: 600px;
-  border-top: 3px solid #00a388;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -8238,7 +8273,8 @@ a {
 
 .recent-post {
   padding: 3em 0;
-  background-image: url(img/texture.jpg);
+  background-image: url(img/crossword.png);
+  border-top: 1px solid #e6e6e6;
 }
 
 .recent-post h2 {
@@ -8248,11 +8284,6 @@ a {
 
 .recent-post h3 {
   margin-top: 0;
-}
-
-.recent-post .view-article {
-  color: #ff5138;
-  text-decoration: none;
 }
 
 .recent-post img {
@@ -8274,12 +8305,12 @@ a {
 
 .recent-post .older-recent-post .older-post-container img {
   margin-right: 2em;
-  width: 175px;
-  height: 175px;
+  width: 180px;
+  height: 180px;
 }
 
 #buffer {
-  padding: 1em 0 4em;
+  padding: 3em 0 6em;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -8303,13 +8334,10 @@ a {
   border: 6px solid #ff5138;
 }
 
-/*
-	6.0 health
-*/
 .health-tip-post {
   width: 850px;
   margin: 0 auto;
-  padding: 2em 0 4em;
+  padding: 3em 0 4em;
   text-align: center;
   max-width: 90%;
 }
@@ -8318,13 +8346,14 @@ a {
   margin: 1em 0 .7em;
 }
 
-.health-tip-post .view-article {
-  text-decoration: none;
-  color: #ff5138;
+.health-tip-post .health-tip {
+  padding: 0;
 }
 
 .meal-post {
-  padding: 3em 0;
+  padding: 3em 0 5em;
+  background-image: url(img/crossword.png);
+  border-bottom: 1px solid #ebebeb;
 }
 
 .meal-post h2 {
@@ -8334,27 +8363,221 @@ a {
 
 .meal-post .recipe {
   display: flex;
-  padding: 0 0 1em 0;
-  margin-bottom: 1em;
+  align-items: flex-start;
+  padding: 0 0 2em 0;
+  margin-bottom: 2em;
   border-bottom: 1px dashed #cccccc;
 }
 
 .meal-post .recipe:last-of-type {
   border-bottom: none;
+  margin-botom: 0;
+  padding-bottom: 0;
 }
 
 .meal-post .recipe img {
-  margin-right: 1em;
+  margin-right: 2em;
+  width: 200px;
+  height: auto;
 }
 
 .meal-post .recipe article h3 {
   margin-top: 0;
-  color: #00a388;
 }
 
-.meal-post .recipe article .view-article {
-  color: #00a388;
-  text-decoration: none;
+.meal-post .recipe article p {
+  margin-bottom: 0;
+}
+
+.meal {
+  width: 750px;
+  margin: 0 auto;
+  padding-bottom: 4em;
+  max-width: 90%;
+}
+
+.meal .meal-title h2 {
+  margin-bottom: .8em;
+}
+
+.meal .meal-img img {
+  margin-bottom: 2em;
+}
+
+.health {
+  width: 750px;
+  margin: 0 auto;
+  padding-bottom: 4em;
+  max-width: 90%;
+}
+
+.health .health-title h2 {
+  margin-bottom: .8em;
+}
+
+.health .health-img img {
+  margin-bottom: 2em;
+}
+
+.health-tip {
+  width: 750px;
+  margin: 0 auto;
+  padding-bottom: 4em;
+  max-width: 90%;
+}
+
+.health-tip .health-tip-title h2 {
+  margin-bottom: .8em;
+}
+
+.health-tip .health-tip-img img {
+  margin-bottom: 2em;
+}
+
+.members-page {
+  padding: 3em 0;
+}
+
+.members-page h2 {
+  margin-bottom: 1em;
+}
+
+.members-page .members-container {
+  display: flex;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 2px dotted #e6e6e6;
+}
+
+.members-page .members-container:last-of-type {
+  border: none;
+}
+
+.members-page .members-container img {
+  margin-right: 3em;
+}
+
+.members-page .members-container article h3 {
+  margin-top: 0;
+}
+
+.members-page .members-container article p {
+  margin-bottom: 0;
+}
+
+.members-single-page {
+  width: 750px;
+  margin: 0 auto;
+  padding-bottom: 4em;
+  max-width: 90%;
+}
+
+.members-single-page .members-title h2 {
+  margin-bottom: .8em;
+}
+
+.members-single-page .members-img img {
+  margin-bottom: 2em;
+}
+
+#login {
+  padding: 4em 0;
+  width: 750px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+#login h2 {
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.feup-pure-form-aligned .feup-pure-control-group label {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.ewd-feup-text-input {
+  display: inline-block;
+  font-size: 1.5em;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  width: 65%;
+}
+
+.ewd-feup-text-input:focus {
+  border-color: #8c8c8c;
+}
+
+input[type="button"], input[type="reset"], input[type="submit"] {
+  background-color: #00a388;
+  padding: 15px 25px;
+  border-radius: 3px;
+  border: none;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  transition: .3s ease-in-out;
+}
+
+input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+  background-color: #029078;
+}
+
+#registration {
+  padding: 4em 0;
+  width: 750px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+#registration h2 {
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.feup-pure-form input[type=text], .feup-pure-form input[type=password] {
+  width: 65%;
+}
+
+#ewd-feup-password-result {
+  font-size: 1.5em;
+  border-radius: 3px;
+}
+
+#profile {
+  padding: 4em 0;
+  width: 750px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+#profile h2 {
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.affiliate {
+  padding: 4em 0;
+}
+
+.affiliate h2 {
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+
+.affiliate .affiliate-image {
+  text-align: center;
+}
+
+.affiliate .affiliate-image img {
+  transition: .3s ease-in-out;
+}
+
+.affiliate .affiliate-image img:hover {
+  transform: scale(1.15, 1.15);
 }
 
 /*
@@ -8363,11 +8586,7 @@ a {
 .footer {
   background-image: linear-gradient(to right, rgba(0, 163, 136, 0.5), #00a388);
   color: white;
-  padding: 3em 0 0;
-}
-
-.footer .foot {
-  padding-bottom: 3em;
+  padding: 3.5em 0 0;
 }
 
 .footer h2 {
@@ -8392,6 +8611,10 @@ a {
 .footer-about {
   text-align: center;
   padding: 0;
+  width: 750px;
+  margin: 0 auto;
+  padding-bottom: 4em;
+  max-width: 90%;
 }
 
 .footer-about .social-links {
@@ -8438,32 +8661,47 @@ a {
   color: #007562;
 }
 
-.meal {
-  width: 750px;
-  margin: 0 auto;
-  padding-bottom: 4em;
-  max-width: 90%;
+.archive-post {
+  padding: 3.5em 0;
 }
 
-.meal .meal-title h2 {
-  margin-bottom: .8em;
+.archive-post h2 {
+  margin-bottom: 1em;
 }
 
-.meal .meal-img img {
+.archive-post section {
+  display: flex;
+  padding: 0 0 2em 0;
   margin-bottom: 2em;
+  border-bottom: 2px dotted #cccccc;
 }
 
-.health {
-  width: 750px;
-  margin: 0 auto;
-  padding-bottom: 4em;
-  max-width: 90%;
+.archive-post section img {
+  width: 300px;
 }
 
-.health .health-title h2 {
-  margin-bottom: .8em;
+.archive-post section .archive-blog-post-page {
+  margin-left: 2em;
 }
 
-.health .health-img img {
-  margin-bottom: 2em;
+.archive-post section .archive-blog-post-page h3 {
+  margin-top: 0;
+}
+
+.archive-post .pagination {
+  display: block;
+  text-align: right;
+}
+
+.archive-post .pagination span, .archive-post .pagination a {
+  font-size: 1.5em;
+  margin: 0 .3em;
+}
+
+.archive-post .pagination span {
+  color: #00a388;
+}
+
+.archive-post .pagination a:hover {
+  text-decoration: none;
 }

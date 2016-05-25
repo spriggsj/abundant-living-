@@ -1,19 +1,15 @@
 <?php get_header(); ?>
 
 	<main role="main">
-		<!-- section -->
-		<section>
+		<div class="container archive-post">
 
-			<h1><?php _e( 'Members only', 'html5blank' ); ?></h1>
+			<h2><?php _e( 'Members Only', 'html5blank' ); ?></h2>
 
 			<?php get_template_part('loop'); ?>
 
 			<?php get_template_part('pagination'); ?>
 
-		</section>
-		<!-- /section -->
+		</div>
 	</main>
-
-
 
 <?php get_footer(); ?>

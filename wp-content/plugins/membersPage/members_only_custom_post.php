@@ -1,4 +1,4 @@
-<?php
+  <?php
 /*
 *Plugin Name: Members Only Post
 *Plugin URI:
@@ -52,10 +52,17 @@ function members_post(){
 		);
 }
 
+function js_excerpts_length($length){
+	return 24;
+}
+add_filter('excerpt_length', 'js_excerpts_length', 999);
 
-	
 
+function js_excerpts_more($more){
+	return 'Read More';
+}
 
+add_filter('excerpt_more', 'js_excerpts_more');
 
 add_action('save_post', 'add_members_fields', 10, 2); //save action to save inputs from custom post
 
@@ -101,58 +108,54 @@ add_action( 'pre_get_posts', 'set_posts_per_page_for_members' );
 
 /*/////////////////////////short code/////////////////////////////////////*/
 /* need to finish this to display on front page for non members /*/
-// function custom_loop_shortcode( $atts ) {
-//     $output = '';
-//     $custom_loop_atts = shortcode_atts(
-//       [
-//         'type' => 'members_post',
-//       ], $atts
 
-//       );
-//     $post_type = $custom_loop_atts['type'];
-//     $args = array(
-//         'post_type' => $post_type,
-//         'post_status' => 'publish',
-//         'order' => 'date',
-//         'post_per_page' => 16
+function members_custom_loop_shortcode( $atts ) {
+    $output = '';
+    $custom_loop_atts = shortcode_atts(
+      [
+        'type' => 'members_post',
+      ], $atts
 
-//       );
+      );
+    $post_type = $custom_loop_atts['type'];
+    $args = array(
+        'post_type' => $post_type,
+        'post_status' => 'publish',
+        'order' => 'date',
+        'post_per_page' => 16
 
-
-
-//     $the_query = new WP_Query($args);
-//         $output .= '<section>';
-//           $output .= '<div class="container-fluid">';
-//             $output .= '<div class="row">';
-
-
-//     while ($the_query->have_posts()) : $the_query->the_post();
-//       $post_id = get_the_ID();
+      );
 
 
 
-//       $output .= '<div class="col-sm-6 col-md-3 image--margin">';
-//         $output .= '<a href="'. get_permalink() . '">';
-//           $output .= get_the_post_thumbnail($post_id, 'full', ['class' => 'grayscale']);
-//         $output .= '<p class="hidden center-block">';
-//           $output .= esc_html(get_post_meta($post_id, 'stylist_title', true));
-//               $output .= ' <br> ';
-//               $output .= '<strong>';
-//                 $output .= esc_html(get_post_meta($post_id, 'stylist_name', true));
-//               $output .= '</strong>';
-//           $output .= '</p>';
-//           $output .= '</a>';
-//         $output .= '</div>';
+    $the_query = new WP_Query($args);
+    	$output .= '<article class="container">';
+    		$output .= '<h2>';
+          		$output .= 'Members';
+          	$output .= '</h2>';
 
-//       endwhile;
+		    while ($the_query->have_posts()) : $the_query->the_post();
+		      $post_id = get_the_ID();
+						$output .= '<div class="members-container">';
+				      		$output .= get_the_post_thumbnail($post_id, 'medium');
+				      		$output .= '<article>';
+				      			$output .= '<h3>';
+				      				$output .= get_the_title();
+				      			$output .= '</h3>';
+					      		$output .= '<p>';
+					        		$output .= get_the_excerpt($post_id);
+					        	$output .= '</p>';
+				        	$output .= '</article>';
+				      	$output .= '</div>'; 
 
-//             $output .= '</div>';
-//            $output .= '</div>';
-//           $output .= '</section>'; 
+		      endwhile;
 
-//       return $output;
-//       wp_reset_postdata();
+            $output .= '</div>';
+        $output .= '</article>';
 
-//     }
+      return $output;
+      wp_reset_postdata();
 
-//     add_shortcode('custom-loop', 'custom_loop_shortcode');
+    }
+
+    add_shortcode('member-custom-loop', 'members_custom_loop_shortcode');

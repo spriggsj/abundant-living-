@@ -34,7 +34,16 @@
 @import 'css/layout/_ebook.scss';
 @import 'css/layout/_health.scss';
 @import 'css/layout/_meal-planner.scss';
-@import 'css/layout/_footer.scss';
 @import 'css/media-query/_media-query.scss';
 @import 'css/layout/_meal-blog-page.scss';
 @import 'css/layout/_health-blog-page.scss';
+@import 'css/layout/_health-tip-blog-page.scss';
+@import 'css/layout/_members-blog-page.scss';
+@import 'css/layout/_members-single-page.scss';
+@import 'css/layout/_login-registration-profile.scss';
+@import 'css/layout/_affiliates.scss';
+@import 'css/layout/_footer.scss';
+
+// custom post scss
+
+@import 'css/custom-post/_all-archive-pages.scss';
