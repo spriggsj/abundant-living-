@@ -29,6 +29,7 @@
 @import 'css/variables/_variables.scss';
 @import 'css/global/_global.scss';
 @import 'css/layout/_nav.scss';
+@import 'css/layout/_sub-nav.scss';
 @import 'css/layout/_header.scss';
 @import 'css/layout/_recent-post.scss';
 @import 'css/layout/_ebook.scss';
@@ -47,3 +48,8 @@
 // custom post scss
 
 @import 'css/custom-post/_all-archive-pages.scss';
+
+// catagory page scss
+
+@import 'css/catagory/_catagory-page.scss';
+@import 'css/catagory/_catagory-single.scss';
