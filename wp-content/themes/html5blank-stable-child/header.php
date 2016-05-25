@@ -114,10 +114,14 @@
                 </div> <!--end div class container-fluid-->
              </div> <!--end div class navbar  navbar-static-top navbar-custom-->
         </nav> 
-        <?php /* Primary navigation */
-                                        wp_nav_menu( array(
-                                        'menu' => 'sub_nav',
-                                        'theme-location' => 'sub-nav',
-                                        ));
-                                    ?>
+        <nav class="secondary-nav">
+            <div class="container">
+                <?php /* sub_nav navigation */
+                    wp_nav_menu( array(
+                    'menu' => 'sub_nav',
+                    'theme-location' => 'sub-nav',
+                    ));
+                ?>
+            </div>
+        </nav>
 	

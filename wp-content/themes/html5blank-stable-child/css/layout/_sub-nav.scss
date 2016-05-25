@@ -1,0 +1,19 @@
+.secondary-nav {
+	background-color: $torquise;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+		li {
+			margin: .3em 0;
+			a {
+				color: #ffffff;
+				text-transform: capitalize;
+				font-size: 1.3em;
+				text-decoration: none;
+			}
+		}
+	}
+}
