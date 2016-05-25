@@ -134,11 +134,7 @@ function js_loop_shortcode( $atts ) {
       'post_per_page' => 4
    );
 
-<<<<<<< HEAD
-    $the_query = new WP_Query($args);
-=======
    $the_query = new WP_Query($args);
->>>>>>> 1fb8dd6522a5531248cef0c18f318edfa430704b
       $output .= '<div class="container">';
         //testing
          $output .= '<div class="row">';
