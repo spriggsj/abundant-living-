@@ -15,12 +15,12 @@
 						
 						echo '<div class="health-tip-img">' ;
 							?>
-							<a href="<?php the_permalink(); ?>">
+							
 							<?php	
 							the_post_thumbnail();
 							the_excerpt();
 							?>
-							</a>;
+							
 							<?php
 						echo '</div>';
 

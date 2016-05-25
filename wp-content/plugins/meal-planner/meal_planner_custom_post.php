@@ -27,7 +27,6 @@ function rc_meal_plans_custom_post(){
 			'public' => true,
 			'has_archive' => true,
 			'menu_icon' => 'dashicons-carrot',
-			'rewrite' => array('slug' => 'meal'),
 			'publicly_queryable' => true,
 			'query_var' => true,
 			'supports' => [
@@ -48,7 +47,42 @@ function meal_post(){
 		'high'
 	);
 }
+/* Taxonomy for catagories */
+//hook into the init action and call create_book_taxonomies when it fires
+add_action( 'init', 'js_people_taxonomy', 0 );
 
+//create a custom taxonomy name it topics for your posts
+
+ function js_people_taxonomy() {
+
+ //Add new taxonomy, make it hierarchical like categories
+// first do the translations part for GUI
+$labels = [
+  'name' => 'Meal Catagories',
+  'singular_name' => 'Meal Catagories',
+  'search_item' => 'Search Meal Catagories',
+  'all_items' => 'All Meal Catagories',
+  'parent_item' => 'Parent Meal',
+  'parent_item_colon' => 'Parent Meal:',
+  'edit_item' => 'Edit Meal Catagories',
+  'update_item' => 'Update Meal',
+  'add_new_item' => 'Add New Meal Catagories',
+  'new_item_name' => 'New Meal Name',
+  'menu_name' => 'Meal Catagories'
+];
+
+$args = [
+  'hierarchical' => true,
+  'labels' => $labels,
+  'show_ui' => true,
+  'show_admin_column' => true,
+  'query_var' => true,
+];
+
+register_taxonomy('meal', 'meal_post', $args);
+
+}
+/* End of Taxonomy */
 add_action('save_post', 'add_meal_fields', 10, 2);
 
 function add_meal_fields($meal_info_id, $meal){
