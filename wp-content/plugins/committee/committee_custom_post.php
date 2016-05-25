@@ -134,24 +134,12 @@ function js_loop_shortcode( $atts ) {
       'post_per_page' => 4
    );
 
-<<<<<<< HEAD
-      );
-
-    $the_query = new WP_Query($args);
-        $output .= '<section>';
-          $output .= '<div class="container-fluid">';
-            $output .= '<div class="row">';
-              $output .= '<p id="slogan">';
-                $output .= 'Products I love';
-                  $output .= '</p>';
-=======
    $the_query = new WP_Query($args);
       $output .= '<div class="container">';
          $output .= '<div class="row">';
 
             while ($the_query->have_posts()) : $the_query->the_post();
                $post_id = get_the_ID();
->>>>>>> 5038974b6334f7a34fb3f58801eb26493ab5ba61
 
                $output .= '<div class="col-xs-6 col-sm-3 affiliate-image">';
                   $output .= get_post_meta($post_id, 'name_title', true);
