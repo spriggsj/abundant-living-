@@ -136,6 +136,7 @@ function js_loop_shortcode( $atts ) {
 
     $the_query = new WP_Query($args);
       $output .= '<div class="container">';
+        //testing
          $output .= '<div class="row">';
 
             while ($the_query->have_posts()) : $the_query->the_post();
