@@ -8070,6 +8070,19 @@ a {
   text-decoration: none;
 }
 
+.view-all-post {
+  font-size: 1.6em;
+  color: #00a388;
+  transition: .2s ease-in-out;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.view-all-post:hover {
+  text-decoration: none;
+  color: #ff5138;
+}
+
 /* Navigation Link */
 #Layer_1 {
   width: 51px !important;
@@ -8336,6 +8349,10 @@ a {
   height: 180px;
 }
 
+.recent-post .view-all-post {
+  float: right;
+}
+
 #buffer {
   padding: 3em 0 6em;
   border-top: 1px solid #e6e6e6;
@@ -8414,6 +8431,10 @@ a {
 
 .meal-post .recipe article p {
   margin-bottom: 0;
+}
+
+.meal-post .view-all-post {
+  float: right;
 }
 
 .meal {
