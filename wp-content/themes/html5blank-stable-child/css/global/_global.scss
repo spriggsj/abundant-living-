@@ -46,3 +46,15 @@ p {
 a {
 	text-decoration: none;
 }
+
+.view-all-post {
+	font-size: 1.6em;
+	color: $torquise;
+	transition: .2s ease-in-out;
+	font-weight: 600;
+	letter-spacing: 1px;
+	&:hover {
+		text-decoration: none;
+		color: $orange;
+	}
+}

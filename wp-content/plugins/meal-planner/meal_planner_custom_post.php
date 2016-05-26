@@ -155,6 +155,9 @@ function meal_loop_shortcode( $atts ) {
 				        	$output .= '</article>';
 				      	$output .= '</div>'; 
 				    endwhile;
+					$output .= '<a href="http://localhost:8001/meal_post/" class="view-all-post">';
+						$output .= 'View all';
+					$output .= '</a>';
 			    $output .= '</div>'; 
 		    	$output .= '<div class="col-sm-4 author">';
 					$output .= '<img src="http://placehold.it/250x250">';

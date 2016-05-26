@@ -196,7 +196,9 @@ function custom_loop_shortcode( $atts ) {
 				$i++;
 		    endwhile;
 
-		      //$output .= '</div>';
+				$output .= '<a href="http://localhost:8001/health_post/" class="view-all-post">';
+					$output .= 'View all';
+				$output .= '</a>';
        		$output .= '</div>';
         $output .= '</div>'; 
 
