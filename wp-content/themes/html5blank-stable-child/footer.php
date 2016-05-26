@@ -1,3 +1,15 @@
+	<nav class="secondary-nav">
+            <div class="container">
+                <?php /* sub_nav navigation */
+                    wp_nav_menu( array(
+                    'menu' => 'sub_nav',
+                    'theme-location' => 'sub-nav',
+                    ));
+                ?>
+            </div>
+        </nav>
+               
+           
 	<footer class="footer">
 		<div class="footer-about">
 			<h2><span>love</span> what you see</h2>
@@ -11,9 +23,13 @@
 				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 			</aside>
 		</div>
+        <nav class="secondary-nav">
+            
+
 		<div class="copyright">
 			<p>Copyright &copy; 2016 Abundant Living Mommy &reg;</p>
 		</div>
+
 	</footer>
 
 	<?php wp_footer(); ?>
