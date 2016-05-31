@@ -4,8 +4,12 @@
 	padding-bottom: 4em;
 	max-width: 90%;
 	.meal-title {
+		padding-bottom: 2em;
 		h2 {
-			margin-bottom: .8em;
+			margin-bottom: .4em;
+		}
+		span {
+			font-size: 1.3em;
 		}
 	}
 	.meal-img {

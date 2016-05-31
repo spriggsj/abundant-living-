@@ -10,7 +10,10 @@
 					if (have_posts()) : while (have_posts()) : the_post();
 					
 						echo '<div class="health-tip-title">'; ?>
-							<h2><?php the_title();  ?></h2>
+							<a href="<?php the_permalink(); ?>"></a><h2><?php the_title();  ?></h2></a>
+							<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
+							<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
+							
 						<?php echo'</div>';
 						
 						echo '<div class="health-tip-img">' ;

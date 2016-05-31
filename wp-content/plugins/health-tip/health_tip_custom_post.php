@@ -90,7 +90,7 @@ function create_tip_hierarchical_taxonomy() {
 /* End of Taxonomy */
 
 function rc_excerpt_length($length){
-	return 20;
+	return 15;
 }
 
 add_filter('excerpt_length', 'rc_excerpt_length', 999);
@@ -165,6 +165,15 @@ function tip_custom_loop_shortcode( $atts ) {
 				$output .= '<h3>';
       				$output .= get_the_title();
       			$output .= '</h3>';
+      			$output .= '<span class="date">';
+      				$output .= get_the_time("F j, Y");
+      			$output .= '</span>';
+      			$output .= '<span class="date">';
+      				$output .= ' / Published by ';
+      			$output .= '</span>';
+      			$output .= '<span class="date">';
+      				$output .= get_the_author_posts_link();;
+      			$output .= '</span>';
 	      		$output .= '<p>';
 	      			$output .= get_the_excerpt($post_id);
 	      		$output .= '</p>';
