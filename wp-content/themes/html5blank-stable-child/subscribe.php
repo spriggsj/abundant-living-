@@ -7,36 +7,42 @@
 			<div class="members-single-page">
 			<!-- CONTENT -->
 			
-			<!-- 	<?php //if ( has_post_thumbnail() ) {the_post_thumbnail();} the_content();?>
-				<!--DISPLAY CUSTOM POSTS-->
-				
-				<?php $loop = new WP_Query( array( 'post_type' => 'members_posts', 'posts_per_page' => 10 ) ); ?> 
+			<!-- <?php //if ( has_post_thumbnail() ) {the_post_thumbnail();} -->the_content();?>
+				<!--DISPLAY CUSTOM POSTS -->
+			<article class="members-registration">		
+				<p>
+					<?php $loop = new WP_Query( array( 'post_type' => 'members_posts', 'posts_per_page' => 10 ) ); ?> 
+						
+					<?php 
+						if (have_posts()) : while (have_posts()) : the_post(); // start of the loop
 					
-				<?php 
-					if (have_posts()) : while (have_posts()) : the_post(); // start of the loop
-				
-					$content = '';
-					$content .= '<div class="members-title">';
-						$content .= '<h2>';
-							$content .= get_the_title();
-						$content .= '</h2>';
-					$content .= '</div>';
+						$content = '';
+						$content .= '<div class="members-title">';
+							$content .= '<h2>';
+								$content .= get_the_title();
+							$content .= '</h2>';
+						$content .= '</div>';
 
-					$content .= '<div class="members-img">';
-						$content .= get_the_post_thumbnail();
-						$content .= '<p>';
-							$content .= get_the_content();
-						$content .= '</p>';
-					$content .= '</div>';
+						$content .= '<div class="members-img">';
+							$content .= get_the_post_thumbnail();
+							$content .= '<p>';
+								$content .= get_the_content();
+							$content .= '</p>';
+						$content .= '</div>';
 
-					echo do_shortcode('[restricted]' . $content . '[/restricted]');
+						echo do_shortcode('[restricted]' . $content . '[/restricted]');
+						?>
+						
+					<?php	
+					
+					endwhile; endif;
+
 					?>
-					
-				<?php	
-				
-				endwhile; endif;
+				</p>
+			</article>
 
-				?>
+				<h2>Register</h2>
+				<?php echo do_shortcode( '[register]' ); ?>
 
 				<!--END CUSTOM POSTS-->
 					
@@ -48,4 +54,4 @@
 	
 	
 	
-		<?php get_footer(); ?>
+<?php get_footer(); ?>
