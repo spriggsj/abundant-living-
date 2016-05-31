@@ -1,7 +1,8 @@
-<?php /* Template Name: Log out Template */ get_header(); ?>
+<?php /* Template Name: Login2 Template */ get_header(); ?>
 	<main role="main">
 		<!-- section -->
 		<section id="login">
+			<h2>You Have successfully Logged out</h2>
 
 			<h2><?php the_title(); ?></h2>
 
@@ -33,7 +34,7 @@
 			<!-- /article -->
 
 		<?php endif; ?>
-			<?php  [login]; ?>
+
 		</section>
 		<!-- /section -->
 	</main>
