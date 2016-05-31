@@ -8317,6 +8317,149 @@ a {
   display: none;
 }
 
+p {
+  line-height: 30px;
+}
+
+.hero-image {
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/5C7A5556.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+.about-wendy {
+  padding: 1em 0;
+}
+
+.about-wendy .container {
+  display: flex;
+}
+
+.about-wendy .container h1 {
+  margin: 0;
+}
+
+.first-about-me {
+  margin-top: 4em;
+  padding-top: 0;
+}
+
+.first-about-me .first h1:nth-of-type(1) {
+  color: #79bd8f;
+  font-size: 10em;
+  font-family: 'bitter';
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.first-about-me .first h1:nth-of-type(2) {
+  color: #ff5138;
+  font-size: 4.8em;
+  font-family: 'bitter';
+  letter-spacing: 7px;
+  position: absolute;
+  top: 113px;
+}
+
+.first-about-me .first h1:nth-of-type(3) {
+  color: #00a388;
+  font-size: 4.9em;
+  font-weight: 600;
+  position: absolute;
+  top: 185px;
+}
+
+.first-about-me .second {
+  padding-left: 2em;
+}
+
+.second-about-me .fourth {
+  background-image: url(img/5C7A5503.JPG);
+  background-size: cover;
+  background-position: left;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+}
+
+.quote {
+  margin: 1em 0 1.5em;
+}
+
+.quote .container p {
+  font-size: 4em;
+  font-family: 'sacramento';
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 60px;
+  color: #737373;
+}
+
+.third-about-me {
+  margin-bottom: 4em;
+  padding-bottom: 0;
+}
+
+.third-about-me .fifth h1 {
+  font-family: 'bitter';
+}
+
+.third-about-me .fifth h1:nth-of-type(odd) {
+  letter-spacing: 3px;
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.third-about-me .fifth h1:nth-of-type(odd) span {
+  color: #00a388;
+}
+
+.third-about-me .fifth h1:nth-of-type(even) {
+  position: absolute;
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.third-about-me .fifth h1:nth-of-type(3) {
+  position: absolute;
+  top: 80px;
+}
+
+.third-about-me .fifth h1:nth-of-type(4) {
+  position: absolute;
+  top: 130px;
+}
+
+.third-about-me .fifth h1:nth-of-type(4) span {
+  font-weight: 600;
+  color: #ff5138;
+}
+
+.bottom-hero-image {
+  height: 300px;
+  background-image: url(img/5C7A5572.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+.bottom-hero-image .container {
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.bottom-hero-image .container button {
+  border: none;
+  background-color: rgba(0, 163, 136, 0.8);
+  color: white;
+  font-size: 2.5em;
+  font-family: 'bitter';
+  border-radius: 3px;
+  padding: .3em 2em;
+  margin-left: 4em;
+}
+
 .recent-post {
   padding: 3em 0;
   background-image: url(img/crossword.png);
