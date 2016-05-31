@@ -86,7 +86,7 @@ register_taxonomy('health', 'health_post', $args);
 
 
 function js_excerpt_length($length){
-	return 20;
+	return 15;
 }
 add_filter('excerpt_length', 'js_excerpt_length', 999);
 
@@ -158,7 +158,7 @@ function custom_loop_shortcode( $atts ) {
     $the_query = new WP_Query($args);
         $output .= '<div class="container">';
           	$output .= '<h2>';
-          		$output .= 'You deserve optimal health';
+          		$output .= 'You Deserve Optimal Health';
           	$output .= '</h2>';
             $output .= '<div class="row">';
 
@@ -170,8 +170,17 @@ function custom_loop_shortcode( $atts ) {
 			      	$output .= '<div class="col-sm-6 newest-recent-post">';
 			      		$output .= get_the_post_thumbnail($post_id, 'full');
 			      		$output .= '<h3>';
-				      				$output .= get_the_title();
-				      			$output .= '</h3>';
+		      				$output .= get_the_title();
+		      			$output .= '</h3>';
+		      			$output .= '<span class="date">';
+		      				$output .= get_the_time("F j, Y");
+		      			$output .= '</span>';
+		      			$output .= '<span class="date">';
+		      				$output .= ' / Published by ';
+		      			$output .= '</span>';
+		      			$output .= '<span class="date">';
+		      				$output .= get_the_author_posts_link();;
+		      			$output .= '</span>';
 			      		$output .= '<p>';
 			      			$output .= get_the_excerpt($post_id);
 			      		$output .= '</p>';
@@ -183,12 +192,21 @@ function custom_loop_shortcode( $atts ) {
 						$output .= '<div class="row older-post-container">';
 							$output .= get_the_post_thumbnail($post_id, 'medium'); 
 							$output .= '<aside>';	
-							$output .= '<h3>';
+								$output .= '<h3>';
 				      				$output .= get_the_title();
 				      			$output .= '</h3>';
-							$output .= '<p>';  
-								$output .= get_the_excerpt($post_id);
-							$output .= '<p>';
+				      			$output .= '<span class="date">';
+				      				$output .= get_the_time("F j, Y");
+				      			$output .= '</span>';
+				      			$output .= '<span class="date">';
+				      				$output .= ' / Published by ';
+				      			$output .= '</span>';
+				      			$output .= '<span class="date">';
+				      				$output .= get_the_author_posts_link();;
+				      			$output .= '</span>';
+								$output .= '<p>';  
+									$output .= get_the_excerpt($post_id);
+								$output .= '<p>';
 							$output .= '</aside>';
 						$output .= '</div>';
 					$output .= '</div>';

@@ -8120,6 +8120,7 @@ a {
 
 .main-img .main-logo div p {
   font-size: 1.2em;
+  margin-bottom: 0;
 }
 
 .main-img .main-logo div p span {
@@ -8499,7 +8500,7 @@ p {
 }
 
 .recent-post .older-recent-post:last-of-type .older-post-container {
-  padding-top: 0;
+  padding-top: 1.5em;
 }
 
 .recent-post .view-all-post {
@@ -8597,8 +8598,16 @@ p {
   max-width: 90%;
 }
 
+.meal .meal-title {
+  padding-bottom: 2em;
+}
+
 .meal .meal-title h2 {
-  margin-bottom: .8em;
+  margin-bottom: .4em;
+}
+
+.meal .meal-title span {
+  font-size: 1.3em;
 }
 
 .meal .meal-img img {
@@ -8612,8 +8621,16 @@ p {
   max-width: 90%;
 }
 
+.health .health-title {
+  padding-bottom: 2em;
+}
+
 .health .health-title h2 {
-  margin-bottom: .8em;
+  margin-bottom: .4em;
+}
+
+.health .health-title span {
+  font-size: 1.3em;
 }
 
 .health .health-img img {
@@ -8627,8 +8644,16 @@ p {
   max-width: 90%;
 }
 
+.health-tip .health-tip-title {
+  padding-bottom: 2em;
+}
+
 .health-tip .health-tip-title h2 {
-  margin-bottom: .8em;
+  margin-bottom: .4em;
+}
+
+.health-tip .health-tip-title span {
+  font-size: 1.3em;
 }
 
 .health-tip .health-tip-img img {
@@ -8918,7 +8943,7 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 .catagory-single {
   width: 750px;
   margin: 0 auto;
-  padding: 4em 0;
+  padding: 3em 0 4em;
   max-width: 90%;
 }
 
