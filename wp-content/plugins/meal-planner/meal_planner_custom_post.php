@@ -137,7 +137,7 @@ function meal_loop_shortcode( $atts ) {
     $the_query = new WP_Query($args);
         $output .= '<div class="container">';
           	$output .= '<h2>';
-          		$output .= 'Meal Planner';
+          		$output .= 'Food changes everything';
           	$output .= '</h2>';
             $output .= '<div class="row">';
 	            $output .= '<div class="col-sm-8 recipe-container">';
