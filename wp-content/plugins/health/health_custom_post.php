@@ -146,10 +146,10 @@ function custom_loop_shortcode( $atts ) {
       );
     $post_type = $custom_loop_atts['type'];
     $args = array(
-        'post_type' => $health_post,
+        'post_type' => health_post,
         'post_status' => 'publish',
         'order' => 'date',
-        'post_per_page' => 3
+        'posts_per_page' => 3
 
       );
 
