@@ -123,13 +123,13 @@ function include_health_function($template_path){
 	return $template_path;
 }
 
-function set_posts_per_page_for_health($query){
-	if($query -> is_post_type_archive('health_post')){
-		$query -> set('posts_per_page', '3');
-	}
-}
+// function set_posts_per_page_for_health($query){
+// 	if($query -> is_post_type_archive('health_post')){
+// 		$query -> set('posts_per_page', '3');
+// 	}
+// }
 
-add_action('pre_get_posts', 'set_posts_per_page_for_health');
+// add_action('pre_get_posts', 'set_posts_per_page_for_health');
 
 
 
@@ -146,10 +146,10 @@ function custom_loop_shortcode( $atts ) {
       );
     $post_type = $custom_loop_atts['type'];
     $args = array(
-        'post_type' => $post_type,
+        'post_type' => $health_post,
         'post_status' => 'publish',
         'order' => 'date',
-        'post_per_page' => -1
+        'post_per_page' => 3
 
       );
 
