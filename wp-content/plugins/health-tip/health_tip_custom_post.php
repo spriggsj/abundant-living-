@@ -125,16 +125,16 @@ function include_health_tip_function($template_path){
 	return $template_path;
 }
 
-function set_post_per_page_health_tip($query){
-	if($query -> is_post_type_archive('health_tip_post')){
-		$query -> set('posts_per_page', '1');
-	}
-}
+// function set_post_per_page_health_tip($query){
+// 	if($query -> is_post_type_archive('health_tip_post')){
+// 		$query -> set('posts_per_page', '1');
+// 	}
+// }
 
-add_action('pre_get_posts', 'set_post_per_page_health_tip');
+// add_action('pre_get_posts', 'set_post_per_page_health_tip');
 
 
-// SHORT CODE 
+//SHORT CODE 
 
 
 function tip_custom_loop_shortcode( $atts ) {
@@ -148,10 +148,10 @@ function tip_custom_loop_shortcode( $atts ) {
 	);
 	$post_type = $custom_tip_loop_atts['type'];
 	$args = array(
-		'post_type' => $post_type,
+		'post_type' => health_tip_post,
 		'post_status' => 'publish',
 		'order' => 'date',
-		'post_per_page' => 1
+		'posts_per_page' => 1
 
 	);
 
