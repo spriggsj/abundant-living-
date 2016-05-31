@@ -14,7 +14,6 @@
 						echo'</div>'; ?>
 						
 						<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-						<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
 
 						<?php 
 						echo '<div class="col-sm-6 col-md-6 col-center meal-img">' ;
