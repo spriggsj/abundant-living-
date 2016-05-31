@@ -69,6 +69,13 @@ p {
 		border-radius: 50%;
 		height: 350px;
 		width: 350px;
+		-webkit-filter: grayscale(80%);
+		filter: grayscale(80%);
+		transition: .2s ease-in-out;
+		&:hover {
+			-webkit-filter: grayscale(0);
+			filter: grayscale(0);
+		}
 	}
 }
 
@@ -78,7 +85,7 @@ p {
 		p {
 			font-size: 4em;
 			font-family: 'sacramento';
-			font-weight: 600;
+			font-weight: 400;
 			letter-spacing: 1px;
 			line-height: 60px;
 			color: hsla(0, 0%, 45%, 1);
