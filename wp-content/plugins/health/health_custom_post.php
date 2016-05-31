@@ -149,7 +149,7 @@ function custom_loop_shortcode( $atts ) {
         'post_type' => $post_type,
         'post_status' => 'publish',
         'order' => 'date',
-        'post_per_page' => 3
+        'post_per_page' => -1
 
       );
 
