@@ -30,6 +30,9 @@
 				height: 180px;
 			}
 		}
+		&:last-of-type .older-post-container {
+			padding-top: 0;
+		}
 	}
 	.view-all-post {
 		float: right;
