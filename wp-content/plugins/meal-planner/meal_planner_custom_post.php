@@ -107,13 +107,13 @@ function include_meal_function($template_path){
 	return $template_path;
 }
 
-function set_posts_per_page_for_meal($query){
-	if($query -> is_post_type_archive('meal_post')){
-		$query -> set('posts_per_page', '3');
-	}
-}
+// function set_posts_per_page_for_meal($query){
+// 	if($query -> is_post_type_archive('meal_post')){
+// 		$query -> set('posts_per_page', '3');
+// 	}
+// }
 
-add_action('pre_get_posts', 'set_posts_per_page_for_meal');
+// add_action('pre_get_posts', 'set_posts_per_page_for_meal');
 
 /*/////////////////////////short code/////////////////////////////////////*/
 
@@ -127,10 +127,10 @@ function meal_loop_shortcode( $atts ) {
       );
     $post_type = $meal_loop_atts['type'];
     $args = array(
-        'post_type' => $post_type,
+        'post_type' => meal_post,
         'post_status' => 'publish',
         'order' => 'date',
-        'post_per_page' => 3
+        'posts_per_page' => 3
 
       );
 
