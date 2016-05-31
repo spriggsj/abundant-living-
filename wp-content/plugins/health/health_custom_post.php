@@ -175,12 +175,6 @@ function custom_loop_shortcode( $atts ) {
 		      			$output .= '<span class="date">';
 		      				$output .= get_the_time("F j, Y");
 		      			$output .= '</span>';
-		      			$output .= '<span class="date">';
-		      				$output .= ' / Published by ';
-		      			$output .= '</span>';
-		      			$output .= '<span class="date">';
-		      				$output .= get_the_author_posts_link();;
-		      			$output .= '</span>';
 			      		$output .= '<p>';
 			      			$output .= get_the_excerpt($post_id);
 			      		$output .= '</p>';
@@ -197,12 +191,6 @@ function custom_loop_shortcode( $atts ) {
 				      			$output .= '</h3>';
 				      			$output .= '<span class="date">';
 				      				$output .= get_the_time("F j, Y");
-				      			$output .= '</span>';
-				      			$output .= '<span class="date">';
-				      				$output .= ' / Published by ';
-				      			$output .= '</span>';
-				      			$output .= '<span class="date">';
-				      				$output .= get_the_author_posts_link();;
 				      			$output .= '</span>';
 								$output .= '<p>';  
 									$output .= get_the_excerpt($post_id);
