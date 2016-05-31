@@ -15,3 +15,17 @@
 
 //Wendy test
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script|Shadows+Into+Light+Two|Covered+By+Your+Grace);
+
+// black jack font
+
+@font-face {
+    font-family: 'black_jackregular';
+    src: url('css/fonts/blackjack-webfont.eot');
+    src: url('css/fonts/blackjack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('css/fonts/blackjack-webfont.woff2') format('woff2'),
+         url('css/fonts/blackjack-webfont.woff') format('woff'),
+         url('css/fonts/blackjack-webfont.ttf') format('truetype'),
+         url('css/fonts/blackjack-webfont.svg#black_jackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
