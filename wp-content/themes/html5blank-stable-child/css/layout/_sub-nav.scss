@@ -13,7 +13,10 @@
 				text-transform: capitalize;
 				font-size: 1.3em;
 				text-decoration: none;
-
+				transition: .2s ease-in-out;
+				&:hover {
+					color: $lime-green;
+				}
 			}
 		}
 	}
