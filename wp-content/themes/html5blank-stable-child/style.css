@@ -8152,6 +8152,7 @@ a {
 
 .main-nav ul li:last-of-type a:hover {
   background-color: #ff5138;
+  color: #ffffff;
 }
 
 .main-nav ul li a {
@@ -8159,10 +8160,12 @@ a {
   font-family: 'cabin';
   font-size: 1.3em;
   letter-spacing: 1px;
+  transition: .2s ease-in-out;
 }
 
 .main-nav ul li a:hover {
   background-color: transparent;
+  color: #00a388;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -8228,6 +8231,7 @@ a {
 
 #fixedbar ul li:last-of-type a:hover {
   background-color: #ff5138;
+  color: #ffffff;
 }
 
 #fixedbar ul li a {
@@ -8236,6 +8240,11 @@ a {
   font-size: 1.3em;
   letter-spacing: 1px;
   color: #000000;
+  transition: .2s ease-in-out;
+}
+
+#fixedbar ul li a:hover {
+  color: #00a388;
 }
 
 #fixednav {
@@ -8263,6 +8272,11 @@ a {
   text-transform: capitalize;
   font-size: 1.3em;
   text-decoration: none;
+  transition: .2s ease-in-out;
+}
+
+.secondary-nav ul li a:hover {
+  color: #beeb9f;
 }
 
 /*
@@ -8346,24 +8360,22 @@ p {
   padding-top: 0;
 }
 
-.first-about-me .first h3 {
-  font-size: 12em;
-  letter-spacing: 5px;
+.first-about-me .first h1 {
+  font-family: 'bitter';
+  font-size: 7em;
   margin: 0;
-  color: #79bd8f;
+}
+
+.first-about-me .first p {
+  font-size: 3.9em;
+  margin: .6em 0;
 }
 
 .first-about-me .first p:first-of-type {
-  font-size: 5.6em;
-  font-family: 'bitter';
-  margin-bottom: .8em;
-  color: #ff5138;
+  margin-top: .3em;
 }
 
 .first-about-me .first p:last-of-type {
-  font-size: 4.9em;
-  font-family: 'sacramento';
-  font-weight: 600;
   color: #00a388;
 }
 
@@ -8385,7 +8397,7 @@ p {
 }
 
 .quote .container p {
-  font-size: 5em;
+  font-size: 4.7em;
   font-family: 'sacramento';
   line-height: 60px;
   color: #737373;
@@ -8402,9 +8414,9 @@ p {
 }
 
 .third-about-me .fifth p {
-  font-size: 3.4em;
+  font-size: 3.9em;
   font-family: 'bitter';
-  line-height: 43px;
+  line-height: 44px;
 }
 
 .third-about-me .fifth p span {
@@ -8417,6 +8429,7 @@ p {
 
 .random-things h2 {
   margin: 0 0 .5em 0;
+  font-size: 3.4em;
 }
 
 .random-things ul {

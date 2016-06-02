@@ -10,8 +10,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-5 col-md-4 first">
-					<h3>Hello</h3>
-					<p>my name is</p>
+					<h1>About me</h1>
+					<p>Hello, my name is</p>
 					<p>Wendy Purviance</p>
 				</div>
 				<div class="col-xs-12 col-sm-7 col-md-8 second">
@@ -41,7 +41,7 @@
 	</section>
 	<section class="quote">
 		<div class="container">
-			<p><span>''</span> I'm a real mom with the same challenges you have.  I have a messy, imperfect life <span>''</span></p>
+			<p><span>''</span>I'm a real mom with the same challenges you have.  I have a messy, imperfect life<span>''</span></p>
 		</div>
 	</section>
 	<section class="about-wendy third-about-me">
