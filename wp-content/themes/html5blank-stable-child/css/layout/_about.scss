@@ -8,49 +8,35 @@ p {
 	background-size: cover;
 	background-position: center;
 	.container {
-		h1 {
-			
-		}
+
 	}
 }
 
 .about-wendy {
-	padding: 1em 0;
-	.container {
-		display: flex;
-		h1 {
-			margin: 0;
-		}
-	}
+	margin-bottom: 2em;
 }
 
 .first-about-me {
 	margin-top: 4em;
 	padding-top: 0;
 	.first {
-		h1 {
-			&:nth-of-type(1) {
-				color: $light-green;
-				font-size: 10em;
-				font-family: 'bitter';
-				text-transform: uppercase;
-				letter-spacing: 3px;
-			}
-			&:nth-of-type(2) {
-				color: $orange;
-				font-size: 4.8em;
-				font-family: 'bitter';
-				letter-spacing: 7px;
-				position: absolute;
-				top: 113px;
-			}
-			&:nth-of-type(3) {
-				color: $torquise;
-				font-size: 4.9em;
-				font-weight: 600;
-				position: absolute;
-				top: 185px;
-			}
+		h3 {
+			font-size: 12em;
+			letter-spacing: 5px;
+			margin: 0;
+			color: $light-green;
+		}
+		p:first-of-type {
+			font-size: 5.6em;
+			font-family: 'bitter';
+			margin-bottom: .8em;
+			color: $orange; 
+		}
+		p:last-of-type {
+			font-size: 4.9em;
+			font-family: 'sacramento';
+			font-weight: 600;
+			color: $torquise;
 		}
 	}
 	.second {
@@ -63,19 +49,13 @@ p {
 
 	}
 	.fourth {
-		background-image: url(img/5C7A5503.JPG);
-		background-size: cover;
-		background-position: left;
+		background-image: url(img/wendy2.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
 		border-radius: 50%;
+		//width: 350px;
 		height: 350px;
-		width: 350px;
-		-webkit-filter: grayscale(80%);
-		filter: grayscale(80%);
-		transition: .2s ease-in-out;
-		&:hover {
-			-webkit-filter: grayscale(0);
-			filter: grayscale(0);
-		}
 	}
 }
 
@@ -83,47 +63,28 @@ p {
 	margin: 1em 0 1.5em;
 	.container {
 		p {
-			font-size: 4em;
+			font-size: 5em;
 			font-family: 'sacramento';
-			font-weight: 400;
-			letter-spacing: 1px;
 			line-height: 60px;
 			color: hsla(0, 0%, 45%, 1);
-			
+			span {
+				font-size: 1.3em;
+				font-weight: 900;
+				color: transparentize($orange, .2);
+			}
 		}
 	}
 }
 
 .third-about-me {
-	margin-bottom: 4em;
 	padding-bottom: 0;
 	.fifth {
-		h1 {
+		p {
+			font-size: 3.4em;
 			font-family: 'bitter';
-			&:nth-of-type(odd) {
-				letter-spacing: 3px;
-				font-weight: 900;
-				font-size: 3.5em;
-				span {
-					color: $torquise;
-				}
-			}
-			&:nth-of-type(even) {
-				position: absolute;
-				font-size: 3em;
-				font-weight: 400;
-			}
-			&:nth-of-type(3) {
-				position: absolute;
-				top: 80px;
-			}
-			&:nth-of-type(4) {
-				position: absolute;
-				top: 130px;
-				span {
-					font-weight: 600;
-					color: $orange;
-				}
+			line-height: 43px;
+			span {
+				color: $torquise;
 			}
 		}
 	}
@@ -132,24 +93,46 @@ p {
 	}
 }
 
+.random-things {
+	margin-bottom: 4em;
+	h2 {
+		margin: 0 0 .5em 0;
+	}
+	ul {
+		margin-left: 4em;
+		li {
+			list-style-type: disc;
+			font-size: 1.5em;
+			font-family: 'raleway';
+			margin-bottom: .5em;
+		}
+	}
+}
+
 .bottom-hero-image {
 	height: 300px;
-	background-image: url(img/5C7A5572.JPG);
+	background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(img/5C7A5572.JPG);
 	background-size: cover;
 	background-position: center;
 	.container {
 		height: 300px;
 		display: flex;
 		align-items: center;
-		button {
-			border: none;
-			background-color: transparentize($torquise, .2);
+		p {
 			color: white;
-			font-size: 2.5em;
-			font-family: 'bitter';
-			border-radius: 3px;
-			padding: .3em 2em;
-			margin-left: 4em;
+			font-size: 2em;
+			line-height: 40px;
+			margin: 0;
+			a {
+				color: white;
+				text-decoration: none;
+				font-size: 2em;
+				font-family: 'bitter';
+				transition: .2s ease-in-out;
+				&:hover {
+					color: $lime-green;
+				}
+			}	
 		}
 	}
 }

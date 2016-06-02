@@ -163,7 +163,7 @@ function meal_loop_shortcode( $atts ) {
 					$output .= '</a>';
 			    $output .= '</div>'; 
 		    	$output .= '<div class="col-sm-4 author">';
-					$output .= '<img src="http://placehold.it/250x250">';
+					$output .= '<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wendy.jpg">';
 				$output .= '</div>';
 				
        		$output .= '</div>';

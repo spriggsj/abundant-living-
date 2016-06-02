@@ -2,9 +2,8 @@
 	
 	<header class="hero-banner">
 		<div class="container">
-			<h1>living <span>healthy</span> should be easy</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolores harum fugiat praesentium corrupti illo ducimus, velit non! Quod dolores harum fugiat praesentium corrupti illo ducimus.</p>
-			<p>Sign up for a free membership and you’ll get instant access to a lot more valuable information created exclusively for you!</p>
+			<h1>Helping woman and moms is my passion</h1>
+			<p>I invite you to join me on this journey.  I am a real mom with the same challenges you have.  I have a messy, imperfect life.  But everyday we are given we have another opportunity to change, grow, transform ourselves and families.  As woman we are the center of the home and have the opportunity to mold and teach.  We have power in numbers.  I'd love to get to know you so we can encourage each other.  As a wellness coach and mommy I've put together simple, raw, healthy meals, toxic free tips for your home and family. Lets do Life together.</p>
 			<a href="http://localhost:8080/register/">Let's Get Started</a>
 		</div>
 	</header>

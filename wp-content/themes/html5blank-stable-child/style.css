@@ -8270,7 +8270,7 @@ a {
 */
 .hero-banner {
   height: 600px;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/banner.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/hero-banner.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -8338,15 +8338,7 @@ p {
 }
 
 .about-wendy {
-  padding: 1em 0;
-}
-
-.about-wendy .container {
-  display: flex;
-}
-
-.about-wendy .container h1 {
-  margin: 0;
+  margin-bottom: 2em;
 }
 
 .first-about-me {
@@ -8354,29 +8346,25 @@ p {
   padding-top: 0;
 }
 
-.first-about-me .first h1:nth-of-type(1) {
+.first-about-me .first h3 {
+  font-size: 12em;
+  letter-spacing: 5px;
+  margin: 0;
   color: #79bd8f;
-  font-size: 10em;
-  font-family: 'bitter';
-  text-transform: uppercase;
-  letter-spacing: 3px;
 }
 
-.first-about-me .first h1:nth-of-type(2) {
+.first-about-me .first p:first-of-type {
+  font-size: 5.6em;
+  font-family: 'bitter';
+  margin-bottom: .8em;
   color: #ff5138;
-  font-size: 4.8em;
-  font-family: 'bitter';
-  letter-spacing: 7px;
-  position: absolute;
-  top: 113px;
 }
 
-.first-about-me .first h1:nth-of-type(3) {
-  color: #00a388;
+.first-about-me .first p:last-of-type {
   font-size: 4.9em;
+  font-family: 'sacramento';
   font-weight: 600;
-  position: absolute;
-  top: 185px;
+  color: #00a388;
 }
 
 .first-about-me .second {
@@ -8384,20 +8372,12 @@ p {
 }
 
 .second-about-me .fourth {
-  background-image: url(img/5C7A5503.JPG);
-  background-size: cover;
-  background-position: left;
+  background-image: url(img/wendy2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
   height: 350px;
-  width: 350px;
-  -webkit-filter: grayscale(80%);
-  filter: grayscale(80%);
-  transition: .2s ease-in-out;
-}
-
-.second-about-me .fourth:hover {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
 }
 
 .quote {
@@ -8405,57 +8385,54 @@ p {
 }
 
 .quote .container p {
-  font-size: 4em;
+  font-size: 5em;
   font-family: 'sacramento';
-  font-weight: 400;
-  letter-spacing: 1px;
   line-height: 60px;
   color: #737373;
 }
 
+.quote .container p span {
+  font-size: 1.3em;
+  font-weight: 900;
+  color: rgba(255, 81, 56, 0.8);
+}
+
 .third-about-me {
-  margin-bottom: 4em;
   padding-bottom: 0;
 }
 
-.third-about-me .fifth h1 {
+.third-about-me .fifth p {
+  font-size: 3.4em;
   font-family: 'bitter';
+  line-height: 43px;
 }
 
-.third-about-me .fifth h1:nth-of-type(odd) {
-  letter-spacing: 3px;
-  font-weight: 900;
-  font-size: 3.5em;
-}
-
-.third-about-me .fifth h1:nth-of-type(odd) span {
+.third-about-me .fifth p span {
   color: #00a388;
 }
 
-.third-about-me .fifth h1:nth-of-type(even) {
-  position: absolute;
-  font-size: 3em;
-  font-weight: 400;
+.random-things {
+  margin-bottom: 4em;
 }
 
-.third-about-me .fifth h1:nth-of-type(3) {
-  position: absolute;
-  top: 80px;
+.random-things h2 {
+  margin: 0 0 .5em 0;
 }
 
-.third-about-me .fifth h1:nth-of-type(4) {
-  position: absolute;
-  top: 130px;
+.random-things ul {
+  margin-left: 4em;
 }
 
-.third-about-me .fifth h1:nth-of-type(4) span {
-  font-weight: 600;
-  color: #ff5138;
+.random-things ul li {
+  list-style-type: disc;
+  font-size: 1.5em;
+  font-family: 'raleway';
+  margin-bottom: .5em;
 }
 
 .bottom-hero-image {
   height: 300px;
-  background-image: url(img/5C7A5572.JPG);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/5C7A5572.JPG);
   background-size: cover;
   background-position: center;
 }
@@ -8466,15 +8443,23 @@ p {
   align-items: center;
 }
 
-.bottom-hero-image .container button {
-  border: none;
-  background-color: rgba(0, 163, 136, 0.8);
+.bottom-hero-image .container p {
   color: white;
-  font-size: 2.5em;
+  font-size: 2em;
+  line-height: 40px;
+  margin: 0;
+}
+
+.bottom-hero-image .container p a {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
   font-family: 'bitter';
-  border-radius: 3px;
-  padding: .3em 2em;
-  margin-left: 4em;
+  transition: .2s ease-in-out;
+}
+
+.bottom-hero-image .container p a:hover {
+  color: #beeb9f;
 }
 
 .recent-post {
@@ -8485,7 +8470,6 @@ p {
 
 .recent-post h2 {
   text-align: center;
-  font-size: 3.5em;
 }
 
 .recent-post h3 {
