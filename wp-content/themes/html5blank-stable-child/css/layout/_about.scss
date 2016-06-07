@@ -8,7 +8,15 @@ p {
 	background-size: cover;
 	background-position: center;
 	.container {
-
+		display: flex;
+		align-items: flex-end;
+		height: 400px;
+		h2 {
+			font-size: 4em;			
+			color: white;
+			font-family: 'great vibes';
+			letter-spacing: 1px;
+		}
 	}
 }
 
@@ -82,6 +90,8 @@ p {
 			line-height: 44px;
 			span {
 				color: $torquise;
+				font-weight: 600;
+				letter-spacing: 1px;
 			}
 		}
 	}

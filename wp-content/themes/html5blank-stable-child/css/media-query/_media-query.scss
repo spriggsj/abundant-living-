@@ -1,0 +1,210 @@
+@media (max-width: 991px) {
+	
+	// Healthy Living Tips
+
+	.recent-post .older-recent-post .older-post-container {
+		flex-direction: column;
+		img {
+			margin-bottom: 2em;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+
+	// Main Nav
+
+	#menu-primary {
+		display: flex;
+		width: 100%;
+		li {
+			text-align: center;
+		}
+	}
+
+	// Healthy Living Tips
+
+	.recent-post .newest-recent-post {
+		display: flex;
+	    img {
+	    	width: 180px;
+	    	height: 180px;
+	    	margin-right: 2em;
+	    }
+	}
+	.recent-post .older-recent-post .older-post-container {
+		flex-direction: row;
+	}
+
+	// View All Post Anchor Tag
+
+	.recent-post .view-all-post {
+		margin-right: 2em;
+	}
+
+	.meal-post .view-all-post {
+		margin: 1em 0 3em;
+	}
+
+	// About Page
+
+	.quote .container p {
+		text-align: center;
+	}
+
+	// Members Blog Page
+
+	.archive-post section a img {
+		margin-left: 1em;
+	}
+
+	// Affiliates image 
+
+	.affiliate .affiliate-image img {
+		margin-bottom: 2em;
+	}
+}
+
+@media (max-width: 562px) {
+
+	// register input field
+	.feup-pure-form-aligned .feup-pure-control-group label {
+		text-align: left;
+		font-weight: 600;
+		padding-left: 0;
+	}
+	.feup-pure-form input[type=text], .feup-pure-form input[type=password] {
+	    width: 100% !important;
+	}
+
+	// Login Page
+
+	.ewd-feup-text-input {
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 425px) {
+
+	// Header Hero Banner
+
+	.hero-banner h1 {
+		font-size: 10vw;
+	}
+	
+	// Healthy Living Tips
+
+	.recent-post .newest-recent-post {
+		flex-direction: column;
+		padding-bottom: 0;
+		img {
+			width: 377px;
+			height: 283px;
+			max-width: 100%;
+			margin-right: 0;
+		}
+	}
+
+	.recent-post .older-recent-post .older-post-container {
+		flex-direction: column;
+		padding-bottom: 0;
+		img {
+			width: 377px;
+			height: 283px;
+			max-width: 100%;
+			margin-right: 0;
+		}
+	}
+
+	// Meal Plan
+	.meal-post .recipe {
+		flex-direction: column;
+		margin: 0 auto;
+		img {
+			margin: 0 0 2em;
+			width: 425px;
+			max-width: 100%;
+		}
+	}
+
+	// About Page
+
+	.quote .container p {
+		font-size: 3.5em;
+		text-align: center;
+		line-height: 40px;
+	}
+
+	.third-about-me .fifth p {
+		font-size: 3em;
+		line-height: 40px;
+	}
+	
+	.random-things h2 {
+		font-size: 3em;
+	}
+
+	.bottom-hero-image .container p {
+		line-height: 30px;
+	}
+
+	// Members Blog Page
+
+	.archive-post section {
+		flex-direction: column;
+		a {
+			text-align: center;
+			img {
+				width: 390px;
+				max-width: 90%;
+				margin-bottom: 2em;
+			}
+		}
+	}
+	.archive-post section .archive-blog-post-page {
+		margin-right: 2em;
+	}
+	.archive-post section a img {
+		margin-left: 0;
+	}
+	.feup-pure-form input[type=text], .feup-pure-form input[type=password] {
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 375px) {
+
+	// About Page
+	.first-about-me .first h1 {
+		font-size: 6.5em; 
+	}
+	.first-about-me .first p {
+		font-size: 3.67em;
+	}
+}
+
+@media (max-width: 320px) {
+	// About Page
+
+	.first-about-me .first h1 {
+		font-size: 5.5em; 
+	}
+
+	.first-about-me .first p {
+		font-size: 3.15em;
+	}
+
+	.quote .container p {
+		font-size: 3em;
+		text-align: center;
+	}
+
+	.third-about-me .fifth p {
+		font-size: 2.5em;
+	}
+	
+	.random-things h2 {
+		font-size: 2.5em;
+	}
+}
+

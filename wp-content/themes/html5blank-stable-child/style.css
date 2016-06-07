@@ -8050,8 +8050,12 @@ html, body {
   text-decoration: none;
 }
 
+.main-content {
+  padding: 4em 0;
+}
+
 h1 {
-  font-family: 'Sacramento';
+  font-family: 'great vibes';
 }
 
 h2 {
@@ -8120,6 +8124,7 @@ a {
   display: inline-block;
   vertical-align: top;
   margin: 11px 0 0 0;
+  letter-spacing: 1px;
 }
 
 .main-img .main-logo div h1 span {
@@ -8174,7 +8179,6 @@ a {
 
 .navbar-static-top {
   margin-bottom: 0;
-  border-bottom: 3px solid #00a388;
 }
 
 .navbar-custom {
@@ -8249,6 +8253,28 @@ a {
 
 #fixednav {
   display: block;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle {
+  border-radius: 0;
+  border: 1px solid #757373;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  border: 1px solid #503838;
+}
+
+.navbar-toggle {
+  border-radius: 0;
+  border: 1px solid #757373;
+}
+
+.navbar-toggle .icon-bar {
+  border: 1px solid #503838;
 }
 
 .secondary-nav {
@@ -8351,6 +8377,19 @@ p {
   background-position: center;
 }
 
+.hero-image .container {
+  display: flex;
+  align-items: flex-end;
+  height: 400px;
+}
+
+.hero-image .container h2 {
+  font-size: 4em;
+  color: white;
+  font-family: 'great vibes';
+  letter-spacing: 1px;
+}
+
 .about-wendy {
   margin-bottom: 2em;
 }
@@ -8421,6 +8460,8 @@ p {
 
 .third-about-me .fifth p span {
   color: #00a388;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .random-things {
@@ -8600,8 +8641,169 @@ p {
   margin-bottom: 0;
 }
 
+.meal-post .wendy-front-page img {
+  box-shadow: 0 0 1px black;
+}
+
 .meal-post .view-all-post {
   float: right;
+}
+
+@media (max-width: 991px) {
+  .recent-post .older-recent-post .older-post-container {
+    flex-direction: column;
+  }
+  .recent-post .older-recent-post .older-post-container img {
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 767px) {
+  #menu-primary {
+    display: flex;
+    width: 100%;
+  }
+  #menu-primary li {
+    text-align: center;
+  }
+  .recent-post .newest-recent-post {
+    display: flex;
+  }
+  .recent-post .newest-recent-post img {
+    width: 180px;
+    height: 180px;
+    margin-right: 2em;
+  }
+  .recent-post .older-recent-post .older-post-container {
+    flex-direction: row;
+  }
+  .recent-post .view-all-post {
+    margin-right: 2em;
+  }
+  .meal-post .view-all-post {
+    margin: 1em 0 3em;
+  }
+  .quote .container p {
+    text-align: center;
+  }
+  .archive-post section a img {
+    margin-left: 1em;
+  }
+  .affiliate .affiliate-image img {
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 562px) {
+  .feup-pure-form-aligned .feup-pure-control-group label {
+    text-align: left;
+    font-weight: 600;
+    padding-left: 0;
+  }
+  .feup-pure-form input[type=text], .feup-pure-form input[type=password] {
+    width: 100% !important;
+  }
+  .ewd-feup-text-input {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero-banner h1 {
+    font-size: 10vw;
+  }
+  .recent-post .newest-recent-post {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .recent-post .newest-recent-post img {
+    width: 377px;
+    height: 283px;
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .recent-post .older-recent-post .older-post-container {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .recent-post .older-recent-post .older-post-container img {
+    width: 377px;
+    height: 283px;
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .meal-post .recipe {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .meal-post .recipe img {
+    margin: 0 0 2em;
+    width: 425px;
+    max-width: 100%;
+  }
+  .quote .container p {
+    font-size: 3.5em;
+    text-align: center;
+    line-height: 40px;
+  }
+  .third-about-me .fifth p {
+    font-size: 3em;
+    line-height: 40px;
+  }
+  .random-things h2 {
+    font-size: 3em;
+  }
+  .bottom-hero-image .container p {
+    line-height: 30px;
+  }
+  .archive-post section {
+    flex-direction: column;
+  }
+  .archive-post section a {
+    text-align: center;
+  }
+  .archive-post section a img {
+    width: 390px;
+    max-width: 90%;
+    margin-bottom: 2em;
+  }
+  .archive-post section .archive-blog-post-page {
+    margin-right: 2em;
+  }
+  .archive-post section a img {
+    margin-left: 0;
+  }
+  .feup-pure-form input[type=text], .feup-pure-form input[type=password] {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .first-about-me .first h1 {
+    font-size: 6.5em;
+  }
+  .first-about-me .first p {
+    font-size: 3.67em;
+  }
+}
+
+@media (max-width: 320px) {
+  .first-about-me .first h1 {
+    font-size: 5.5em;
+  }
+  .first-about-me .first p {
+    font-size: 3.15em;
+  }
+  .quote .container p {
+    font-size: 3em;
+    text-align: center;
+  }
+  .third-about-me .fifth p {
+    font-size: 2.5em;
+  }
+  .random-things h2 {
+    font-size: 2.5em;
+  }
 }
 
 .meal {
@@ -8711,7 +8913,7 @@ p {
 .members-single-page {
   width: 750px;
   margin: 0 auto;
-  padding-bottom: 4em;
+  padding: 0 0 3em;
   max-width: 90%;
 }
 
@@ -8920,7 +9122,8 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 }
 
 .archive-post section img {
-  width: 300px;
+  width: 200px;
+  max-width: 200px;
 }
 
 .archive-post section .archive-blog-post-page {

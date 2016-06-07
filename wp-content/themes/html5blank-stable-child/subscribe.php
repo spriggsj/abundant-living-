@@ -7,8 +7,7 @@
 			<div class="members-single-page">
 			<!-- CONTENT -->
 			
-			<!-- <?php //if ( has_post_thumbnail() ) {the_post_thumbnail();} -->the_content();?>
-				<!--DISPLAY CUSTOM POSTS -->
+			
 			<article class="members-registration">		
 				<p>
 					<?php $loop = new WP_Query( array( 'post_type' => 'members_posts', 'posts_per_page' => 10 ) ); ?> 
@@ -40,9 +39,6 @@
 					?>
 				</p>
 			</article>
-
-				<h2>Register</h2>
-				<?php echo do_shortcode( '[register]' ); ?>
 
 				<!--END CUSTOM POSTS-->
 					
