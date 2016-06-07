@@ -169,15 +169,17 @@ function custom_loop_shortcode( $atts ) {
 		        if ($i == 0 ){
 			      	$output .= '<div class="col-sm-6 newest-recent-post">';
 			      		$output .= get_the_post_thumbnail($post_id, 'full');
-			      		$output .= '<h3>';
-		      				$output .= get_the_title();
-		      			$output .= '</h3>';
-		      			$output .= '<span class="date">';
-		      				$output .= get_the_time("F j, Y");
-		      			$output .= '</span>';
-			      		$output .= '<p>';
-			      			$output .= get_the_excerpt($post_id);
-			      		$output .= '</p>';
+			      		$output .= '<aside>';
+				      		$output .= '<h3>';
+			      				$output .= get_the_title();
+			      			$output .= '</h3>';
+			      			$output .= '<span class="date">';
+			      				$output .= get_the_time("F j, Y");
+			      			$output .= '</span>';
+				      		$output .= '<p>';
+				      			$output .= get_the_excerpt($post_id);
+				      		$output .= '</p>';
+				      	$output .= '</aside>';
 			      	$output .= '</div>';
 
 		        } else {

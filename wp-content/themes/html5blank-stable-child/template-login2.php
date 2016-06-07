@@ -2,7 +2,7 @@
 	<main role="main">
 		<!-- section -->
 		<section id="login">
-			<h2>You Have successfully Logged out</h2>
+			<h2>You have successfully logged out</h2>
 
 			<h2><?php the_title(); ?></h2>
 
