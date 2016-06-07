@@ -75,7 +75,7 @@
 	</section>
 	<section class="bottom-hero-image">
 		<div class="container">
-			<p><a href="http://localhost:8001/register/">Join Me </a> to receive exclusive healthy recipes, encouraging </br> & inspirational and wellness tips</p>
+			<p><a href="http://localhost:8080/register/">Join Me </a> to receive exclusive healthy recipes, encouraging </br> & inspirational and wellness tips</p>
 		</div>
 	</section>
 
