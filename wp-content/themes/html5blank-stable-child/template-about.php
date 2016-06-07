@@ -2,7 +2,7 @@
 	
 	<header class="hero-image">
 		<div class="container">
-			
+			<h2>helping woman and moms is my passion</h2>
 		</div>
 	</header>
 
@@ -48,7 +48,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4 fifth">
-					<p>I want to meet <span>you</span>. <strong>Please send me a <span>comment</span>.</strong> Tell me who you are and your personal story. <strong>Lets do life <span>together</span>.</strong></p>
+					<p>I want to meet you. Please send me a comment. Tell me who you are and your personal story. <span>Lets do life together</span>.</p>
 				</div>
 				<div class="col-sm-8 sixth">
 					<p>Kids toys you would think they would be safe right? Wrong! Many of the toys are imported from places like China with very poor regulations. These are the toys our children put in their mouths, lay on and play with.</p>

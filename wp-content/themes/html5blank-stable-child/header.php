@@ -22,7 +22,7 @@
                 <!-- Brand and toggle get grouped for better mobile display --> 
                 <div class="container-fluid"> 
                     <div class="row">
-                        <div class="col-xs-7 col-sm-6 col-md-6 main-img">
+                        <div class="col-xs-7 col-sm-6 main-img">
                             <a href="<?php echo home_url(); ?>" class="main-logo">
                                 <?php include 'logo.php'; ?>
                                 <div>
@@ -32,7 +32,7 @@
                             </a>
                         </div>
 
-                        <div class="col-xs-5 col-sm-6 col-md-6">
+                        <div class="col-xs-5 col-sm-6">
                             <div class="row">
                                 <div class="col-xs-12">
                                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -40,7 +40,7 @@
                                         <span class="icon-bar"></span> 
                                         <span class="icon-bar"></span> 
                                     </button>
-                                </div> 
+                                <!-- </div>  -->
                      
                             <!-- Collect the nav links, forms, and other content for toggling --> 
                                 <div class="collapse navbar-collapse navHeaderCollapse pull-right"> 
