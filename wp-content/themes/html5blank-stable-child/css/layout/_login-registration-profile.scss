@@ -14,10 +14,13 @@
 	}
 }
 
+#ewd-feup-login {
+	font-size: 1.5em;
+}
+
 // LOGIN NAME FOR INPUT BOX
 
 .feup-pure-form-aligned .feup-pure-control-group label {
-	font-size: 1.5em;
 	font-weight: 400;
 }
 
@@ -25,7 +28,6 @@
 
 .ewd-feup-text-input {
 	display: inline-block;
-	font-size: 1.5em;
 	border: 1px solid hsla(0, 0%, 80%, 1);
 	border-radius: 3px;
 	width: 65%;
@@ -41,7 +43,6 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 	padding: 15px 25px;
 	border-radius: 3px;
 	border: none;
-	font-size: 1.5em;
 	letter-spacing: 1px;
 	transition: .3s ease-in-out;
 	&:hover {
