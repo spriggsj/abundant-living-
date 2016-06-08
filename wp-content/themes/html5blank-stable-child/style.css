@@ -8605,7 +8605,7 @@ p {
 
 .meal-post h2 {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 1.3em;
 }
 
 .meal-post .recipe {
@@ -8636,8 +8636,33 @@ p {
   margin-bottom: 0;
 }
 
+.meal-post .wendy-front-page {
+  text-align: right;
+}
+
 .meal-post .wendy-front-page img {
-  box-shadow: 0 0 1px black;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.meal-post .wendy-front-page p {
+  margin-bottom: 1.5em;
+  text-align: left;
+}
+
+.meal-post .wendy-front-page a {
+  font-size: 1.7em;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #ff5138;
+  color: #ffffff;
+  padding: .5em 1em;
+  transition: .3s ease-in-out;
+}
+
+.meal-post .wendy-front-page a:hover {
+  text-decoration: none;
+  background-color: #00a388;
 }
 
 .meal-post .view-all-post {
@@ -8978,12 +9003,20 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   font-weight: 600;
 }
 
+#registration .feup-pure-control-group {
+  font-size: 1.5em;
+}
+
+#registration p {
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
 .feup-pure-form input[type=text], .feup-pure-form input[type=password] {
   width: 65%;
 }
 
 #ewd-feup-password-result {
-  font-size: 1.5em;
   border-radius: 3px;
 }
 

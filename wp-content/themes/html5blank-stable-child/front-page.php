@@ -33,7 +33,9 @@
 			<div class="row">
 				<?php echo do_shortcode( '[meal-loop]' ); ?>
 				<div class="col-sm-4 wendy-front-page">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wendy3.JPG">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wendy4.jpg">
+					<p>As a wife, mommy, health coach, writer gourmet healthy cook and natural life enthusiast I've prepared a plan for you. Please join me in transforming your family's life.</p>
+					<a href="http://localhost:8080/register/">Join me</a>
 				</div>
 			</div>
 		</div>
