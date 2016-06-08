@@ -43,11 +43,11 @@
 				<!--END CUSTOM POSTS-->
 					
 					<!-- need to change page_id when site is live  -->
-
+				
+				<?php echo do_shortcode( '[register]' ); ?>		
+				
 			</div>		
 		</div>
 	</div>
-	
-	
 	
 <?php get_footer(); ?>

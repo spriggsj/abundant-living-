@@ -8654,7 +8654,7 @@ p {
   font-size: 1.7em;
   display: inline-block;
   border-radius: 3px;
-  background-color: #ff5138;
+  background-color: #00a388;
   color: #ffffff;
   padding: .5em 1em;
   transition: .3s ease-in-out;
@@ -8662,7 +8662,7 @@ p {
 
 .meal-post .wendy-front-page a:hover {
   text-decoration: none;
-  background-color: #00a388;
+  background-color: #ff5138;
 }
 
 .meal-post .view-all-post {
@@ -9031,6 +9031,56 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   margin-bottom: 1em;
   letter-spacing: 1px;
   font-weight: 600;
+}
+
+.login {
+  background-color: #00a388;
+  padding: 0 3.55em;
+}
+
+.login #ewd-feup-login-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login #ewd-feup-login-form .feup-pure-control-group {
+  display: flex;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.login #ewd-feup-login-form .feup-pure-control-group .ewd-feup-field-label, .login #ewd-feup-login-form .feup-pure-control-group .ewd-feup-login-label {
+  width: 5.5em;
+  color: #ffffff;
+  padding: 0 10px 0 0;
+  margin: 3px 0 0;
+}
+
+.login #ewd-feup-login-form .feup-pure-control-group:last-of-type label {
+  width: 0;
+  padding: 0;
+}
+
+.login #ewd-feup-login-form .ewd-feup-text-input {
+  height: 27px;
+  margin: 0;
+  border-radius: 0;
+  border: 1px solid #ffffff;
+}
+
+.login #ewd-feup-login-form input[type="submit"] {
+  height: 28px;
+  padding: 0 13px;
+  margin-left: 1em;
+  background-color: #ffffff;
+  color: #00a388;
+  border-radius: 0;
+  transition: .3s ease-in-out;
+}
+
+.login #ewd-feup-login-form input[type="submit"]:hover {
+  background-color: #ff5138;
+  color: #ffffff;
 }
 
 .affiliate {
