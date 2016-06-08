@@ -45,13 +45,13 @@
 			font-size: 1.7em;
 			display: inline-block;
 			border-radius: 3px;
-			background-color: $orange;
+			background-color: $torquise;
 			color: #ffffff;
 			padding: .5em 1em;
 			transition: .3s ease-in-out;
 			&:hover {
 				text-decoration: none;
-				background-color: $torquise;
+				background-color: $orange;
 			}
 		}
 	}

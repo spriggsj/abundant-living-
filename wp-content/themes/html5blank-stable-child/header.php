@@ -17,6 +17,10 @@
     </head>
 
     <body>
+
+        <div class="login">
+            <?php wp_nav_menu( array( 'theme_location' => 'login-menu' ) ); ?>
+        </div>
         <nav class="navbar navbar-transparent navbar-static-top">
             <div class="navbar  navbar-custom" style="border-radius:0px;"> 
                 <!-- Brand and toggle get grouped for better mobile display --> 
