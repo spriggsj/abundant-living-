@@ -42,9 +42,7 @@
 
 				<!--END CUSTOM POSTS-->
 					
-					<!-- need to change page_id when site is live  -->
-				
-				<?php echo do_shortcode( '[register]' ); ?>		
+					<!-- need to change page_id when site is live  -->	
 				
 			</div>		
 		</div>
