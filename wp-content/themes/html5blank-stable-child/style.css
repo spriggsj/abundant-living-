@@ -8990,24 +8990,24 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   background-color: #029078;
 }
 
-#ewd-feup-register-form-div {
+#ewd-feup-register-form-div, #registration {
   padding-top: 2em;
   width: 750px;
   margin: 0 auto;
   max-width: 90%;
 }
 
-#ewd-feup-register-form-div h2 {
+#ewd-feup-register-form-div h2, #registration h2 {
   margin-bottom: 1em;
   letter-spacing: 1px;
   font-weight: 600;
 }
 
-#ewd-feup-register-form-div .feup-pure-control-group {
+#ewd-feup-register-form-div .feup-pure-control-group, #registration .feup-pure-control-group {
   font-size: 1.5em;
 }
 
-#ewd-feup-register-form-div p {
+#ewd-feup-register-form-div p, #registration p {
   font-size: 1em;
   padding-bottom: 1em;
 }
