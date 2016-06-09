@@ -1,3 +1,19 @@
+#menu-login-logout {
+	display: flex;
+	justify-content: flex-end;
+	li {
+		margin-left: 1em;
+		a {
+			font-size: 1.3em;
+			line-height: 38px;
+			color: #ffffff;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
 .login {
 	background-color: $torquise;
 	padding: 0 3.55em;
@@ -34,10 +50,11 @@
 			background-color: #ffffff;
 			color: $torquise;
 			border-radius: 0;
+			border: 1px solid transparent;
 			transition: .3s ease-in-out;
 			&:hover {
-				background-color: $orange;
-				color: #ffffff;
+				border-color: $orange;
+				color: $orange;
 			}
 		}
 	}
