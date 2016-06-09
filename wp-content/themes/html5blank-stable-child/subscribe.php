@@ -42,12 +42,10 @@
 
 				<!--END CUSTOM POSTS-->
 					
-					<!-- need to change page_id when site is live  -->
-
+					<!-- need to change page_id when site is live  -->	
+				
 			</div>		
 		</div>
 	</div>
-	
-	
 	
 <?php get_footer(); ?>

@@ -72,7 +72,7 @@ function Insert_Login_Form($atts) {
 		if ($feup_success and $redirect_page != '#') {FEUPRedirect($redirect_page);}
 		
 		$ReturnString .= "<div id='ewd-feup-login' class='ewd-feup-login-form-div' class='ewd-feup-form-div'>";
-		if (isset($user_message['Message'])) {$ReturnString .= $user_message['Message'];}
+		//if (isset($user_message['Message'])) {$ReturnString .= $user_message['Message'];}
 		if (strpos($user_message['Message'], "Payment required.") !== false) {$ReturnString .= "</div>"; return $ReturnString;} //Payment required
 		if (in_array("Facebook", $Login_Options) or in_array("Twitter", $Login_Options)) {
 			$ReturnString .= "<div class='ewd-feup-social-login-options'>";

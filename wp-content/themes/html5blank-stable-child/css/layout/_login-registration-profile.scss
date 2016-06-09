@@ -52,8 +52,8 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 
 // REGISTRATION PAGE
 
-#registration {
-	padding: 4em 0;
+#ewd-feup-register-form-div, #registration {
+	padding-top: 2em;
 	width: 750px;
 	margin: 0 auto;
 	max-width: 90%;
@@ -61,6 +61,13 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 		margin-bottom: 1em;
 		letter-spacing: 1px;
 		font-weight: 600;
+	}
+	.feup-pure-control-group {
+		font-size: 1.5em;
+	}
+	p {
+		font-size: 1em;
+		padding-bottom: 1em;
 	}
 }
 
@@ -73,7 +80,6 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 // INDICATES IF PASSWORD IS TOO SHORT OR PASSWORD IS GOOD
 
 #ewd-feup-password-result {
-	font-size: 1.5em;
 	border-radius: 3px;
 }
 
