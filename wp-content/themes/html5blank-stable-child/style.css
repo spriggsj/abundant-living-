@@ -8990,24 +8990,24 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   background-color: #029078;
 }
 
-#registration {
-  padding: 4em 0;
+#ewd-feup-register-form-div {
+  padding-top: 2em;
   width: 750px;
   margin: 0 auto;
   max-width: 90%;
 }
 
-#registration h2 {
+#ewd-feup-register-form-div h2 {
   margin-bottom: 1em;
   letter-spacing: 1px;
   font-weight: 600;
 }
 
-#registration .feup-pure-control-group {
+#ewd-feup-register-form-div .feup-pure-control-group {
   font-size: 1.5em;
 }
 
-#registration p {
+#ewd-feup-register-form-div p {
   font-size: 1em;
   padding-bottom: 1em;
 }
@@ -9031,6 +9031,25 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   margin-bottom: 1em;
   letter-spacing: 1px;
   font-weight: 600;
+}
+
+#menu-login-logout {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#menu-login-logout li {
+  margin-left: 1em;
+}
+
+#menu-login-logout li a {
+  font-size: 1.3em;
+  line-height: 38px;
+  color: #ffffff;
+}
+
+#menu-login-logout li a:hover {
+  text-decoration: none;
 }
 
 .login {
@@ -9075,12 +9094,61 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   background-color: #ffffff;
   color: #00a388;
   border-radius: 0;
+  border: 1px solid transparent;
   transition: .3s ease-in-out;
 }
 
 .login #ewd-feup-login-form input[type="submit"]:hover {
-  background-color: #ff5138;
-  color: #ffffff;
+  border-color: #ff5138;
+  color: #ff5138;
+}
+
+#forgot-password {
+  width: 750px;
+  margin: 0 auto;
+  padding: 4em 0;
+  max-width: 90%;
+}
+
+#forgot-password .log-message {
+  margin: 0 0 1em 2em;
+}
+
+#forgot-password label, #forgot-password input {
+  font-size: 1.4em;
+}
+
+#forgot-password input[type="email"] {
+  width: 65%;
+}
+
+#forgot-password h2 {
+  font-weight: 600;
+  margin-bottom: .8em;
+}
+
+#confirm-lost-password {
+  width: 750px;
+  margin: 0 auto;
+  padding: 4em 0;
+  max-width: 90%;
+}
+
+#confirm-lost-password .log-message {
+  margin: 0 0 1em 2em;
+}
+
+#confirm-lost-password label, #confirm-lost-password input {
+  font-size: 1.4em;
+}
+
+#confirm-lost-password input[type="email"] {
+  width: 65%;
+}
+
+#confirm-lost-password h2 {
+  font-weight: 600;
+  margin-bottom: .8em;
 }
 
 .affiliate {

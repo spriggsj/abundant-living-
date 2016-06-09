@@ -44,7 +44,9 @@ function Insert_Confirm_Forgot_Password($atts) {
 	if ($feup_success and $redirect_page != '#') {FEUPRedirect($redirect_page);}
 		
 	$ReturnString .= "<div id='ewd-feup-edit-profile-form-div'>";
-	if (isset($user_message['Message'])) {$ReturnString .= $user_message['Message'];}
+	// $ReturnString .= "<p class='log-message'>";
+	// 	if (isset($user_message['Message'])) {$ReturnString .= $user_message['Message'];}
+	// $ReturnString .= "</p>";
 	$ReturnString .= "<form action='#' method='post' id='ewd-feup-edit-profile-form' class='feup-pure-form pure-form-aligned feup-pure-form-aligned'>";
 	$ReturnString .= "<input type='hidden' name='ewd-feup-check' value='" . sha1(md5($Time.$Salt)) . "'>";
 	$ReturnString .= "<input type='hidden' name='ewd-feup-time' value='" . $Time . "'>";
@@ -66,7 +68,7 @@ function Insert_Confirm_Forgot_Password($atts) {
 	$ReturnString .= "<label for='Confirm_User_Password' id='ewd-feup-edit-confirm-password' class='ewd-feup-field-label'>" . $feup_Label_Repeat_Password . ": </label>";
 	$ReturnString .= "<input type='password' class='ewd-feup-text-input' name='Confirm_User_Password' class='ewd-feup-text-input' value='' />";
 	$ReturnString .= "</div>";
-	$ReturnString .= "<div class='feup-pure-control-group'><label for='submit'></label><input type='submit' class='ewd-feup-submit feup-pure-button feup-pure-button-primary' name='Edit_Password_Submit' value='" . $feup_Label_Change_Password . "'></div>";
+	$ReturnString .= "<div class='feup-pure-control-group'><label for='submit'></label><input type='submit' class='ewd-feup-submit feup-pure-button feup-pure-button-primary' name='Edit_Password_Submit' value='" . "Submit" . "'></div>";
 	$ReturnString .= "</div>";
 	$ReturnString .= "</form>";
 
