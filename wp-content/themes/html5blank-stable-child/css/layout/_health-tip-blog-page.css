@@ -1,0 +1,22 @@
+.health-tip {
+  width: 750px;
+  margin: 0 auto;
+  padding-bottom: 4em;
+  max-width: 90%;
+}
+
+.health-tip .health-tip-title {
+  padding-bottom: 2em;
+}
+
+.health-tip .health-tip-title h1 {
+  margin-bottom: .4em;
+}
+
+.health-tip .health-tip-title span {
+  font-size: 1.3em;
+}
+
+.health-tip .health-tip-img img {
+  margin-bottom: 2em;
+}
