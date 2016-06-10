@@ -1,0 +1,33 @@
+// max-width: 562px
+
+@media (max-width: 562px) {
+
+	// hero banner
+
+	.hero-banner a {
+		margin-top: 0;
+	}
+
+	// svg 
+
+	#Layer_1 {
+		display: none;
+	}
+
+	// register input field
+
+	.feup-pure-form-aligned .feup-pure-control-group label {
+		text-align: left;
+		font-weight: 600;
+		padding-left: 0;
+	}
+	.feup-pure-form input[type=text], .feup-pure-form input[type=password] {
+	    width: 100% !important;
+	}
+
+	// Login Page
+
+	.ewd-feup-text-input {
+		width: 100% !important;
+	}
+}

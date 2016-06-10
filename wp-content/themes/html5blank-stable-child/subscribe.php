@@ -17,9 +17,9 @@
 					
 						$content = '';
 						$content .= '<div class="members-title">';
-							$content .= '<h2>';
+							$content .= '<h1>';
 								$content .= get_the_title();
-							$content .= '</h2>';
+							$content .= '</h1>';
 						$content .= '</div>';
 
 						$content .= '<div class="members-img">';

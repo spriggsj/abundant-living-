@@ -1,0 +1,26 @@
+// max-width: 991px
+
+@media (max-width: 1054px) {
+	.main-img .main-logo div p {
+		position: relative;
+		width: 427px;
+	}
+}
+
+@media (max-width: 991px) {
+
+	// svg
+
+	#Layer_1 {
+		//width: 100px !important;
+	}
+	
+	// Healthy Living Tips
+
+	.recent-post .older-recent-post .older-post-container {
+		flex-direction: column;
+		img {
+			margin-bottom: 2em;
+		}
+	}
+}

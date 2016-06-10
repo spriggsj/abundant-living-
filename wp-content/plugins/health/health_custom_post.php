@@ -1,8 +1,8 @@
 <?php
 /*
-*Plugin Name: Health Custom Post
+*Plugin Name: Healthy Living Tips
 *Plugin URI:
-*Description: Health Custom Post
+*Description: Healthy Living Tips
 *Version 1.0
 *Author: Roger Chang
 */
@@ -14,8 +14,8 @@ function rc_health_custom_post(){
 	register_post_type('health_post',
 		[
 		'labels' => [
-			'name' => 'Health Custom Post',
-			'singular_name' => 'Health Custom Post',
+			'name' => 'Healthy Living Tips',
+			'singular_name' => 'Healthy Living Tips',
 			'edit_item' => 'Edit item',
 			'new_item' => 'New item',
 			'view_item' => 'View item',
@@ -204,7 +204,7 @@ function custom_loop_shortcode( $atts ) {
 				$i++;
 		    endwhile;
 
-				$output .= '<a href="http://localhost:8080/health_post/" class="view-all-post">';
+				$output .= '<a href="http://www.abundantlivingmommy.com/health_post/" class="view-all-post">';
 					$output .= 'View all';
 				$output .= '</a>';
        		$output .= '</div>';
