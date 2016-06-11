@@ -172,7 +172,7 @@ function tip_custom_loop_shortcode( $atts ) {
 	      			$output .= get_the_excerpt($post_id);
 	      		$output .= '</p>';
 			endwhile;
-			$output .= '<a href="http://localhost:8080/health-tip/" class="view-all-post">';
+			$output .= '<a href="http://www.abundantlivingmommy.com/health-tip/" class="view-all-post">';
 				$output .= 'View all';
 			$output .= '</a>';
 		$output .= '</div>';

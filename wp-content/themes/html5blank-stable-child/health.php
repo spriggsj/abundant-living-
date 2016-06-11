@@ -7,7 +7,7 @@
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 					<div class="health-title">
-						<h2><?php echo the_title() ; ?></h2>
+						<h1><?php echo the_title() ; ?></h1>
 						<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
 					</div>
 					<div class="health-img">

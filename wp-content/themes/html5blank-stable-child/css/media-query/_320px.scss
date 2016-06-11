@@ -1,0 +1,27 @@
+// max-width: 320px
+
+
+@media (max-width: 320px) {
+	// About Page
+
+	.first-about-me .first h1 {
+		font-size: 5.5em; 
+	}
+
+	.first-about-me .first p {
+		font-size: 3.15em;
+	}
+
+	.quote .container p {
+		font-size: 3em;
+		text-align: center;
+	}
+
+	.third-about-me .fifth p {
+		font-size: 2.5em;
+	}
+	
+	.random-things h2 {
+		font-size: 2.5em;
+	}
+}

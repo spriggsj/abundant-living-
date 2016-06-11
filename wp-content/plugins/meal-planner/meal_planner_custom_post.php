@@ -153,7 +153,7 @@ function meal_loop_shortcode( $atts ) {
 		        	$output .= '</article>';
 		      	$output .= '</div>'; 
 		    endwhile;
-			$output .= '<a href="http://localhost:8080/meal_post/" class="view-all-post">';
+			$output .= '<a href="http://www.abundantlivingmommy.com/meal_post/" class="view-all-post">';
 				$output .= 'View all';
 			$output .= '</a>';
 	    $output .= '</div>';

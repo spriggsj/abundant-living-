@@ -4,7 +4,7 @@
 		<!-- section -->
 		<div class="container archive-post">
 
-			<h2><?php _e( 'Meal Posts', 'html5blank' ); ?></h2>
+			<h1><?php _e( 'Meal Posts', 'html5blank' ); ?></h1>
 
 			<?php get_template_part('loop'); ?>
 
