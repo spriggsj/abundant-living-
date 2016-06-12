@@ -130,9 +130,9 @@ function members_custom_loop_shortcode( $atts ) {
 
     $the_query = new WP_Query($args);
     	$output .= '<article class="container">';
-    		$output .= '<h2>';
+    		$output .= '<h1>';
           		$output .= 'Members';
-          	$output .= '</h2>';
+          	$output .= '</h1>';
 
 		    while ($the_query->have_posts()) : $the_query->the_post();
 		      $post_id = get_the_ID();

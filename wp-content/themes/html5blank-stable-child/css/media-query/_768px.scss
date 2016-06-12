@@ -1,0 +1,95 @@
+// max-width: 768px;
+
+@media (max-width: 820px) {
+
+	// fixed nav 
+
+	.fudge {
+		display: none !important;
+		opacity: 0;
+	}
+
+	#fixedbar ul {
+		margin-right: 0;
+	}
+
+	// main nav
+
+	.main-nav ul {
+		margin-right: 0;
+		li {
+			a {
+				letter-spacing: 0;
+			}
+		}
+	}
+
+	// logo
+
+	.main-img .main-logo div h1 {
+		position: relative;
+		width: 307px;
+		margin-bottom: .05em;
+	}
+}
+
+@media (max-width: 767px) {
+
+	// Main Nav
+
+	#menu-primary {
+		display: flex;
+		width: 100%;
+		li {
+			text-align: center;
+		}
+	}
+
+	// Healthy Living Tips
+
+	.recent-post .newest-recent-post {
+		display: flex;
+	    img {
+	    	width: 200px;
+	    	height: 200px;
+	    	margin-right: 2em;
+	    }
+	}
+
+	.recent-post .older-recent-post .older-post-container {
+		flex-direction: row;
+	}
+
+	// View All Post Anchor Tag
+
+	.recent-post .view-all-post {
+		margin-right: 2em;
+	}
+
+	.meal-post .view-all-post {
+		margin: 1em 0 3em;
+	}
+
+	// About Page
+
+	.quote .container p {
+		text-align: center;
+	}
+
+	// Members Blog Page
+
+	.archive-post section a img {
+		margin-left: 1em;
+	}
+
+	// Affiliates image 
+
+	.affiliate .affiliate-image img {
+		margin-bottom: 2em;
+	}
+
+	.meal-post .recipe img {
+		width: 200px;
+		height: 200px;
+	}
+}

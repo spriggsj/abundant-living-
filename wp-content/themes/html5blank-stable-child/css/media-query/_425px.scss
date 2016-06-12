@@ -1,0 +1,115 @@
+// max-width: 425px
+
+@media (max-width: 485px) {
+
+	.main-img .main-logo div p {
+		width: 315px;
+		line-height: 18px;
+	}
+
+	// hero banner
+
+	.hero-banner h1 {
+		font-size: 3em;
+	}
+
+	.hero-banner p {
+		line-height: 23px;
+	}
+
+}
+
+
+@media (max-width: 425px) {
+
+	// main logo
+
+	.main-img .main-logo div h1 {
+		font-size: 2em;
+	}
+	
+	// Healthy Living Tips
+
+	.recent-post .newest-recent-post {
+		flex-direction: column;
+		padding-bottom: 0;
+		img {
+			margin: 0 auto 2em;
+			width: 363px;
+			height: 283px;
+			max-width: 100%;
+			margin-right: 0;
+		}
+	}
+
+	.recent-post .older-recent-post .older-post-container {
+		flex-direction: column;
+		padding-bottom: 0;
+		img {
+			width: 363px;
+			height: 283px;
+			max-width: 100%;
+			margin: 0 auto 2em;
+		}
+	}
+
+	// Meal Plan
+
+	.meal-post .recipe {
+		flex-direction: column;
+		margin: 0 auto;
+		img {
+			margin: 0 auto 2em;
+			width: 363px;
+			height: 283px;
+			max-width: 100%;
+		}
+		article {
+			padding-left: 6px;
+		}
+	}
+
+	// About Page
+
+	.quote .container p {
+		font-size: 3.5em;
+		text-align: center;
+		line-height: 40px;
+	}
+
+	.third-about-me .fifth p {
+		font-size: 3em;
+		line-height: 40px;
+	}
+	
+	.random-things h2 {
+		font-size: 3em;
+	}
+
+	.bottom-hero-image .container p {
+		line-height: 30px;
+	}
+
+	// Members Blog Page
+
+	.archive-post section {
+		flex-direction: column;
+		a {
+			text-align: center;
+			img {
+				width: 390px;
+				max-width: 90%;
+				margin-bottom: 2em;
+			}
+		}
+	}
+	.archive-post section .archive-blog-post-page {
+		margin-right: 2em;
+	}
+	.archive-post section a img {
+		margin-left: 0;
+	}
+	.feup-pure-form input[type=text], .feup-pure-form input[type=password] {
+		width: 100% !important;
+	}
+}

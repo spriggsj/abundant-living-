@@ -28,7 +28,9 @@
                     <div class="row">
                         <div class="col-xs-7 col-sm-6 main-img">
                             <a href="<?php echo home_url(); ?>" class="main-logo">
-                                <?php include 'logo.php'; ?>
+                                <aside>
+                                    <?php include 'logo.php'; ?>
+                                </aside>
                                 <div>
                                     <h1 class="main-name">Abundant Living <span>Mommy</span></h1>
                                     <p>simple healthy tips, that will transform your family for the <span>abundant life</span></p>
@@ -71,7 +73,7 @@
             </div><!--end div class navbar  navbar-static-top navbar-custom-->
         </nav> 
                 
-        <nav class="navbar navbar-default"id="fixedbar" >
+        <nav class="navbar navbar-default fudge" id="fixedbar" >
             <div class="navbar  navbar-custom" style="border-radius:0px;"> 
                 <!-- Brand and toggle get grouped for better mobile display --> 
                 <div class="container-fluid"> 

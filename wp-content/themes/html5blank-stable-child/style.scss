@@ -36,7 +36,6 @@
 @import 'css/layout/_ebook.scss';
 @import 'css/layout/_health.scss';
 @import 'css/layout/_meal-planner.scss';
-@import 'css/media-query/_media-query.scss';
 @import 'css/layout/_meal-blog-page.scss';
 @import 'css/layout/_health-blog-page.scss';
 @import 'css/layout/_health-tip-blog-page.scss';
@@ -56,3 +55,12 @@
 // catagory page scss
 
 @import 'css/catagory/_catagory-single.scss';
+
+// media queries
+
+@import 'css/media-query/_991px.scss';
+@import 'css/media-query/_768px.scss';
+@import 'css/media-query/_562px.scss';
+@import 'css/media-query/_425px.scss';
+@import 'css/media-query/_375px.scss';
+@import 'css/media-query/_320px.scss';
