@@ -9,10 +9,23 @@
 
 @media (max-width: 991px) {
 
-	// svg
+	.login {
+		padding: 0;
+		justify-content: center;
+	}
 
-	#Layer_1 {
-		//width: 100px !important;
+	.btn-primary {
+		background-color: transparent;
+		border: none;
+		text-align: right;
+		&:hover {
+
+		}
+	}
+
+	.fudge {
+		display: none !important;
+		opacity: 0;
 	}
 	
 	// Healthy Living Tips
