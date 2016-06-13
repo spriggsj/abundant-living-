@@ -8881,6 +8881,7 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 #menu-login-logout {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 0;
 }
 
 #menu-login-logout li {
@@ -8900,6 +8901,8 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 .login {
   background-color: #00a388;
   padding: 0 3.55em;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .login #ewd-feup-login-form {
@@ -8946,6 +8949,10 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 .login #ewd-feup-login-form input[type="submit"]:hover {
   border-color: #ff5138;
   color: #ff5138;
+}
+
+.login-pop-up {
+  display: none;
 }
 
 #forgot-password {
@@ -9201,6 +9208,19 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 }
 
 @media (max-width: 991px) {
+  .login {
+    padding: 0;
+    justify-content: center;
+  }
+  .btn-primary {
+    background-color: transparent;
+    border: none;
+    text-align: right;
+  }
+  .fudge {
+    display: none !important;
+    opacity: 0;
+  }
   .recent-post .older-recent-post .older-post-container {
     flex-direction: column;
   }
@@ -9210,9 +9230,49 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 }
 
 @media (max-width: 820px) {
-  .fudge {
-    display: none !important;
-    opacity: 0;
+  .login {
+    padding: .3em 1.55em;
+  }
+  .login .login-bar-menu {
+    display: none;
+  }
+  .login-pop-up {
+    display: block;
+  }
+  .login-pop-up .btn-primary {
+    border: 1px solid #ffffff;
+  }
+  .login-pop-up .btn-primary:hover {
+    background-color: transparent;
+  }
+  .login-pop-up .btn-primary:focus {
+    background-color: transparent;
+    outline: none;
+  }
+  .login-pop-up .modal-content {
+    padding: 2em;
+    background-image: url(img/crossword.png);
+  }
+  .login-pop-up .modal-content #ewd-feup-login-form {
+    flex-direction: column;
+  }
+  .login-pop-up .modal-content #ewd-feup-login-form .feup-pure-control-group {
+    justify-content: flex-end;
+  }
+  .login-pop-up .modal-content #ewd-feup-login-form .ewd-feup-login-label {
+    color: #00a388;
+  }
+  .login-pop-up .modal-content #ewd-feup-login-form .ewd-feup-text-input {
+    padding: 15px 10px;
+    border: 1px solid #00a388;
+  }
+  .login-pop-up .modal-content #ewd-feup-login-form input[type="submit"] {
+    border: 1px solid #00a388;
+    transition: .3s ease-in-out;
+  }
+  .login-pop-up .modal-content #ewd-feup-login-form input[type="submit"]:hover {
+    color: #ffffff;
+    background-color: #00a388;
   }
   #fixedbar ul {
     margin-right: 0;
@@ -9274,6 +9334,9 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   .hero-banner a {
     margin-top: 0;
   }
+  .hero-banner h1 {
+    margin-top: 0;
+  }
   #Layer_1 {
     display: none;
   }
@@ -9296,7 +9359,7 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
     line-height: 18px;
   }
   .hero-banner h1 {
-    font-size: 3em;
+    font-size: 3.5em !important;
   }
   .hero-banner p {
     line-height: 23px;
@@ -9305,7 +9368,7 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 
 @media (max-width: 425px) {
   .main-img .main-logo div h1 {
-    font-size: 2em;
+    font-size: 2.5em !important;
   }
   .recent-post .newest-recent-post {
     flex-direction: column;
@@ -9381,6 +9444,7 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 @media (max-width: 375px) {
   .hero-banner h1 {
     margin-top: 0;
+    font-size: 3em !important;
   }
   .hero-banner p {
     line-height: 19px;

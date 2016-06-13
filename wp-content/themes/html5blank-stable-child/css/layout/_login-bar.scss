@@ -1,6 +1,7 @@
 #menu-login-logout {
 	display: flex;
 	justify-content: flex-end;
+	margin-bottom: 0;
 	li {
 		margin-left: 1em;
 		a {
@@ -17,6 +18,8 @@
 .login {
 	background-color: $torquise;
 	padding: 0 3.55em;
+	display: flex;
+	justify-content: flex-end;
 	#ewd-feup-login-form {
 		display: flex;
 		justify-content: flex-end;
@@ -58,4 +61,10 @@
 			}
 		}
 	}
+}
+
+// Login in pop up
+
+.login-pop-up {
+	display: none;
 }

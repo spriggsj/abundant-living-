@@ -19,7 +19,35 @@
     <body>
 
         <div class="login">
-            <?php wp_nav_menu( array( 'theme_location' => 'login-menu' ) ); ?>
+            <aside class="login-bar-menu">
+                <?php wp_nav_menu( array( 'theme_location' => 'login-menu' ) ); ?>
+            </aside>
+            
+            <aside class="login-pop-up">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">
+                    
+                    <?php 
+                        $UserCookie = CheckLoginCookie();
+                        $username  = $UserCookie['Username'];
+                        if($username){
+                            echo do_shortcode( '[user-data field_name="First Name"]' ); ?>
+                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                            <?php
+                        }else{
+                            echo "Login";
+                        }
+                    ?>
+
+                </button>
+
+                <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <?php echo do_shortcode( '[login-logout-toggle]' ); ?>
+                        </div>
+                    </div>
+                </div>
+            </aside>
         </div>
         <nav class="navbar navbar-transparent navbar-static-top">
             <div class="navbar  navbar-custom" style="border-radius:0px;"> 
