@@ -8398,12 +8398,12 @@ p {
 
 .first-about-me .first h1 {
   font-family: 'bitter';
-  font-size: 7em !important;
+  font-size: 5.7vw !important;
   margin: 0;
 }
 
 .first-about-me .first p {
-  font-size: 3.9em;
+  font-size: 3.25vw;
   margin: .6em 0;
 }
 
@@ -9208,6 +9208,9 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 }
 
 @media (max-width: 991px) {
+  .third-about-me .fifth p {
+    font-size: 3.7vw;
+  }
   .login {
     padding: 0;
     justify-content: center;
@@ -9291,6 +9294,15 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 }
 
 @media (max-width: 767px) {
+  .first-about-me .first h1 {
+    font-size: 7em !important;
+  }
+  .first-about-me .first p {
+    font-size: 4em;
+  }
+  .third-about-me .fifth p {
+    font-size: 4em;
+  }
   #menu-primary {
     display: flex;
     width: 100%;
@@ -9298,16 +9310,20 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   #menu-primary li {
     text-align: center;
   }
-  .recent-post .newest-recent-post {
-    display: flex;
-  }
   .recent-post .newest-recent-post img {
     width: 200px;
     height: 200px;
     margin-right: 2em;
+    float: left;
   }
   .recent-post .older-recent-post .older-post-container {
-    flex-direction: row;
+    display: block;
+  }
+  .recent-post .older-recent-post .older-post-container img {
+    width: 200px;
+    height: 200px;
+    margin: 0 2em 0 0;
+    float: left;
   }
   .recent-post .view-all-post {
     margin-right: 2em;
@@ -9324,9 +9340,13 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   .affiliate .affiliate-image img {
     margin-bottom: 2em;
   }
+  .meal-post .recipe {
+    display: block;
+  }
   .meal-post .recipe img {
     width: 200px;
     height: 200px;
+    float: left;
   }
 }
 
