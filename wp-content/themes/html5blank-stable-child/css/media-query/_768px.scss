@@ -78,6 +78,19 @@
 
 @media (max-width: 767px) {
 
+	// about page
+
+	.first-about-me .first h1 {
+		font-size: 7em !important;
+	}
+	.first-about-me .first p {
+		font-size: 4em;
+	}
+
+	.third-about-me .fifth p {
+		font-size: 4em;
+	}
+
 	// Main Nav
 
 	#menu-primary {
@@ -91,16 +104,22 @@
 	// Healthy Living Tips
 
 	.recent-post .newest-recent-post {
-		display: flex;
-	    img {
+   		img {
 	    	width: 200px;
 	    	height: 200px;
 	    	margin-right: 2em;
+	    	float: left;
 	    }
 	}
 
 	.recent-post .older-recent-post .older-post-container {
-		flex-direction: row;
+		display: block;
+		img {
+			width: 200px;
+	    	height: 200px;
+	    	margin: 0 2em 0 0;
+	    	float: left;
+		}
 	}
 
 	// View All Post Anchor Tag
@@ -131,8 +150,12 @@
 		margin-bottom: 2em;
 	}
 
-	.meal-post .recipe img {
-		width: 200px;
-		height: 200px;
+	.meal-post .recipe {
+		display: block;
+		img {
+			width: 200px;
+			height: 200px;
+			float: left;
+		}
 	}
 }

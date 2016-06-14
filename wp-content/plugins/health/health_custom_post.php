@@ -168,7 +168,7 @@ function custom_loop_shortcode( $atts ) {
 
 		        if ($i == 0 ){
 			      	$output .= '<div class="col-sm-6 newest-recent-post">';
-			      		$output .= get_the_post_thumbnail($post_id, 'full');
+				      	$output .= get_the_post_thumbnail($post_id, 'full');
 			      		$output .= '<aside>';
 				      		$output .= '<h3>';
 			      				$output .= get_the_title();
