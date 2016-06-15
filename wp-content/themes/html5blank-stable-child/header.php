@@ -49,105 +49,109 @@
                 </div>
             </aside>
         </div>
-        <nav class="navbar navbar-transparent navbar-static-top">
-            <div class="navbar  navbar-custom" style="border-radius:0px;"> 
-                <!-- Brand and toggle get grouped for better mobile display --> 
-                <div class="container-fluid"> 
-                    <div class="row">
-                        <div class="col-xs-7 col-sm-6 main-img">
-                            <a href="<?php echo home_url(); ?>" class="main-logo">
-                                <aside>
-                                    <?php include 'logo.php'; ?>
-                                </aside>
-                                <div>
-                                    <h1 class="main-name">Abundant Living <span>Mommy</span></h1>
-                                    <p>simple healthy tips, that will transform your family for the <span>abundant life</span></p>
-                                </div>
-                            </a>
-                        </div>
 
-                        <div class="col-xs-5 col-sm-6">
+        <nav class="navbar navbar-default">
+                    <div class="navbar navbar-static-top navbar-custom"> 
+                    <!-- Brand and toggle get grouped for better mobile display --> 
+                        <div class="container-fluid"> 
                             <div class="row">
-                                <div class="col-xs-12">
-                                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                                        <span class="icon-bar"></span> 
-                                        <span class="icon-bar"></span> 
-                                        <span class="icon-bar"></span> 
-                                    </button>
-                                <!-- </div>  -->
-                     
-                            <!-- Collect the nav links, forms, and other content for toggling --> 
-                                <div class="collapse navbar-collapse navHeaderCollapse pull-right"> 
-                                    <div class="col-xs-12 main-nav">
-                                        <?php /* Primary navigation */
-                                            wp_nav_menu( array(
-                                            'menu' => 'primary',
-                                            'theme-location' => 'primary',
-                                            'depth' => 2,
-                                            'menu_class' => 'nav navbar-nav ',
-                                            'fallback-cb' => 'wp_bootstrap_navwalker::fallback',
-                                            //Process nav menu using our custom nav walker
-                                            'walker' => new wp_bootstrap_navwalker())
-                                            );
-                                        ?>
+                                <div class="col-xs-12 col-sm-6 col-md-7 main-img">
+                                    <a href="<?php echo home_url(); ?>" class="main-logo">
+                                        <aside>
+                                            <?php include 'logo.php'; ?>
+                                        </aside>
+                                        <div>
+                                            <h1 class="main-name">Abundant Living <span>Mommy</span></h1>
+                                            <p>simple healthy tips, that will transform your family for the <span>abundant life</span></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-5">
+                                    <div class="row">
+                                         <div class="col-xs-12 col-md-12">
+                                            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                                            <span class="icon-bar"></span> 
+                                            <span class="icon-bar"></span> 
+                                            <span class="icon-bar"></span> 
+                                            </button>
+                                        </div> 
+                                 
+                                        <!-- Collect the nav links, forms, and other content for toggling --> 
+                                        <div class="collapse navbar-collapse navHeaderCollapse"> 
+                                            <div class="col-xs-12 main-nav">
+                                                <?php /* Primary navigation */
+                                                    wp_nav_menu( array(
+                                                    'menu' => 'primary',
+                                                    'theme-location' => 'primary',
+                                                    'depth' => 2,
+                                                    'menu_class' => 'nav navbar-nav ',
+                                                    'fallback-cb' => 'wp_bootstrap_navwalker::fallback',
+                                                    //Process nav menu using our custom nav walker
+                                                    'walker' => new wp_bootstrap_navwalker())
+                                                    );
+                                                ?>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+
+                                </div><!--end div class collapse navbar-collapse navHeaderCollapse -->
                             </div>
-
-                        </div><!--end div class collapse navbar-collapse navHeaderCollapse -->
-                    </div>
-
-                </div><!--end div class container-fluid-->
-            </div><!--end div class navbar  navbar-static-top navbar-custom-->
-        </nav> 
+                        </div><!--end div class container-fluid-->
+                    </div><!--end div class navbar  navbar-static-top navbar-custom-->
+                </nav> 
                 
-        <nav class="navbar navbar-default fudge" id="fixedbar" >
-            <div class="navbar  navbar-custom" style="border-radius:0px;"> 
-                <!-- Brand and toggle get grouped for better mobile display --> 
-                <div class="container-fluid"> 
-                    <div class="row">
-                        <div class="col-xs-7 col-sm-6 col-md-6 main-img">
-                            <a href="<?php echo home_url(); ?>" class="main-logo">
-                                <?php include 'logo.php'; ?>
-                                <div>
-                                    <h1 class="main-name">Abundant Living <span>Mommy</span></h1>
-                                    <p>simple healthy tips, that will transform your family for the <span>abundant life</span></p>
-                                </div>
-                            </a>
-                        </div>
-                                
-                        <div class="col-xs-5 col-sm-6">
+            <nav class="navbar navbar-default fudge" id="fixedbar">
+                    <div class="navbar navbar-static-top navbar-custom"> 
+                    <!-- Brand and toggle get grouped for better mobile display --> 
+                        <div class="container-fluid"> 
                             <div class="row">
-                                <div class="col-xs-12">
-                                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                                        <span class="icon-bar"></span> 
-                                        <span class="icon-bar"></span> 
-                                        <span class="icon-bar"></span> 
-                                    </button>
-                                </div>  
-                         
-                                <!-- Collect the nav links, forms, and other content for toggling --> 
-                                <div class="collapse navbar-collapse navHeaderCollapse pull-right"> 
-                                    
-                                    <?php /* Primary navigation */
-                                        wp_nav_menu( array(
-                                        'menu' => 'primary',
-                                        'theme-location' => 'primary',
-                                        'depth' => 2,
-                                        'menu_class' => 'nav navbar-nav fixer',
-                                        'fallback-cb' => 'wp_bootstrap_navwalker::fallback',
-                                        //Process nav menu using our custom nav walker
-                                        'walker' => new wp_bootstrap_navwalker())
-                                        );
-                                    ?>
-                               
+                                <div class="col-xs-12 col-sm-6 col-md-7 main-img">
+                                    <a href="<?php echo home_url(); ?>" class="main-logo">
+                                        <aside>
+                                            <?php include 'logo.php'; ?>
+                                        </aside>
+                                        <div>
+                                            <h1 class="main-name">Abundant Living <span>Mommy</span></h1>
+                                            <p>simple healthy tips, that will transform your family for the <span>abundant life</span></p>
+                                        </div>
+                                    </a>
                                 </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-5">
+                                    <div class="row">
+                                         <div class="col-xs-12 col-md-12">
+                                            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                                            <span class="icon-bar"></span> 
+                                            <span class="icon-bar"></span> 
+                                            <span class="icon-bar"></span> 
+                                            </button>
+                                        </div> 
+                                 
+                                        <!-- Collect the nav links, forms, and other content for toggling --> 
+                                        <div class="collapse navbar-collapse navHeaderCollapse"> 
+                                            <div class="col-xs-12 main-nav">
+                                                <?php /* Primary navigation */
+                                                    wp_nav_menu( array(
+                                                    'menu' => 'primary',
+                                                    'theme-location' => 'primary',
+                                                    'depth' => 2,
+                                                    'menu_class' => 'nav navbar-nav ',
+                                                    'fallback-cb' => 'wp_bootstrap_navwalker::fallback',
+                                                    //Process nav menu using our custom nav walker
+                                                    'walker' => new wp_bootstrap_navwalker())
+                                                    );
+                                                ?>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div><!--end div class collapse navbar-collapse navHeaderCollapse -->
                             </div>
-                        </div><!--end div class collapse navbar-collapse navHeaderCollapse -->
-                    </div>
-                </div> <!--end div class container-fluid-->
-             </div> <!--end div class navbar  navbar-static-top navbar-custom-->
-        </nav> 
+                        </div><!--end div class container-fluid-->
+                    </div><!--end div class navbar  navbar-static-top navbar-custom-->
+                </nav>
+
         <nav class="secondary-nav">
             <div class="container">
                 <?php /* sub_nav navigation */
