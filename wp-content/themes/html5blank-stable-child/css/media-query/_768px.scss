@@ -14,9 +14,13 @@
 	.login-pop-up {
 		display: block;
 		.btn-primary {
+			margin-right: 5px;
 			border: 1px solid #ffffff;
+			transition: .3s ease-in-out;
 			&:hover {
 				background-color: transparent;
+				color: $lime-green;
+				border-color: $lime-green;
 			}
 			&:focus {
 				background-color: transparent;
@@ -50,6 +54,19 @@
 		}
 	}
 
+	// Forgot Password Mobile
+
+	.forgot-password-mobile {
+		margin-left: 5px;
+		color: #ffffff;
+		font-size: 14px;
+		transition: .3s ease-in-out;
+		&:hover {
+			color: $lime-green;
+			text-decoration: none;
+		}
+	}
+
 	// fixed nav 
 
 	#fixedbar ul {
@@ -71,7 +88,7 @@
 
 	.main-img .main-logo div h1 {
 		position: relative;
-		width: 307px;
+		width: 100%;
 		margin-bottom: .05em;
 	}
 }
@@ -150,8 +167,11 @@
 		margin-bottom: 2em;
 	}
 
+	// recipe image front page
+
 	.meal-post .recipe {
 		display: block;
+		height: 226px;
 		img {
 			width: 200px;
 			height: 200px;

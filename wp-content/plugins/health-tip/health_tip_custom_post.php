@@ -180,7 +180,6 @@ function tip_custom_loop_shortcode( $atts ) {
 		return $output;
 
       	wp_reset_postdata();
-
 }
 
   add_shortcode('tip-custom-loop', 'tip_custom_loop_shortcode');
