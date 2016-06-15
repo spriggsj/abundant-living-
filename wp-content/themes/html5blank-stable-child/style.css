@@ -9138,11 +9138,16 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   border-bottom: 2px dotted #cccccc;
 }
 
-.archive-post section img {
+.archive-post section a {
+  flex: 1;
+}
+
+.archive-post section a img {
   max-width: 200px;
 }
 
 .archive-post section .archive-blog-post-page {
+  flex: 6;
   margin-left: 2em;
 }
 
@@ -9252,10 +9257,14 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
     display: block;
   }
   .login-pop-up .btn-primary {
+    margin-right: 5px;
     border: 1px solid #ffffff;
+    transition: .3s ease-in-out;
   }
   .login-pop-up .btn-primary:hover {
     background-color: transparent;
+    color: #beeb9f;
+    border-color: #beeb9f;
   }
   .login-pop-up .btn-primary:focus {
     background-color: transparent;
@@ -9286,6 +9295,16 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
     color: #ffffff;
     background-color: #00a388;
   }
+  .forgot-password-mobile {
+    margin-left: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+  }
+  .forgot-password-mobile:hover {
+    color: #beeb9f;
+    text-decoration: none;
+  }
   #fixedbar ul {
     margin-right: 0;
   }
@@ -9297,7 +9316,7 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   }
   .main-img .main-logo div h1 {
     position: relative;
-    width: 307px;
+    width: 100%;
     margin-bottom: .05em;
   }
 }
@@ -9351,6 +9370,7 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   }
   .meal-post .recipe {
     display: block;
+    height: 226px;
   }
   .meal-post .recipe img {
     width: 200px;

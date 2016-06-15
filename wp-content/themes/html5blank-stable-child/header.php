@@ -25,7 +25,7 @@
             
             <aside class="login-pop-up">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">
-                    
+                  
                     <?php 
                         $UserCookie = CheckLoginCookie();
                         $username  = $UserCookie['Username'];
@@ -39,11 +39,12 @@
                     ?>
 
                 </button>
+                <a class="forgot-password-mobile" href="http://www.abundantlivingmommy.com/forgot-password/">Forgot Password</a>
 
                 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
                     <div class="modal-dialog modal-sm">
                         <div class="modal-content">
-                            <?php echo do_shortcode( '[login-logout-toggle]' ); ?>
+                            <?php echo do_shortcode( '[login-logout-toggle login_redirect_page="http://www.abundantlivingmommy.com/" logout_redirect_page="http://www.abundantlivingmommy.com/"]' ); ?>
                         </div>
                     </div>
                 </div>
