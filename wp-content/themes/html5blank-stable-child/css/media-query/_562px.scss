@@ -18,6 +18,14 @@
 		display: none;
 	}
 
+	#menu-primary {
+		flex-direction: column;
+	}
+
+	.navbar-nav {
+		margin: 0;
+	}
+
 	// register input field
 
 	.feup-pure-form-aligned .feup-pure-control-group label {

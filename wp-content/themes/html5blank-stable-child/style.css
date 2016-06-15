@@ -8147,7 +8147,10 @@ a {
 }
 
 .main-nav ul {
-  margin: .8em 2em 0 0;
+  margin-top: .8em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-nav ul li:last-of-type a {
@@ -8257,9 +8260,16 @@ a {
   background-color: #ffffff;
 }
 
+.navbar-default {
+  margin-bottom: 0;
+}
+
 .navbar-default .navbar-toggle {
   border-radius: 0;
   border: 1px solid #757373;
+  position: absolute;
+  right: 30px;
+  top: -68px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -9129,7 +9139,6 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 }
 
 .archive-post section img {
-  width: 200px;
   max-width: 200px;
 }
 
@@ -9348,6 +9357,9 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
     height: 200px;
     float: left;
   }
+  .navbar-nav {
+    margin: 0;
+  }
 }
 
 @media (max-width: 562px) {
@@ -9359,6 +9371,12 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   }
   #Layer_1 {
     display: none;
+  }
+  #menu-primary {
+    flex-direction: column;
+  }
+  .navbar-nav {
+    margin: 0;
   }
   .feup-pure-form-aligned .feup-pure-control-group label {
     text-align: left;
@@ -9388,7 +9406,10 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 
 @media (max-width: 425px) {
   .main-img .main-logo div h1 {
-    font-size: 2.5em !important;
+    font-size: 7vw !important;
+  }
+  .main-img .main-logo div p {
+    width: 250px;
   }
   .recent-post .newest-recent-post {
     flex-direction: column;
@@ -9478,6 +9499,9 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 }
 
 @media (max-width: 320px) {
+  .main-img .main-logo div p {
+    width: 200px;
+  }
   .first-about-me .first h1 {
     font-size: 5.5em;
   }
