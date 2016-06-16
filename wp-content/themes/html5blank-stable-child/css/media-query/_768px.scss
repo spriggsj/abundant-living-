@@ -88,7 +88,7 @@
 
 	.main-img .main-logo div h1 {
 		position: relative;
-		width: 100%;
+		width: 350px;
 		margin-bottom: .05em;
 	}
 }
@@ -147,6 +147,9 @@
 
 	.meal-post .view-all-post {
 		margin: 1em 0 3em;
+		float: none;
+		display: block;
+		text-align: right;
 	}
 
 	// About Page
@@ -170,12 +173,12 @@
 	// recipe image front page
 
 	.meal-post .recipe {
-		display: block;
-		height: 226px;
+		//display: block;
+		//height: 226px;
 		img {
 			width: 200px;
 			height: 200px;
-			float: left;
+			//float: left;
 		}
 	}
 

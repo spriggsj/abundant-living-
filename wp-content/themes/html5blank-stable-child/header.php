@@ -95,7 +95,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div><!--end div class collapse navbar-collapse navHeaderCollapse -->
                             </div>
                         </div><!--end div class container-fluid-->
