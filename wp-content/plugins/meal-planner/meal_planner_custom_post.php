@@ -162,6 +162,7 @@ function meal_loop_shortcode( $atts ) {
 
       wp_reset_postdata();
 
+
     }
 
     add_shortcode('meal-loop', 'meal_loop_shortcode');
