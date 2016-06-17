@@ -8,6 +8,11 @@
 		padding: 0 0 2em 0;
 		margin-bottom: 2em;
 		border-bottom: 2px dotted hsla(0, 0%, 80%, 1);
+		a {
+			img {
+				max-width: 250px !important;
+			}
+		}
 		.archive-blog-post-page {
 			margin-left: 2em;
 			h3 {
