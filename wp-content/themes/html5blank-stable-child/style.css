@@ -9135,10 +9135,6 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   border-bottom: 2px dotted #cccccc;
 }
 
-.archive-post section a img {
-  max-width: 250px !important;
-}
-
 .archive-post section .archive-blog-post-page {
   margin-left: 2em;
 }
@@ -9366,6 +9362,7 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   .meal-post .recipe img {
     width: 200px;
     height: 200px;
+    float: left;
   }
   .navbar-nav {
     margin: 0;
