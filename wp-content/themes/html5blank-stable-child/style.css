@@ -8621,8 +8621,6 @@ p {
 }
 
 .meal-post .recipe {
-  display: flex;
-  align-items: flex-start;
   padding: 0 0 2em 0;
   margin-bottom: 2em;
   border-bottom: 1px dashed #cccccc;
@@ -8636,6 +8634,8 @@ p {
 
 .meal-post .recipe img {
   margin-right: 2em;
+  width: 200px;
+  float: left;
 }
 
 .meal-post .recipe article h3 {
@@ -9232,9 +9232,6 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   }
   .recent-post .older-recent-post .older-post-container img {
     margin-bottom: 2em;
-  }
-  .archive-post section a img {
-    max-width: 200px !important;
   }
 }
 
