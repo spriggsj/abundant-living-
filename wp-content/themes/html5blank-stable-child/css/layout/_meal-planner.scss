@@ -8,6 +8,7 @@
 	}
 	.recipe {
 		display: flex;
+		align-items: flex-start;
 		padding: 0 0 2em 0;
 		margin-bottom: 2em;
 		border-bottom: 1px dashed hsla(0, 0%, 80%, 1);
