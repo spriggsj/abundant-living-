@@ -8635,6 +8635,7 @@ p {
 .meal-post .recipe img {
   margin-right: 2em;
   width: 200px;
+  height: 200px;
   float: left;
 }
 
@@ -9136,6 +9137,11 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   border-bottom: 2px dotted #cccccc;
 }
 
+.archive-post section img {
+  width: 200px;
+  height: 200px;
+}
+
 .archive-post section .archive-blog-post-page {
   margin-left: 2em;
 }
@@ -9466,19 +9472,14 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   .archive-post section {
     flex-direction: column;
   }
-  .archive-post section a {
-    text-align: center;
-  }
-  .archive-post section a img {
-    width: 390px;
+  .archive-post section img {
+    width: 450px;
+    height: auto;
     max-width: 90% !important;
-    margin-bottom: 2em;
+    margin: 0 auto 2em;
   }
   .archive-post section .archive-blog-post-page {
     margin-right: 2em;
-  }
-  .archive-post section a img {
-    margin-left: 0;
   }
   .feup-pure-form input[type=text], .feup-pure-form input[type=password] {
     width: 100% !important;
