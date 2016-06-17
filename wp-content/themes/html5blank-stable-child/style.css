@@ -9363,11 +9363,6 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   .affiliate .affiliate-image img {
     margin-bottom: 2em;
   }
-  .meal-post .recipe img {
-    width: 200px;
-    height: 200px;
-    float: left;
-  }
   .navbar-nav {
     margin: 0;
   }
