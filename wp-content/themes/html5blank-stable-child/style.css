@@ -9205,7 +9205,7 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 @media (max-width: 1054px) {
   .main-img .main-logo div p {
     position: relative;
-    width: 427px;
+    width: 440px;
   }
 }
 
@@ -9231,6 +9231,9 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   }
   .recent-post .older-recent-post .older-post-container img {
     margin-bottom: 2em;
+  }
+  .archive-post section a img {
+    max-width: 200px !important;
   }
 }
 
@@ -9475,7 +9478,7 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   }
   .archive-post section a img {
     width: 390px;
-    max-width: 90%;
+    max-width: 90% !important;
     margin-bottom: 2em;
   }
   .archive-post section .archive-blog-post-page {

@@ -3,7 +3,7 @@
 @media (max-width: 1054px) {
 	.main-img .main-logo div p {
 		position: relative;
-		width: 427px;
+		width: 440px;
 	}
 }
 
@@ -39,5 +39,9 @@
 		img {
 			margin-bottom: 2em;
 		}
+	}
+
+	.archive-post section a img {
+		max-width: 200px !important;
 	}
 }
