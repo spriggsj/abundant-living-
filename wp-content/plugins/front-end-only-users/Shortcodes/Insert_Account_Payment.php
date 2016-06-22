@@ -62,7 +62,7 @@ function EWD_FEUP_Account_Payment($atts) {
 	if ($feup_Label_Next == "") {$feup_Label_Next = __('Next', 'EWD_FEUP') ;}
 	if ($feup_Label_Discount_Message == "") {$feup_Label_Discount_Message = __("Have a discount code? Enter it below.", 'EWD_FEUP');}
 	if ($feup_Label_Discount_Code == "") {$feup_Label_Discount_Code = __('Discount Code', 'EWD_FEUP') ;}
-	if ($feup_Label_Use_Discount_Code == "") {$feup_Label_Discount_Code = __('Use Discount Code', 'EWD_FEUP') ;}
+	if ($feup_Label_Use_Discount_Code == "") {$feup_Label_Use_Discount_Code = __('Use Discount Code', 'EWD_FEUP') ;}
 
 
 	if ($username == "" or ($Payment_Types == "Levels" and $level == "")) {

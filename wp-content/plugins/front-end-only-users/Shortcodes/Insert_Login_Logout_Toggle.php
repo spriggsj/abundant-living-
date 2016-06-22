@@ -33,7 +33,7 @@ function Insert_Login_Logout_Toggle($atts) {
 	 	$ReturnString .= EWD_FEUP_Add_Modified_Styles();
 		
 		$ReturnString .= "<div id='ewd-feup-login-form-div'>";
-		//if (isset($user_message['Message'])) {$ReturnString .= $user_message['Message'];}
+		if (isset($user_message['Message'])) {$ReturnString .= $user_message['Message'];}
 		$ReturnString .= "<form action='#' method='post' id='ewd-feup-login-form' class='feup-pure-form feup-pure-form-aligned'>";
 		$ReturnString .= "<input type='hidden' name='ewd-feup-check' value='" . sha1(md5($Time.$Salt)) . "'>";
 		$ReturnString .= "<input type='hidden' name='ewd-feup-time' value='" . $Time . "'>";

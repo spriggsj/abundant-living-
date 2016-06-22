@@ -1,9 +1,9 @@
 <?php 
 
 /*
-*Plugin Name: Meal Planer Custom Post
+*Plugin Name: Meal Planner
 *Plugin URI:
-*Description: Meal Palnner Custom Post
+*Description: Meal Planner
 *Version 1.0
 *Author: Roger Chang
 */

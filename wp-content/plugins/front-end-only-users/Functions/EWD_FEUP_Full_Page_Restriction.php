@@ -2,7 +2,7 @@
 
 function ewd_feup_add_custom_meta_box()
 {
-	add_meta_box("ewd-feup-meta-box", __("Front-End Users",'EWD_FEUP'), "ewd_feup_meta_box_markup", "page", "side", "high", null);
+	add_meta_box("ewd-feup-meta-box", __("Front-End Users",'EWD_FEUP'), "ewd_feup_meta_box_markup", array("page", "post"), "side", "high", null);
 }
 if ($EWD_FEUP_Full_Version == "Yes") {add_action("add_meta_boxes", "ewd_feup_add_custom_meta_box");}
 
