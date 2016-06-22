@@ -205,7 +205,8 @@ $Username_Is_Email = get_option("EWD_FEUP_Username_Is_Email");
 			<option value='file'>File</option>
 			<option value='date'>Date</option>
 			<option value='datetime'>Date/Time</option>
-			<option value='countries'>Country Select</option>
+			<option value='countries'>Country Select</option>			
+			<option value='label'>Label (No field, just a message)</option>
 	</select>
 	<p><?php _e("The input method for the field and type of data that the field will hold.", 'EWD_FEUP') ?></p>
 </div>

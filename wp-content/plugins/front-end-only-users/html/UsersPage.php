@@ -17,19 +17,25 @@
 	$Fields = $wpdb->get_results("SELECT * FROM $ewd_feup_fields_table_name WHERE Field_Show_In_Admin='Yes'");
 	$AllFields = $wpdb->get_results("SELECT * FROM $ewd_feup_fields_table_name"); 
 			
-	$Sql = "SELECT * FROM $ewd_feup_user_table_name ";
+	$Sql = "SELECT DISTINCT $ewd_feup_user_table_name.User_ID FROM $ewd_feup_user_table_name ";
+	$Sql .= "INNER JOIN $ewd_feup_user_fields_table_name ON $ewd_feup_user_table_name.User_ID=$ewd_feup_user_fields_table_name.User_ID ";
 	if (isset($_REQUEST['UserSearchValue']) and $_REQUEST['UserSearchField'] == "Username") {
 		$Sql .= "WHERE " . $_REQUEST['UserSearchField'] . " ";
 		if ($_REQUEST['UserSearchOperator'] == "LIKE") {$Sql .= " LIKE '%". $_REQUEST['UserSearchValue'] . "%' ";}
 		else {$Sql .= "='" . $_REQUEST['UserSearchValue'] . "' ";}
 	}
 	elseif (isset($_REQUEST['UserSearchValue'])) {
-		$Sql .= "INNER JOIN $ewd_feup_user_fields_table_name ON $ewd_feup_user_table_name.User_ID=$ewd_feup_user_fields_table_name.User_ID";
-		$Sql .= " WHERE Field_ID=" . $_REQUEST['UserSearchField'] . " AND Field_Value ";
+		$Sql .= "WHERE Field_ID=" . $_REQUEST['UserSearchField'] . " AND Field_Value ";
 		if ($_REQUEST['UserSearchOperator'] == "LIKE") {$Sql .= " LIKE '%". $_REQUEST['UserSearchValue'] . "%' ";}
 		else {$Sql .= "='" . $_REQUEST['UserSearchValue'] . "' ";}
 	}
-	if (isset($_GET['OrderBy']) and $_GET['DisplayPage'] == "Users") {$Sql .= "ORDER BY " . $_GET['OrderBy'] . " " . $_GET['Order'] . " ";}
+	if (isset($_GET['OrderBy']) and $_GET['DisplayPage'] == "Users") {
+		if ($_REQUEST['OrderBy'] == "User_Last_Login" or $_REQUEST['OrderBy'] == "User_Date_Created") {$Sql .= "ORDER BY " . $_GET['OrderBy'] . " " . $_GET['Order'] . " ";}
+		else {
+			$OrderBy_Field_ID = $wpdb->get_var($wpdb->prepare("SELECT Field_ID FROM $ewd_feup_fields_table_name WHERE Field_Name=%s", $_GET['OrderBy']));
+			$Sql .= "ORDER BY ('" . $_GET['OrderBy'] . "' AND Field_ID='" . $OrderBy_Field_ID . "') " . $_GET['Order'] . " ";
+		}
+	}
 	else {$Sql .= "ORDER BY User_Date_Created ";}
 	$RowCount = $wpdb->get_results($Sql);
 	$Number_of_Pages = ceil($wpdb->num_rows/20);
@@ -203,8 +209,9 @@
 		
 	<?php
 		if ($myrows) { 
-	  		foreach ($myrows as $User) {
+	  		foreach ($myrows as $User_ID) {
 				$FieldCount = 0;
+				$User = $wpdb->get_row("SELECT * FROM $ewd_feup_user_table_name WHERE User_ID='" .$User_ID->User_ID . "'");
 				echo "<tr id='User" . $User->User_ID ."'>";
 				echo "<th scope='row' class='check-column'>";
 				echo "<input type='checkbox' name='Users_Bulk[]' value='" . $User->User_ID ."' />";

@@ -15,12 +15,12 @@
 			<h2><span>love</span> what you see</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis adipisci suscipit quod quaerat, doloribus quo hic, tempora a rerum, possimus nisi alias illum ipsam sit!</p>
 			<aside class="social-links">
-				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://plus.google.com/b/104244961359949094496/104244961359949094496/posts?gmbpt=true&pageId=104244961359949094496" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/abundantlivingmommy/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="https://www.pinterest.com/abundantlivingm/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/Abundant_mommy" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="https://www.youtube.com/channel/UCVlYsSc-Oj96Whrw93VHX9A" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
 			</aside>
 		</div>
         <nav class="secondary-nav">

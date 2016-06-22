@@ -7,6 +7,7 @@
 	$Default_User_Level = get_option("EWD_Default_User_Level");
 	$Use_Crypt = get_option("EWD_FEUP_Use_Crypt");
 	$Username_Is_Email = get_option("EWD_FEUP_Username_Is_Email");
+	$Required_Field_Symbol = get_option("EWD_FEUP_Required_Field_Symbol");
 
 	$Use_Captcha = get_option("EWD_FEUP_Use_Captcha");
 	$Track_Events = get_option("EWD_FEUP_Track_Events");
@@ -209,6 +210,14 @@
 			<label title='Yes'><input type='radio' name='username_is_email' value='Yes' <?php if($Username_Is_Email == "Yes") {echo "checked='checked'";} ?> /> <span>Yes</span></label><br />
 			<label title='No'><input type='radio' name='username_is_email' value='No' <?php if($Username_Is_Email == "No") {echo "checked='checked'";} ?> /> <span>No</span></label><br />
 			<p>Should your users register using their e-mail addresses instead of by creating usernames?</p>
+			</fieldset>
+		</td>
+		</tr>
+		<th scope="row">Required Field Symbol</th>
+		<td>
+			<fieldset><legend class="screen-reader-text"><span>Required Field Symbol</span></legend>
+			<label title='Login Time'><input type='text' name='required_field_symbol' value='<?php echo $Required_Field_Symbol; ?>' /></label><br />
+			<p>Appears next to each required field on the registration form. Default value is an asterisk (*).</p>
 			</fieldset>
 		</td>
 		</tr>

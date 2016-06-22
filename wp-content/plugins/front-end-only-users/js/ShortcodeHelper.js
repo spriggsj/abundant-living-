@@ -191,7 +191,7 @@ function setUserListShortcodeHelpHandler() {
 function setUserProfileShortcodeHelpHandler() {
 	jQuery('.wp-editor-area').on('keyup', function(){
 		if (jQuery(this).val().indexOf("[user-profile help") >= 0) {
-			var AttributeString = "[user-profile \n";
+			var AttributeString = "[user-profile (premium shortcode)\n";
 			AttributeString += "login_page='' the URL of your login page if you want a link to appear when a non-logged in visitor views this page if login necessary is set to Yes\n";
 			AttributeString += "omit_fields='' a comma-separated list of fields that you don't want to display\n";
 			AttributeString += "login_necessary='Yes' set to No to allow anyone to view profiles\n";

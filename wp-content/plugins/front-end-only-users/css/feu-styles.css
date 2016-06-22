@@ -35,6 +35,11 @@
 .ewd-feup-clear {
   
 }
+
+.ewd-feup-req-symbol {
+	color: red;
+}
+
 .ewd-feup-negative-top {
     margin-top: -8px;
 }

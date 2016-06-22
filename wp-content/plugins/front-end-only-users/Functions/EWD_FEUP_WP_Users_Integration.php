@@ -98,4 +98,57 @@ function EWD_FEUP_Return_Meta_Data($meta_data, $wp_user_id, $meta_key, $single) 
 	}
 }
 
+
+add_action('show_user_profile', 'EWD_FEUP_Custom_User_Profile_Fields');
+add_action('edit_user_profile', 'EWD_FEUP_Custom_User_Profile_Fields');
+
+function EWD_FEUP_Custom_User_Profile_Fields($user) {
+	global $wpdb, $ewd_feup_user_table_name, $ewd_feup_fields_table_name, $ewd_feup_user_fields_table_name;
+
+	$User_ID = $wpdb->get_var($wpdb->prepare("SELECT User_ID FROM $ewd_feup_user_table_name WHERE User_WP_ID=%d", $user->ID));
+
+	if (!$User_ID) {return;}
+
+	$Fields = $wpdb->get_results("SELECT * FROM $ewd_feup_fields_table_name");
+?>
+    <h2><?php _e('Front-End Only Users Fields'); echo $EWD_FEUP_TEST; ?></h2>
+    <table class="form-table">
+    <?php 
+    	foreach ($Fields as $Field) {
+    		$Meta_Value = $wpdb->get_var($wpdb->prepare("SELECT Field_Value FROM $ewd_feup_user_fields_table_name WHERE Field_ID=%d AND User_ID=%d", $Field->Field_ID, $User_ID));
+    ?>
+        	<tr>
+        	    <th>
+        	        <label for="code"><?php echo $Field->Field_Name; ?></label>
+        	    </th>
+        	    <td>
+        	        <input type="text" name="FEUP_<? echo $Field->Field_ID; ?>" id="code" value="<?php echo $Meta_Value; ?>" class="regular-text" />
+        	    </td>
+        	</tr>
+    <?php } ?>
+    </table>
+<?php
+}
+
+add_action( 'personal_options_update', 'EWD_FEUP_Update_Extra_Profile_Fields' );
+add_action( 'edit_user_profile_update', 'EWD_FEUP_Update_Extra_Profile_Fields' );
+
+function EWD_FEUP_Update_Extra_Profile_Fields($user_id) {
+    global $wpdb, $ewd_feup_user_table_name, $ewd_feup_fields_table_name, $ewd_feup_user_fields_table_name;
+    
+    if (current_user_can('edit_user', $user_id)) {
+    	$User_ID = $wpdb->get_var($wpdb->prepare("SELECT User_ID  FROM $ewd_feup_user_table_name WHERE User_WP_ID=%d", $user_id));
+
+		if (!$User_ID) {return;}
+
+    	foreach ($_POST as $Post_Field_ID => $Value) {
+    		if (substr($Post_Field_ID, 0, 4) == "FEUP") {
+    			$Field_ID = substr($Post_Field_ID, 5);
+    			$wpdb->query($wpdb->prepare("UPDATE $ewd_feup_user_fields_table_name SET Field_Value=%s WHERE Field_ID=%d AND User_ID=%d", $Value, $Field_ID, $User_ID));
+    		}
+    	}
+    }
+        
+}
+
 ?>
