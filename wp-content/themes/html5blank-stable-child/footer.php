@@ -13,18 +13,20 @@
 	<footer class="footer">
 		<div class="footer-about">
 			<h2><span>love</span> what you see</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis adipisci suscipit quod quaerat, doloribus quo hic, tempora a rerum, possimus nisi alias illum ipsam sit!</p>
+			<p>Can't get enough Abundant Living Mommy.  Connect with me on these social media links.</p>
 			<aside class="social-links">
-				<a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-				<a href="https://plus.google.com/b/104244961359949094496/104244961359949094496/posts?gmbpt=true&pageId=104244961359949094496" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com/wendy.purviance" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 				<a href="https://www.instagram.com/abundantlivingmommy/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 				<a href="https://www.pinterest.com/abundantlivingm/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
 				<a href="https://twitter.com/Abundant_mommy" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 				<a href="https://www.youtube.com/channel/UCVlYsSc-Oj96Whrw93VHX9A" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
 			</aside>
 		</div>
-        <nav class="secondary-nav">
-            
+
+		<div class="disclaimer">
+			<p>The information on this website has not been evaluated by the FDA and is not intended to diagnose, treat, prevent, or cure any disease.</p>
+		</div>
 
 		<div class="copyright">
 			<p>Copyright &copy; 2016 Abundant Living Mommy &reg;</p>
