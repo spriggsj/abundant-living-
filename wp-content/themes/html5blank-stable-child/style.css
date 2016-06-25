@@ -9110,6 +9110,15 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   padding: 0;
 }
 
+.disclaimer {
+  text-align: center;
+}
+
+.disclaimer p {
+  color: #007562;
+  font-size: 12px;
+}
+
 .copyright {
   padding: 1em 0;
   margin-top: 1em;
