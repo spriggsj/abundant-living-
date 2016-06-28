@@ -111,7 +111,7 @@ function Add_Edit_User() {
 					$Additional_Fields_Array[$Field->Field_Name]['Field_Name'] = $Field->Field_Name;
 					if ($Field->Field_Type == "file" or $Field->Field_Type == "picture") {
 					  	$File_Upload_Return = Handle_File_Upload($Field_Name);
-						if ($File_Upload_Return['Success'] == "No") {return $File_Upload_Return['Data'];}
+						if ($File_Upload_Return['Success'] == "No") {return array("Message_Type" => "Error", "Message" => $File_Upload_Return['Data']);}
 						elseif ($File_Upload_Return['Success'] == "N/A") {unset($Additional_Fields_Array[$Field->Field_Name]);}
 						else {$Additional_Fields_Array[$Field->Field_Name]['Field_Value'] = $File_Upload_Return['Data'];}
 					}
@@ -126,7 +126,7 @@ function Add_Edit_User() {
 	if (!isset($error) and $Validate_Captcha == "Yes") {
 		/* Pass the data to the appropriate function in Update_Admin_Databases.php to create the user */
 		if ($_POST['action'] == "Add_User" or $_POST['ewd-feup-action'] == "register") {
-			if (is_object($User)) {$user_update = __("There is already an account with that Username. Please select a different one.", "EWD_FEUP"); return $user_update;}
+			if (is_object($User)) {$user_update = __("There is already an account with that Username. Please select a different one.", "EWD_FEUP"); return array("Message_Type" => "Error", "Message" => $user_update);}
 			if (!isset($User_Fields['User_Admin_Approved'])) {$User_Fields['User_Admin_Approved'] = "No";}
 			if (!isset($User_Fields['User_Email_Confirmed'])) {$User_Fields['User_Email_Confirmed'] = "No";}
 			$User_Fields['User_Date_Created'] = $date;

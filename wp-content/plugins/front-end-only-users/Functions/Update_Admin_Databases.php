@@ -16,7 +16,7 @@ function EWD_FEUP_Add_WP_User($User_ID, $User_Fields) {
 	global $ewd_feup_user_table_name;
 	
 	define( 'WP_IMPORTING', 'SKIP_EMAIL_EXIST' );
-	$wp_user_id = wp_create_user("EWD_FEUP_" . $User_ID, $User_Fields['User_Password'], $User_Fields['Username']);
+	$wp_user_id = wp_create_user($User_Fields['Username'], $User_Fields['User_Password'], $User_Fields['Username']);
 
 	add_user_meta($wp_user_id, "EWD FEUP ID", $User_ID);
 
@@ -451,6 +451,8 @@ function Update_EWD_FEUP_Options() {
 	if (isset($_POST['custom_css'])) {update_option("EWD_FEUP_Custom_CSS", $_POST['custom_css']);}
 	if (isset($_POST['use_crypt'])) {update_option("EWD_FEUP_Use_Crypt", $_POST['use_crypt']);}
 	if (isset($_POST['username_is_email'])) {update_option("EWD_FEUP_Username_Is_Email", $_POST['username_is_email']);}
+
+	if (isset($_POST['required_field_symbol'])) {update_option("EWD_FEUP_Required_Field_Symbol", $_POST['required_field_symbol']);}
 
 	if (isset($_POST['use_captcha']) and $EWD_FEUP_Full_Version == "Yes") {update_option("EWD_FEUP_Use_Captcha", $_POST['use_captcha']);}
 	if (isset($_POST['track_events']) and $EWD_FEUP_Full_Version == "Yes") {update_option("EWD_FEUP_Track_Events", $_POST['track_events']);}

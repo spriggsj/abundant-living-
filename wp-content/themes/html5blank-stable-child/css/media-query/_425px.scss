@@ -98,20 +98,15 @@
 
 	.archive-post section {
 		flex-direction: column;
-		a {
-			text-align: center;
-			img {
-				width: 390px;
-				max-width: 90%;
-				margin-bottom: 2em;
-			}
+		img {
+			width: 450px;
+			height: auto;
+			max-width: 90% !important;
+			margin: 0 auto 2em;
 		}
 	}
 	.archive-post section .archive-blog-post-page {
 		margin-right: 2em;
-	}
-	.archive-post section a img {
-		margin-left: 0;
 	}
 	.feup-pure-form input[type=text], .feup-pure-form input[type=password] {
 		width: 100% !important;

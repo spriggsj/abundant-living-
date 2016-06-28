@@ -37,6 +37,7 @@ function Initial_EWD_FEUP_Data() {
 				));
 		}
 		
+		update_option('EWD_FEUP_Required_Field_Symbol', '*');
 		update_option('EWD_FEUP_Login_Time', 1440);
 }
 ?>

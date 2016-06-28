@@ -30,7 +30,7 @@
 												<option value='file' <?php if ($Field->Field_Type == 'file') {echo "selected='selected'";} ?>>File</option>
 												<option value='date' <?php if ($Field->Field_Type == 'date') {echo "selected='selected'";} ?>>Date</option>
 												<option value='datetime' <?php if ($Field->Field_Type == 'datetime') {echo "selected='selected'";} ?>>Date/Time</option>
-												<option value='countries' <?php if ($Field->Field_Type == 'countries') {echo "selected='selected'";} ?>>Country Select</option>
+												<option value='countries' <?php if ($Field->Field_Type == 'countries') {echo "selected='selected'";} ?>>Country Select</option>													<option value='label' <?php if ($Field->Field_Type == 'label') {echo "selected='selected'";} ?>>Label (No field, just a message)</option>
 										</select>
 										<p><?php _e("The input method for the field and type of data that the field will hold.", 'EWD_FEUP') ?></p>
 								</div>

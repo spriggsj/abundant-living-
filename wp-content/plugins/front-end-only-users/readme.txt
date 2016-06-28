@@ -1,4 +1,4 @@
-﻿=== Front-End Only Users ===
+=== Front-End Only Users ===
 Contributors: Rustaurius, EtoileWebDesign
 Donate link: http://www.etoilewebdesign.com/plugin-donations/
 Tags: WP Members, paid membership, wp membership, WordPress members, user management, wp user management, WordPress user management, shortcodes, user management shortcodes, front end user shortcodes, user import, user export, market segmentation, personalization, front-end users, custom field registration, custom redirects, custom registration, custom registration page, custom user profile, customize profile, edit profile, front-end edit profile, front-end login, front-end register, front-end registration, front-end user listing, front-end user registration, profile builder, user listing, user login, user profile, user profile page, User Registration, user registration form, user-fields, password, profile, email, custom fields, premium content, statistics, analytics, widget, widgets, PayPal, monetize
@@ -8,6 +8,7 @@ License: GPLv3
 License URI:http://www.gnu.org/licenses/gpl-3.0.html 
 
 A customizable user management plugin for membership sites. Use shortcodes for registration, login, payment, etc. and allow restricted access to the front end of your site.
+
 
 == Description ==
 
@@ -26,25 +27,25 @@ Ideal for paid content, membership, dating sites and more!
 = Key Features =
 
 * Customizable membership fields
-* Pure CSS-styled login form, registration form and edit profile form
+* Pure CSS-styled front-end login form, registration form and edit profile form
 * Supports all input types for user fields, allowing you to create a custom user profile
-* Include different membership levels and restrict content accordingly
+* Include different user membership levels and restrict content accordingly
 * Option to send sign-up emails and to require admin approval of users
 * User input-based redirects
 * Send user groups to different pages after login with our customizable login shortcode
 * Personalize the experience of your site with the [user-data] shortcode
 * UTF-8 support
-* Front end features: registration form, login form, edit user profile form, account management, user listings or searches, user profiles and more!
+* Front end features: user registration form, login form, edit user profile form, account management, user listings or searches, user profiles and more!
 * Back end user management features: add new fields, add new users, create and assign user levels, email settings and options
 
 = Premium Features =
-The premium version includes lots of useful features such as:
+The premium version includes lots of useful user management features such as:
 
 * Facebook and Twitter integration: Ability for users to create and log in to accounts using Facebook or Twitter APIs
 * PayPal integration: Ability to charge users a one-time, annual, or monthly membership fee through PayPal
 * Ability to integrate WordPress users, so that WP users can create profiles, access restricted content, be given a specific frontend user level within this plugin, etc.
 * User Levels: Ability to create different user levels and to specify a default user level for users to be set to when they register (created on the “Levels” tab). Different user level groups can have access to different user content, allowing for easy and effective user management.
-* Access to the one-click installer, which lets you create all of the pages necessary for a membership site with one click
+* Access to the one-click installer, which lets you create all of the pages necessary for a user membership site with one click
 * WooCommerce integration: Autofill WooCommerce fields for logged-in users
 * Email confirmation: Require users to confirm their email address before they can log in.
 * Ability to restrict pages: Gives you the option of restricting pages to groups of users in the sidebar of the page editor.
@@ -54,6 +55,7 @@ The premium version includes lots of useful features such as:
 
 For a complete list of the plugin shortcodes please go to our FAQs page:
 <https://wordpress.org/plugins/front-end-only-users/faq/>
+
 
 = Additional Languages =
 
@@ -109,7 +111,7 @@ For more videos on this membership plugin, please see the FAQ tab
 * Inserting User Information: [user-data]
 * User Search Form: [user-search]
 * User List: [user-list]
-* User Profile: [user-profile]
+* User Profile: [user-profile] (Premium shortcode)
 * Forgot Password: [forgot-password]
 * Confirm Forgot Password: [confirm-forgot-password]
 
@@ -244,6 +246,36 @@ Video 7 - One-Click Installer
 11. The "Basic" section of the "Options" admin screen
 
 == Changelog ==
+= 2.9.8 
+- Fixed an error message that was coming up
+
+= 2.9.7 =
+- Updated the PHPExcel version included with the plugin to (hopefully) work with PHP7
+
+= 2.9.6 =
+- Fixed an error where users weren't displaying in the users table
+
+= 2.9.5 =
+- Field filtering update
+
+= 2.9.4 =
+- Fixed an error with user sorting
+
+= 2.9.3 =
+- Fixed an error where full page restriction wasn't displayed for posts
+
+= 2.9.2 =
+- Updated another button missing text
+
+= 2.9.1 =
+- Fixed an error where the "Confirm Forgot Password" submit button was blank
+
+= 2.9.0 =
+- Changed the "Create WordPress Users" feature so that WP usernames are set to emails
+- Added in the FEUP user data to the WP "Users" page if that option is selected
+- Added in a new field type for labels
+- Added in a "required" symbol for fields which are required
+
 = 2.8.7 =
 - Fixed an error where Facebook emails weren't being collected anymore after a Facebook API update
 
@@ -664,3 +696,5 @@ Video 7 - One-Click Installer
 = 1.1 = 
 - Fixed an error with sign-up e-mails
 - Fixed an error with "Admin Approval"
+
+

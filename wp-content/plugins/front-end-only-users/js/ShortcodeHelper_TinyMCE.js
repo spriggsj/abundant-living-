@@ -227,7 +227,7 @@ function setUserProfileShortcodeHelpHandler_tinyMCE() {
         editor.on('keyup', function(e) {
             var tinymce_content = tinyMCE.activeEditor.getContent();
 			if (tinymce_content.indexOf("[user-profile help") >= 0) {
-				var AttributeString = "[user-profile <br />";
+				var AttributeString = "[user-profile (premium shortcode) <br />";
 				AttributeString += "login_page='' the URL of your login page if you want a link to appear when a non-logged in visitor views this page if login necessary is set to Yes<br />";
 				AttributeString += "omit_fields='' a comma-separated list of fields that you don't want to display<br />";
 				AttributeString += "login_necessary='Yes' set to No to allow anyone to view profiles<br />";

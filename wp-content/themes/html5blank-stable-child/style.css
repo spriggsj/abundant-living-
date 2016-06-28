@@ -8621,8 +8621,6 @@ p {
 }
 
 .meal-post .recipe {
-  display: flex;
-  align-items: flex-start;
   padding: 0 0 2em 0;
   margin-bottom: 2em;
   border-bottom: 1px dashed #cccccc;
@@ -8637,7 +8635,8 @@ p {
 .meal-post .recipe img {
   margin-right: 2em;
   width: 200px;
-  height: auto;
+  height: 200px;
+  float: left;
 }
 
 .meal-post .recipe article h3 {
@@ -9111,6 +9110,15 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   padding: 0;
 }
 
+.disclaimer {
+  text-align: center;
+}
+
+.disclaimer p {
+  color: #007562;
+  font-size: 12px;
+}
+
 .copyright {
   padding: 1em 0;
   margin-top: 1em;
@@ -9138,16 +9146,12 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   border-bottom: 2px dotted #cccccc;
 }
 
-.archive-post section a {
-  flex: 1;
-}
-
-.archive-post section a img {
-  max-width: 200px;
+.archive-post section img {
+  width: 200px;
+  height: 200px;
 }
 
 .archive-post section .archive-blog-post-page {
-  flex: 6;
   margin-left: 2em;
 }
 
@@ -9217,7 +9221,7 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 @media (max-width: 1054px) {
   .main-img .main-logo div p {
     position: relative;
-    width: 427px;
+    width: 440px;
   }
 }
 
@@ -9316,7 +9320,7 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   }
   .main-img .main-logo div h1 {
     position: relative;
-    width: 100%;
+    width: 350px;
     margin-bottom: .05em;
   }
 }
@@ -9358,6 +9362,9 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   }
   .meal-post .view-all-post {
     margin: 1em 0 3em;
+    float: none;
+    display: block;
+    text-align: right;
   }
   .quote .container p {
     text-align: center;
@@ -9367,15 +9374,6 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   }
   .affiliate .affiliate-image img {
     margin-bottom: 2em;
-  }
-  .meal-post .recipe {
-    display: block;
-    height: 226px;
-  }
-  .meal-post .recipe img {
-    width: 200px;
-    height: 200px;
-    float: left;
   }
   .navbar-nav {
     margin: 0;
@@ -9483,19 +9481,14 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   .archive-post section {
     flex-direction: column;
   }
-  .archive-post section a {
-    text-align: center;
-  }
-  .archive-post section a img {
-    width: 390px;
-    max-width: 90%;
-    margin-bottom: 2em;
+  .archive-post section img {
+    width: 450px;
+    height: auto;
+    max-width: 90% !important;
+    margin: 0 auto 2em;
   }
   .archive-post section .archive-blog-post-page {
     margin-right: 2em;
-  }
-  .archive-post section a img {
-    margin-left: 0;
   }
   .feup-pure-form input[type=text], .feup-pure-form input[type=password] {
     width: 100% !important;
