@@ -15,7 +15,7 @@
 			<h2><span>love</span> what you see</h2>
 			<p>Can't get enough Abundant Living Mommy.  Connect with me on these social media links.</p>
 			<aside class="social-links">
-				<a href="https://www.facebook.com/wendy.purviance" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com/abundantlvingmommy/?fref=ts" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 				<a href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 				<a href="https://www.instagram.com/abundantlivingmommy/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 				<a href="https://www.pinterest.com/abundantlivingm/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
