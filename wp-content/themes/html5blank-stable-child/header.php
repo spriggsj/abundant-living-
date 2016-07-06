@@ -5,11 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="<?php bloginfo('description'); ?>">
+<<<<<<< HEAD
         <meta name="description" content="Simple healthy tips that transform your family for the abundant life" />
         <meta name="google-site-verification" content="cuLUAwAE3Dec4hmEwft29d_5xWnnXuyAohwpedhkPXI" />
     	<title>Abundant Living Mommy</title>
+=======
+        <meta name="google-site-verification" content="cuLUAwAE3Dec4hmEwft29d_5xWnnXuyAohwpedhkPXI" />
+    	<title>Abundant Living Mamma</title>
+>>>>>>> f41fda8bf0875d4ace69e54d85da1ae558b4957f
     	<link href="//www.google-analytics.com" rel="dns-prefetch">
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -35,11 +40,11 @@
             <aside class="login-bar-menu">
                 <?php wp_nav_menu( array( 'theme_location' => 'login-menu' ) ); ?>
             </aside>
-            
+
             <aside class="login-pop-up">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">
-                  
-                    <?php 
+
+                    <?php
                         $UserCookie = CheckLoginCookie();
                         $username  = $UserCookie['Username'];
                         if($username){
@@ -65,9 +70,9 @@
         </div>
 
         <nav class="navbar navbar-default">
-                    <div class="navbar navbar-static-top navbar-custom"> 
-                    <!-- Brand and toggle get grouped for better mobile display --> 
-                        <div class="container-fluid"> 
+                    <div class="navbar navbar-static-top navbar-custom">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="container-fluid">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-7 main-img">
                                     <a href="<?php echo home_url(); ?>" class="main-logo">
@@ -85,14 +90,14 @@
                                     <div class="row">
                                          <div class="col-xs-12 col-md-12">
                                             <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                                            <span class="icon-bar"></span> 
-                                            <span class="icon-bar"></span> 
-                                            <span class="icon-bar"></span> 
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
                                             </button>
-                                        </div> 
-                                 
-                                        <!-- Collect the nav links, forms, and other content for toggling --> 
-                                        <div class="collapse navbar-collapse navHeaderCollapse"> 
+                                        </div>
+
+                                        <!-- Collect the nav links, forms, and other content for toggling -->
+                                        <div class="collapse navbar-collapse navHeaderCollapse">
                                             <div class="col-xs-12 main-nav">
                                                 <?php /* Primary navigation */
                                                     wp_nav_menu( array(
@@ -112,12 +117,12 @@
                             </div>
                         </div><!--end div class container-fluid-->
                     </div><!--end div class navbar  navbar-static-top navbar-custom-->
-                </nav> 
-                
+                </nav>
+
             <nav class="navbar navbar-default fudge" id="fixedbar">
-                    <div class="navbar navbar-static-top navbar-custom"> 
-                    <!-- Brand and toggle get grouped for better mobile display --> 
-                        <div class="container-fluid"> 
+                    <div class="navbar navbar-static-top navbar-custom">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="container-fluid">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-7 main-img">
                                     <a href="<?php echo home_url(); ?>" class="main-logo">
@@ -135,14 +140,14 @@
                                     <div class="row">
                                          <div class="col-xs-12 col-md-12">
                                             <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                                            <span class="icon-bar"></span> 
-                                            <span class="icon-bar"></span> 
-                                            <span class="icon-bar"></span> 
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
                                             </button>
-                                        </div> 
-                                 
-                                        <!-- Collect the nav links, forms, and other content for toggling --> 
-                                        <div class="collapse navbar-collapse navHeaderCollapse"> 
+                                        </div>
+
+                                        <!-- Collect the nav links, forms, and other content for toggling -->
+                                        <div class="collapse navbar-collapse navHeaderCollapse">
                                             <div class="col-xs-12 main-nav">
                                                 <?php /* Primary navigation */
                                                     wp_nav_menu( array(
@@ -175,4 +180,3 @@
                 ?>
             </div>
         </nav>
-	
