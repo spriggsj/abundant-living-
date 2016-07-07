@@ -1,25 +1,36 @@
+
+
+
+.woocommerce-breadcrumb{
+  padding: 40px 0 20px 20px;
+  font-size: 1.5em;
+    a{
+      color:#00a388;
+    }
+}
+
 .product{
   margin-left: 140px;
   .images{
     float: left;
     padding-right: 40px;
+
   }
   .summary{
-    background-color: rgba(0, 163, 136, 0.56);
     border-radius: 10px;
-    margin: 0 200px 0 350px;
+    margin-right: 250px;
     padding: 20px 0;
       h1{
         padding: 20px 0;
         text-transform: uppercase;
         margin: 0;
-        color: #ffffff;
+        color: #0c5d53;
       }
       p{
         line-height: 1.5;
         margin: 0 40px 0 20px;
-        color: #ffffff;
-        font-weight: 700;
+        color: #575757;
+        font-weight: 400;
       }
       .stock{
         display: none;
@@ -54,7 +65,8 @@
   .woocommerce-tabs{
     ul{
           border-bottom: 5px solid #e2fbf8;
-          margin: 0 250px 0 0;
+          margin: 0 200px 0 0;
+          padding: 0;
           &:after{
             content: "\0020";
             display: block;
@@ -70,6 +82,7 @@
 
           a{
             text-decoration: none;
+            font-size: 1.5em;
 
           }
         }
@@ -79,7 +92,7 @@
         border-radius: 0;
         border-width: 0 5px 5px;
         padding: 30px;
-        margin-right: 250px;
+        margin-right: 200px;
 
           h2{
             margin: 0;
@@ -94,10 +107,10 @@
 
   }
 
-  
 
-  .star-rating{float:right;width:80px;height:16px;background:url(img/star.png) repeat-x left 0}
-  .star-rating span{background:url(images/star.png) repeat-x left -32px;height:0;padding-top:16px;overflow:hidden;float:left}
+  // This is for the star review, it makes the stars.
+  .star-rating{margin-left:15px;width:80px;height:16px;background:url(img/star.png) repeat-x left 0}
+  .star-rating span{background:url(img/star.png) repeat-x left -32px;height:0;padding-top:16px;overflow:hidden;float:left}
   .hreview-aggregate .star-rating{margin:10px 0 0 0}
   #review_form #respond{position:static;margin:0;width:auto;padding:0 0 0;background:transparent none;border:0}
   #review_form #respond:after{content:"";display:block;clear:both}
@@ -108,9 +121,31 @@
   p.stars span{width:80px;height:16px;position:relative;float:left;background:url(img/star.png) repeat-x left 0}
   p.stars span a{float:left;position:absolute;left:0;top:0;width:16px;height:0;padding-top:16px;overflow:hidden}
   p.stars span a:hover,p.stars span a:focus{background:url(img/star.png) repeat-x left -16px}
-  p.stars span a.active{background:url(images/star.png) repeat-x left -32px}
+  p.stars span a.active{background:url(img/star.png) repeat-x left -32px}
   p.stars span a.star-1{width:16px;z-index:10}
   p.stars span a.star-2{width:32px;z-index:9}
   p.stars span a.star-3{width:48px;z-index:8}
   p.stars span a.star-4{width:64px;z-index:7}
   p.stars span a.star-5{width:80px;z-index:6}
+
+
+  .comment-form-comment{
+    textarea{
+      border-radius: 4px;
+      border: 1px solid #ebebeb;
+    }
+
+  }
+.form-submit{
+  .submit{
+    background-color: #128677;
+    box-shadow: none;
+    border: 1px solid #128677;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 6px 20px;
+    font-size: .8em;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+}
