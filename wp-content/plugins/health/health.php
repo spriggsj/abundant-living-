@@ -14,6 +14,21 @@
 							<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
 							<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
 
+							
+						<?php echo'</div>';
+						
+						echo '<div class="health-img">' ;
+							the_post_thumbnail();
+							the_content();
+						echo '</div>';
+					<? php comments_template(); ?>
+					endwhile; endif;
+
+				?>
+				
+			</div>				
+
+
 						</div>
 
 						<div class="health-img">
@@ -27,6 +42,7 @@
 				?>
 
 			</div>
+>>>>>>> 81c51c629b1c1d73940257c213c3a6600c8a2cd7
 		</div>
 	</div>
 

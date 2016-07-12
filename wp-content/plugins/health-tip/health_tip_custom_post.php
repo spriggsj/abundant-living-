@@ -30,7 +30,7 @@ function rc_health_tip_custom_post(){
 			'publicly_queryable' => true,
 			'query_var' => true,
 			'supports' => [
-				'title', 'editor', 'thumbnail'
+				'title', 'editor', 'thumbnail', 'comments',
 			],
 				'taxonomies' => ['Tip Catagories','post_tag'],
 		]

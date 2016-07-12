@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 	<main role="main">
-	<!-- section -->
+	<!-- section --> 
 	<section>
-
+	
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 		<!-- article -->
@@ -38,6 +38,11 @@
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 
 			<?php comments_template(); ?>
+
+			
+				
+
+
 
 		</article>
 		<!-- /article -->
