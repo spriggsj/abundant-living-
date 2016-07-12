@@ -11,14 +11,16 @@
 						<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
 					</div>
 					<div class="health-img">
-						<?php echo the_post_thumbnail(); ?> 
-						<?php echo the_content(); ?> 
+						<?php echo the_post_thumbnail(); ?>
+						<?php echo the_content(); ?>
 					</div>
-					
-					
+
+					<?php comments_template(); ?>
+
+
 				<?php endwhile; endif; ?>
 
-			</div>				
+			</div>
 		</div>
 	</div>
 

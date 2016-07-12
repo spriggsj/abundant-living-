@@ -25,6 +25,13 @@ function login_logout() {
 
 add_action( 'init', 'login_logout' );
 
+// delcares woocommerce theme stream_support
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
 
 /** woocommerce: change position of price on single product **/
  remove_action( 'woocommerce_single_product_summary',
@@ -33,8 +40,33 @@ add_action( 'init', 'login_logout' );
 				 'woocommerce_template_single_price', 20 );
 
 
+// removing the woocommerce sorriting
+	remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 
-	// override the quantity input with a dropdown for woocommere
+	/** Remove Showing results functionality site-wide */
+	function woocommerce_result_count() {
+	        return;
+	}
+
+
+add_filter( 'woocommerce_show_page_title' , 'woo_hide_page_title' );
+/**
+ * woo_hide_page_title
+ *
+ * Removes the "shop" title on the main shop page
+ *
+ * @access      public
+ * @since       1.0
+ * @return      void
+*/
+function woo_hide_page_title() {
+
+	return false;
+
+}
+
+
+// override the quantity input with a dropdown for woocommere
 
 	function woocommerce_quantity_input() {
 		 global $product;
@@ -65,4 +97,18 @@ add_action( 'init', 'login_logout' );
 			echo '<div class="quantity_select" style="' . $defaults['style'] . '"><select name="' . esc_attr( $defaults['input_name'] ) . '" title="' . _x( 'Qty', 'Product quantity input tooltip', 'woocommerce' ) . '" class="qty">' . $options . '</select></div>';
 		}
 
-		
+
+
+// Ensure cart contents update when products are added to the cart via AJAX (place the following in functions.php)
+add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
+
+function woocommerce_header_add_to_cart_fragment( $fragments ) {
+	ob_start();
+	?>
+	<a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf (_n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
+	<?php
+
+	$fragments['a.cart-contents'] = ob_get_clean();
+
+	return $fragments;
+}

@@ -9187,7 +9187,7 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   border-radius: 4px;
   color: #ffffff;
   padding: 6px 20px;
-  margin-left: 350px;
+  margin-left: 300px;
   font-size: 1.2em;
   text-transform: capitalize;
   font-weight: 600;
@@ -9362,6 +9362,51 @@ p.stars span a.star-5 {
   font-size: .8em;
   text-transform: capitalize;
   font-weight: 600;
+}
+
+#content {
+  padding: 20px 0;
+}
+
+#content .products {
+  margin-left: 70px;
+}
+
+#content .products li {
+  margin-left: 0;
+  padding: 10px 0;
+}
+
+#content .products li h3 {
+  font-size: 2.2em;
+  margin: 5px 0;
+}
+
+#content .products li .price {
+  font-size: 1.7em;
+  font-weight: 700;
+}
+
+#content .products li a:hover {
+  text-decoration: none;
+}
+
+#content .products li .button {
+  background-color: #00a388;
+  color: #ffffff;
+  padding: 6px;
+  border-radius: 4px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+a.added_to_cart.wc-forward {
+  background-color: #067a67;
+  padding: 6px;
+  color: #ffffff;
+  border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .archive-post {
