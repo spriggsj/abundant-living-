@@ -97,7 +97,26 @@ function woo_hide_page_title() {
 			echo '<div class="quantity_select" style="' . $defaults['style'] . '"><select name="' . esc_attr( $defaults['input_name'] ) . '" title="' . _x( 'Qty', 'Product quantity input tooltip', 'woocommerce' ) . '" class="qty">' . $options . '</select></div>';
 		}
 
-
+		// function my_nav_wrap() {
+		//   // checks if there is an item in the cart
+		//   // returns default items + cart link if there is
+		//   // returns default items if the cart is empty
+		//   if (sizeof(WC()->cart->get_cart()) != 0) {
+		//     $wrap  = '<ul id="%1$s" class="%2$s">';
+		//     $wrap .= '<li class="cart">';
+		//     $wrap .= '<a class"cart-contents "href="' . WC()->cart->get_cart_url() . '">';
+		// 		$wrap .= WC()->cart->get_cart_contents_count();
+		// 		$wrap .= ' ';
+		// 		$wrap .= '<i class="fa fa-shopping-cart" aria-hidden="true"></i>';
+		//     $wrap .= '</a>';
+		//     $wrap .= '</li>';
+		// 		$wrap .= '%3$s';
+		//     $wrap .= '</ul>';
+		//   } else {
+		//     $wrap = '<ul id="%1$s" class="%2$s">%3$s</ul>';
+		//   }
+		//   return $wrap;
+		// }
 
 // Ensure cart contents update when products are added to the cart via AJAX (place the following in functions.php)
 add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
@@ -105,7 +124,9 @@ add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart
 function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	ob_start();
 	?>
-	<a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf (_n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
+<a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf (_n( '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+
+
 	<?php
 
 	$fragments['a.cart-contents'] = ob_get_clean();

@@ -104,6 +104,7 @@
                                                     'menu' => 'primary',
                                                     'theme-location' => 'primary',
                                                     'depth' => 2,
+                                                    // 'items_wrap' => my_nav_wrap(),
                                                     'menu_class' => 'nav navbar-nav ',
                                                     'fallback-cb' => 'wp_bootstrap_navwalker::fallback',
                                                     //Process nav menu using our custom nav walker
@@ -111,7 +112,6 @@
                                                     );
 
                                                 ?>
-
                                             </div>
                                         </div>
                                     </div>
@@ -157,11 +157,11 @@
                                                     'menu' => 'primary',
                                                     'theme-location' => 'primary',
                                                     'depth' => 2,
-                                                    'menu_class' => 'nav navbar-nav ',
+                                                    // 'menu_class' => 'nav navbar-nav ',
                                                     'fallback-cb' => 'wp_bootstrap_navwalker::fallback',
                                                     //Process nav menu using our custom nav walker
-                                                    'walker' => new wp_bootstrap_navwalker())
-                                                    );
+                                                    'walker' => new wp_bootstrap_navwalker()
+                                                  ));
                                                 ?>
 
 
@@ -175,12 +175,8 @@
                     </div><!--end div class navbar  navbar-static-top navbar-custom-->
 
                 </nav>
-                <?php global $woocommerce; ?>
 
-                 <a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
-                 <?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?> - <?php echo $woocommerce->cart->get_cart_total(); ?>
 
-                </a>
         <nav class="secondary-nav">
             <div class="container">
                 <?php /* sub_nav navigation */
