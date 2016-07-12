@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
     	<meta charset="UTF-8">
@@ -20,9 +20,9 @@
 
     <body>
         <nav class="navbar navbar-transparent navbar-static-top">
-            <div class="navbar  navbar-custom" style="border-radius:0px;"> 
-                <!-- Brand and toggle get grouped for better mobile display --> 
-                <div class="container"> 
+            <div class="navbar  navbar-custom" style="border-radius:0px;">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="container">
                     <div class="row">
                         <div class="col-xs-6 col-sm-4 col-md-6 main-img">
                             <a href="<?php echo home_url(); ?>" class="main-logo">
@@ -35,14 +35,14 @@
                             <div class="row">
                                 <div class="col-xs-12">
                                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                                        <span class="icon-bar"></span> 
-                                        <span class="icon-bar"></span> 
-                                        <span class="icon-bar"></span> 
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
                                     </button>
-                                </div> 
-                     
-                            <!-- Collect the nav links, forms, and other content for toggling --> 
-                                <div class="collapse navbar-collapse navHeaderCollapse pull-right"> 
+                                </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse navHeaderCollapse pull-right">
                                     <div class="col-xs-12 main-nav">
                                         <?php /* Primary navigation */
                                             wp_nav_menu( array(
@@ -64,4 +64,4 @@
 
                 </div><!--end div class container-fluid-->
             </div><!--end div class navbar  navbar-static-top navbar-custom-->
-        </nav> 
+        </nav>  -->
