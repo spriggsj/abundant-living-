@@ -13,6 +13,7 @@
 					<div class="health-img">
 						<?php echo the_post_thumbnail(); ?> 
 						<?php echo the_content(); ?> 
+						<?php comments_template(); ?>
 					</div>
 					
 					

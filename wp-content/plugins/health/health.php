@@ -21,11 +21,11 @@
 							the_post_thumbnail();
 							the_content();
 						echo '</div>';
-
+					<? php comments_template(); ?>
 					endwhile; endif;
 
 				?>
-
+				
 			</div>				
 		</div>
 	</div>

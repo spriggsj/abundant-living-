@@ -18,11 +18,13 @@
 						echo '<div class="health-tip-img">' ;
 							the_post_thumbnail();
 							the_content();
+							 
 						echo '</div>';
 
 					endwhile; endif;
 
 				?>
+				<?php comments_template(); ?>
 
 			</div>				
 		</div>

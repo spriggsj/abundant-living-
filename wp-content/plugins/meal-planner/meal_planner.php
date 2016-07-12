@@ -24,7 +24,7 @@
 					endwhile; endif;
 
 				?>
-				
+				<?php comments_template(); ?>
 			</div>				
 		</div>
 	</div>

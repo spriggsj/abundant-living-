@@ -2,33 +2,29 @@
 
 	<div class="container">
 		<div class="row main-content">
-			<div class="col-md-12 meal">
+			<div class="meal">
 				
 				<?php $loop = new WP_Query( array( 'post_type' => 'meal_post', 'posts_per_page' => 10 ) ); ?> 
 
 				<?php 
 					if (have_posts()) : while (have_posts()) : the_post();
-					
-						echo '<div class="meal-title">';
-							the_title(); 
-						echo'</div>'; ?>
+			
+						echo '<div class="meal-title">'; ?>
+							<a href="<?php the_permalink(); ?>"></a><h2><?php the_title(); ?></h2></a>
 						
 						<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
 
-						<?php 
-						echo '<div class="col-sm-6 col-md-6 col-center meal-img">' ;
+						<?php echo'</div>';
+						
+						echo '<div class="meal-img">' ;
 							the_post_thumbnail();
-						echo '</div>';
-
-						echo '<div class="meal-content">';
 							the_content();
 						echo '</div>';
-						
+
 					endwhile; endif;
 
 				?>
-				<?php comments_template(); ?>
-					
+				
 			</div>				
 		</div>
 	</div>

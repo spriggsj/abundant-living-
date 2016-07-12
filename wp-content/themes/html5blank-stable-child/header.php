@@ -5,14 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="<?php bloginfo('description'); ?>">
-<<<<<<< HEAD
+
         <meta name="description" content="Simple healthy tips that transform your family for the abundant life" />
         <meta name="google-site-verification" content="cuLUAwAE3Dec4hmEwft29d_5xWnnXuyAohwpedhkPXI" />
     	<title>Abundant Living Mommy</title>
-=======
+
         <meta name="google-site-verification" content="cuLUAwAE3Dec4hmEwft29d_5xWnnXuyAohwpedhkPXI" />
     	<title>Abundant Living Mamma</title>
->>>>>>> f41fda8bf0875d4ace69e54d85da1ae558b4957f
+ 
     	<link href="//www.google-analytics.com" rel="dns-prefetch">
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
