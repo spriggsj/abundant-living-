@@ -162,7 +162,7 @@ function custom_loop_shortcode( $atts ) {
           	$output .= '</h2>';
             $output .= '<div class="row">';
 
-            $i = 0; 
+            $i = 0;
 		    while ($the_query->have_posts()) : $the_query->the_post();
 		      $post_id = get_the_ID();
 
@@ -186,21 +186,21 @@ function custom_loop_shortcode( $atts ) {
 
 					$output .= '<div class="col-sm-6 older-recent-post">';
 						$output .= '<div class="row older-post-container">';
-							$output .= get_the_post_thumbnail($post_id, 'medium'); 
-							$output .= '<aside>';	
+							$output .= get_the_post_thumbnail($post_id, 'medium');
+							$output .= '<aside>';
 								$output .= '<h3>';
 				      				$output .= get_the_title();
 				      			$output .= '</h3>';
 				      			$output .= '<span class="date">';
 				      				$output .= get_the_time("F j, Y");
 				      			$output .= '</span>';
-								$output .= '<p>';  
+								$output .= '<p>';
 									$output .= get_the_excerpt($post_id);
 								$output .= '<p>';
 							$output .= '</aside>';
 						$output .= '</div>';
 					$output .= '</div>';
-		        }       
+		        }
 				$i++;
 		    endwhile;
 
@@ -208,14 +208,14 @@ function custom_loop_shortcode( $atts ) {
 					$output .= 'View all';
 				$output .= '</a>';
        		$output .= '</div>';
-        $output .= '</div>'; 
+        $output .= '</div>';
 
       	return $output;
 
       	wp_reset_postdata();
 
     }
-    
+
 
     add_shortcode('custom-loop', 'custom_loop_shortcode');
 

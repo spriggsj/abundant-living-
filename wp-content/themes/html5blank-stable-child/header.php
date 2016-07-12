@@ -12,7 +12,9 @@
 
         <meta name="google-site-verification" content="cuLUAwAE3Dec4hmEwft29d_5xWnnXuyAohwpedhkPXI" />
     	<title>Abundant Living Mamma</title>
+
  
+
     	<link href="//www.google-analytics.com" rel="dns-prefetch">
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -109,7 +111,9 @@
                                                     //Process nav menu using our custom nav walker
                                                     'walker' => new wp_bootstrap_navwalker())
                                                     );
+
                                                 ?>
+
                                             </div>
                                         </div>
                                     </div>
@@ -149,6 +153,7 @@
                                         <!-- Collect the nav links, forms, and other content for toggling -->
                                         <div class="collapse navbar-collapse navHeaderCollapse">
                                             <div class="col-xs-12 main-nav">
+
                                                 <?php /* Primary navigation */
                                                     wp_nav_menu( array(
                                                     'menu' => 'primary',
@@ -160,16 +165,24 @@
                                                     'walker' => new wp_bootstrap_navwalker())
                                                     );
                                                 ?>
-                                            </div>
+
+
                                         </div>
                                     </div>
 
                                 </div><!--end div class collapse navbar-collapse navHeaderCollapse -->
                             </div>
+
                         </div><!--end div class container-fluid-->
                     </div><!--end div class navbar  navbar-static-top navbar-custom-->
-                </nav>
 
+                </nav>
+                <?php global $woocommerce; ?>
+
+                 <a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
+                 <?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?> - <?php echo $woocommerce->cart->get_cart_total(); ?>
+
+                </a>
         <nav class="secondary-nav">
             <div class="container">
                 <?php /* sub_nav navigation */
