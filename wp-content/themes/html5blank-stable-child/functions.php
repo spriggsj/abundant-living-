@@ -66,57 +66,38 @@ function woo_hide_page_title() {
 }
 
 
-// override the quantity input with a dropdown for woocommere
+function woocommerce_quantity_input($data) {
+    global $product;
 
-	function woocommerce_quantity_input() {
-		 global $product;
+  $defaults = array(
+    'input_name'    => $data['input_name'],
+    'input_value'   => $data['input_value'],
+    'max_value'   => apply_filters( 'woocommerce_quantity_input_max', '', $product ),
+    'min_value'   => apply_filters( 'woocommerce_quantity_input_min', '', $product ),
+    'step'    => apply_filters( 'woocommerce_quantity_input_step', '1', $product ),
+    'style'   => apply_filters( 'woocommerce_quantity_style', 'float:left; margin-right:10px;', $product )
+  );
+  if ( ! empty( $defaults['min_value'] ) )
+    $min = $defaults['min_value'];
+  else $min = 1;
+
+  if ( ! empty( $defaults['max_value'] ) )
+    $max = $defaults['max_value'];
+  else $max = 20;
+
+  if ( ! empty( $defaults['step'] ) )
+    $step = $defaults['step'];
+  else $step = 1;
+
+  $options = '';
+  for ( $count = $min; $count <= $max; $count = $count+$step ) {
+    $selected = $count === $defaults['input_value'] ? ' selected' : '';
+    $options .= '<option value="' . $count . '"'.$selected.'>' . $count . '</option>';
+  }
+  echo '<div class="quantity_select" style="' . $defaults['style'] . '"><select name="' . esc_attr( $defaults['input_name'] ) . '" title="' . _x( 'Qty', 'Product quantity input tooltip', 'woocommerce' ) . '" class="qty">' . $options . '</select></div>';
+}
 
 
-		 $defaults = array(
-			 'input_name'  	=> 'quantity',
-			 'input_value'  	=> '1',
-			 'max_value'  	=> apply_filters( 'woocommerce_quantity_input_max', '', $product ),
-			 	'min_value'  	=> apply_filters( 'woocommerce_quantity_input_min', '', $product ),
-				'step' 		=> apply_filters( 'woocommerce_quantity_input_step', '1', $product ),
-				'style'		=> apply_filters( 'woocommerce_quantity_style', 'float:left; margin-right:10px;', $product )
-			);
-			if ( ! empty( $defaults['min_value'] ) )
-			$min = $defaults['min_value'];
-			else $min = 1;
-
-			if ( ! empty( $defaults['max_value'] ) )
-			$max = $defaults['max_value'];
-			else $max = 20;
-			if ( ! empty( $defaults['step'] ) )
-			$step = $defaults['step'];
-			else $step = 1;
-			$options = '';
-			for ( $count = $min; $count <= $max; $count = $count+$step ) {
-				$options .= '<option value="' . $count . '">' . $count . '</option>';
-			}
-			echo '<div class="quantity_select" style="' . $defaults['style'] . '"><select name="' . esc_attr( $defaults['input_name'] ) . '" title="' . _x( 'Qty', 'Product quantity input tooltip', 'woocommerce' ) . '" class="qty">' . $options . '</select></div>';
-		}
-
-		// function my_nav_wrap() {
-		//   // checks if there is an item in the cart
-		//   // returns default items + cart link if there is
-		//   // returns default items if the cart is empty
-		//   if (sizeof(WC()->cart->get_cart()) != 0) {
-		//     $wrap  = '<ul id="%1$s" class="%2$s">';
-		//     $wrap .= '<li class="cart">';
-		//     $wrap .= '<a class"cart-contents "href="' . WC()->cart->get_cart_url() . '">';
-		// 		$wrap .= WC()->cart->get_cart_contents_count();
-		// 		$wrap .= ' ';
-		// 		$wrap .= '<i class="fa fa-shopping-cart" aria-hidden="true"></i>';
-		//     $wrap .= '</a>';
-		//     $wrap .= '</li>';
-		// 		$wrap .= '%3$s';
-		//     $wrap .= '</ul>';
-		//   } else {
-		//     $wrap = '<ul id="%1$s" class="%2$s">%3$s</ul>';
-		//   }
-		//   return $wrap;
-		// }
 
 // Ensure cart contents update when products are added to the cart via AJAX (place the following in functions.php)
 add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );

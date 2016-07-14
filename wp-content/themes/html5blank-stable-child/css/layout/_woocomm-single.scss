@@ -150,6 +150,8 @@
   }
 }
 
+// products page for woocommerce
+
 #content{
   padding: 20px 0;
   .products{
@@ -185,6 +187,7 @@
   }
 }
 
+
 a.added_to_cart.wc-forward{
   background-color: #067a67;
   padding: 6px;
@@ -193,11 +196,139 @@ a.added_to_cart.wc-forward{
   text-transform: uppercase;
 
 }
+// end of products page
 
 
+// for cart icon in nav menu
 div#text-2 {
-    padding: 6px 0;
+    padding: 6px 10px 6px 0;
     .cart-contents{
       color:#777;
     }
+}
+
+// end of cart icon nave menu
+
+// Featured items on the front page
+.woocommerce ul.products li.product a img{
+  height: 220px;
+}
+
+.woocommerce ul.products li.product h3{
+  font-size: 1.5em;
+}
+
+.woocommerce ul.products li.product .price{
+  color: #000000;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart{
+
+    background-color: #00a388;
+    color: #ffffff;
+    padding: 10px;
+    text-transform: uppercase;
+
+
+}
+
+//end of featuer items on front page
+
+
+//Cart Empty Page
+
+ .woocommerce{
+   .cart-empty{
+     padding-top: 20px;
+     text-align: center;
+     font-size: 2.5em;
+     font-weight: 700;
+   }
+   .return-to-shop{
+     text-align: center;
+     a{
+       margin-top: 20px;
+       background-color: #00a388;
+       color:#ffffff;
+       padding: 30px;
+       &:hover{
+         background-color: #00a388;
+         text-decoration: none;
+         color: #ffffff;
+       }
+     }
+   }
+ }
+
+ .post-edit-link{
+   display: none;
+ }
+
+//End of Cart Empty Page
+
+
+
+// When Cart has soemthing in it styles
+
+.cart_item{
+  .product-remove{
+      .remove{
+        font-size: 1.5em;
+        margin-left: 30px;
+        text-align: center;
+        color: white !important;
+        background-color: red;
+        &:hover{
+          background: none !important;
+          color:blue !important;
+        }
+      }
+  }
+}
+
+.woocommerce table.shop_table{
+  margin: 20px auto;
+  width: 0;
+}
+td.product-remove{
+  width: 80px;
+}
+td.product-thumbnail{
+  width: 200px;
+  img{
+    height: 150px;
+    width: 150px;
+  }
+}
+
+td.product-name{
+  width: 230px;
+  text-align: center;
+  a{
+    font-size: 1.4em;
+    text-transform: uppercase;
+  }
+}
+
+td.product-price{
+  width: 100px;
+  .woocommerce-Price-amount{
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #00a388;
+  }
+}
+
+td.product-quantity{
+  width: 100px;
+}
+
+td.product-subtotal{
+  .woocommerce-Price-amount{
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #00a388;
+  }
 }
