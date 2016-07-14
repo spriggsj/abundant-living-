@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	
+
 	<header class="hero-banner">
 		<div class="container">
 			<h1>Living <span>Healthy</span> Should Be Easy</h1>
@@ -11,7 +11,7 @@
 	<section class="health-tip-post">
 		<?php echo do_shortcode( '[tip-custom-loop]' ); ?>
 	</section>
-	
+
 	<section class="recent-post">
 		<?php echo do_shortcode( '[custom-loop]' ); ?>
 	</section>
@@ -20,9 +20,7 @@
 		<div class="container">
 			<h2 class="name-title">Abundant Living <span>Mommy</span> E Books</h2>
 			<ul id="books">
-				<li><a href="#">coming soon</a></li>
-				<li><a href="#">coming soon</a></li>
-				<li><a href="#">coming soon</a></li>
+					<?php echo do_shortcode('[featured_products per_page="5" columns="5"]');?>
 			</ul>
 		</div>
 	</section>

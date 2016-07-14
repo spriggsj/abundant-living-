@@ -6,11 +6,11 @@
 			<input type="submit" value="submit">
 		</div>
 	</header>
-	
+
 	<div class="recentpost"><?php echo do_shortcode( '[custom-loop]' ); ?></div>
 	<section id="buffer">
 		<div class="col-sm-12">Abundant Living <span>Mommy</span> E Books</div>
-		
+
 		<ul id="books">
 			<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
 			<li><a href="#"><img src="http://placehold.it/250x250"></a></li>
