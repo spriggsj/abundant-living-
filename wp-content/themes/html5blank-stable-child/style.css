@@ -9479,6 +9479,16 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
   color: blue !important;
 }
 
+thead {
+  background-color: #00a388;
+  color: #ffffff;
+  font-size: 1.3em;
+}
+
+thead .product-name {
+  text-align: center;
+}
+
 .woocommerce table.shop_table {
   margin: 20px auto;
   width: 0;
@@ -9525,6 +9535,82 @@ td.product-subtotal .woocommerce-Price-amount {
   font-size: 1.6em;
   font-weight: 700;
   color: #00a388;
+}
+
+.actions .coupon .input-text {
+  border-radius: 3px;
+  width: 150px !important;
+  height: 30px;
+  border-style: none;
+  border: 1px solid #c6c6c6;
+  font-weight: 800;
+  padding-left: 30px;
+  text-transform: capitalize;
+}
+
+.actions .coupon input.button {
+  background-color: #00a388;
+  color: #ffffff;
+  margin-left: 20px;
+  padding: 9px;
+}
+
+.actions input.button {
+  background-color: #00a388;
+  color: #ffffff !important;
+  margin-left: 20px;
+  padding: 9px !important;
+  opacity: 1 !important;
+}
+
+.cart_totals h2 {
+  margin: 0 180px;
+  font-size: 2em;
+}
+
+tr.cart-subtotal th {
+  width: 200px;
+  font-size: 1.5em;
+  line-height: 3;
+}
+
+tr.cart-subtotal td {
+  background-color: rgba(0, 163, 136, 0.6);
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+tr.tax-rate th {
+  width: 200px;
+  font-size: 1.5em;
+  line-height: 3;
+}
+
+tr.tax-rate td {
+  background-color: rgba(0, 163, 136, 0.6);
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+tr.order-total th {
+  width: 200px;
+  font-size: 1.5em;
+  line-height: 3;
+}
+
+tr.order-total td {
+  background-color: rgba(0, 163, 136, 0.6);
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.woocommerce a.checkout-button.button.alt.wc-forward {
+  background-color: #00a388;
+  padding: 15px;
+  margin-left: 170px;
 }
 
 .archive-post {
