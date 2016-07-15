@@ -288,6 +288,16 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart{
   }
 }
 
+thead{
+  background-color: #00a388;
+  color: #ffffff;
+  font-size: 1.3em;
+  .product-name{
+    text-align: center;
+  }
+
+}
+
 .woocommerce table.shop_table{
   margin: 20px auto;
   width: 0;
@@ -331,4 +341,92 @@ td.product-subtotal{
     font-weight: 700;
     color: #00a388;
   }
+}
+
+.actions{
+  .coupon{
+    .input-text{
+      border-radius: 3px;
+      width: 150px !important;
+      height: 30px;
+      border-style: none;
+      border: 1px solid #c6c6c6;
+      font-weight: 800;
+      padding-left: 30px;
+      text-transform: capitalize;
+    }
+    //coupon button
+    input.button{
+      background-color: #00a388;
+      color: #ffffff;
+      margin-left: 20px;
+      padding: 9px;
+    }
+  }
+  //update cart
+  input.button{
+    background-color: #00a388;
+    color: #ffffff !important;
+    margin-left: 20px;
+    padding: 9px !important;
+    opacity: 1 !important;
+  }
+}
+
+.cart_totals{
+  h2{
+    margin: 0 180px;
+    font-size: 2em;
+  }
+
+}
+tr.cart-subtotal{
+  th{
+    width: 200px;
+    font-size: 1.5em;
+    line-height: 3;
+  }
+  td{
+    background-color: rgba(0, 163, 136, 0.6);
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 800;
+  }
+
+}
+
+tr.tax-rate{
+  th{
+    width: 200px;
+    font-size: 1.5em;
+    line-height: 3;
+  }
+  td{
+    background-color: rgba(0, 163, 136, 0.6);
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 800;
+  }
+
+}
+
+tr.order-total{
+  th{
+    width: 200px;
+    font-size: 1.5em;
+    line-height: 3;
+  }
+  td{
+    background-color: rgba(0, 163, 136, 0.6);
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 800;
+  }
+
+}
+
+.woocommerce a.checkout-button.button.alt.wc-forward{
+  background-color: #00a388;
+  padding: 15px;
+  margin-left: 170px;
 }
