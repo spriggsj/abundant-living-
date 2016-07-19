@@ -430,3 +430,73 @@ tr.order-total{
   padding: 15px;
   margin-left: 170px;
 }
+
+//paying-checkout page
+.woocommerce{
+  input{
+    border-radius: 4px;
+    border-style: none;
+    border: 1px solid #cfcfcf;
+    height: 1.6em;
+
+  }
+
+}
+
+.woocommerce form.login{
+  background: #f5f5f5;
+}
+
+
+
+.woocommerce-checkout{
+  margin: 0 40px;
+  input{
+    border-radius: 4px;
+    border-style: none;
+    border: 1px solid #cfcfcf;
+    height: 2.5em;
+  }
+  textarea{
+    border-radius: 4px;
+    border-style: none;
+    border: 1px solid #cfcfcf;
+  }
+}
+
+
+
+.woocommerce table.shop_table{
+  margin-left: 150px;
+}
+
+.woocommerce-checkout-review-order-table{
+  float: left;
+  width: 50%;
+}
+
+.woocommerce-checkout-payment#payment{
+  float: right;
+  width: 35%;
+  margin-right: 200px;
+  background: #f5f5f5;
+  .payment_box.payment_method_cheque{
+    background-color: #e9e7e7;
+      p{
+        font-weight: 700;
+        line-height: 2;
+      }
+  }
+}
+
+#place_order{
+  background-color: #00a388;
+  padding: 10px;
+  font-size: 1.3em;
+}
+
+tr.cart_item{
+  td.product-name{
+    font-size: 1.3em;
+  }
+}
