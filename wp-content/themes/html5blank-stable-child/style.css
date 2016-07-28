@@ -9131,6 +9131,10 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
   color: #007562;
 }
 
+.woocommerce-message {
+  display: none;
+}
+
 .woocommerce-breadcrumb {
   padding: 40px 0 20px 20px;
   font-size: 1.5em;
@@ -9552,15 +9556,17 @@ td.product-subtotal .woocommerce-Price-amount {
   background-color: #00a388;
   color: #ffffff;
   margin-left: 20px;
-  padding: 9px;
+  padding: 16px !important;
+  line-height: 0;
 }
 
 .actions input.button {
   background-color: #00a388;
   color: #ffffff !important;
   margin-left: 20px;
-  padding: 9px !important;
+  padding: 16px !important;
   opacity: 1 !important;
+  line-height: 0;
 }
 
 .cart_totals h2 {
@@ -9674,6 +9680,31 @@ tr.order-total td {
 
 tr.cart_item td.product-name {
   font-size: 1.3em;
+}
+
+.woocommerce form.login {
+  display: block;
+  margin: 15px 30px;
+  background-color: #fbf9f9;
+}
+
+.woocommerce form.login p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.woocommerce form.login .form-row input {
+  height: 30px;
+}
+
+.woocommerce form.login .form-row input[type="checkbox"] {
+  position: relative;
+  top: 9px;
+}
+
+.woocommerce form.login .form-row .button {
+  background-color: #00a388;
+  color: #ffffff;
 }
 
 .archive-post {
