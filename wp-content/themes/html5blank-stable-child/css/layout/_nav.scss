@@ -112,7 +112,7 @@
 /* fixed navbar styling */
 
 
-#fixedbar { 
+#fixedbar {
    display: none;
    position: fixed;
    z-index: 99;
@@ -149,7 +149,7 @@
    }
 }
 
-#fixednav { 
+#fixednav {
   display: block;
 }
 
@@ -172,10 +172,9 @@
 }
 
 .navbar-toggle {
-   border-radius: 0; 
+   border-radius: 0;
    border: 1px solid #757373;
       .icon-bar {
          border: 1px solid #503838;
       }
 }
-
