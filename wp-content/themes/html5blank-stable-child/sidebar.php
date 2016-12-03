@@ -1,15 +1,15 @@
 <!-- sidebar -->
 <aside class="sidebar" role="complementary">
 
-	<?php /* get_template_part('searchform');  */?> 
+	<?php
+		$banner = get_post_meta(get_the_ID(), 'banner_input', true);
 
-	<div class="sidebar-widget">
-		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
-	</div>
+		if(isset($banner)){
+		echo $banner;
+		echo wp_oembed_get($banner);
+		}
+	?>
 
-	<div class="sidebar-widget">
-		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
-	</div>
 
 </aside>
 <!-- /sidebar -->

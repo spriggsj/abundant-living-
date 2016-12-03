@@ -8285,6 +8285,15 @@ a {
   border: 1px solid #503838;
 }
 
+@media (max-width: 1024px) {
+  .main-nav ul li a {
+    font-size: 1em;
+  }
+  li#menu-item-260 {
+    margin-top: 5px;
+  }
+}
+
 .secondary-nav {
   background-color: #00a388;
 }
@@ -8706,6 +8715,7 @@ p {
 }
 
 .health .health-title {
+  margin-left: 16px;
   padding-bottom: 2em;
 }
 
@@ -9734,6 +9744,19 @@ tr.cart_item td.product-name {
     margin: 20px auto;
     width: 50%;
   }
+  .woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+    background-color: rgba(0, 163, 136, 0.6);
+  }
+  .actions input.button {
+    margin: 0;
+  }
+  .woocommerce #content table.cart td.actions .coupon .button, .woocommerce #content table.cart td.actions .coupon .input-text, .woocommerce #content table.cart td.actions .coupon input, .woocommerce table.cart td.actions .coupon .button, .woocommerce table.cart td.actions .coupon .input-text, .woocommerce table.cart td.actions .coupon input, .woocommerce-page #content table.cart td.actions .coupon .button, .woocommerce-page #content table.cart td.actions .coupon .input-text, .woocommerce-page #content table.cart td.actions .coupon input, .woocommerce-page table.cart td.actions .coupon .button, .woocommerce-page table.cart td.actions .coupon .input-text, .woocommerce-page table.cart td.actions .coupon input {
+    width: 100% !important;
+    margin: 8px 0;
+  }
+  .woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -9743,6 +9766,25 @@ tr.cart_item td.product-name {
   .woocommerce-checkout {
     margin: 0px 90px;
   }
+}
+
+@media (max-width: 450px) {
+  .woocommerce-checkout-payment#payment {
+    width: 90%;
+  }
+  .woocommerce-checkout {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .woocommerce-checkout {
+    margin: 0 20px;
+  }
+}
+
+.singles__title {
+  margin-left: 19px;
 }
 
 .archive-post {
@@ -9934,7 +9976,6 @@ tr.cart_item td.product-name {
   }
   .main-img .main-logo div h1 {
     position: relative;
-    width: 350px;
     margin-bottom: .05em;
   }
 }

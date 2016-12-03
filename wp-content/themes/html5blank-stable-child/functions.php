@@ -67,6 +67,8 @@ function woo_hide_page_title() {
 
 
 
+
+
 if ( ! function_exists( 'woocommerce_quantity_input' ) ) {
 	function woocommerce_quantity_input( $args = array(), $product = null, $echo = true ) {
 
@@ -130,3 +132,79 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 
 	return $fragments;
 }
+
+
+// Meta box for Posts
+
+add_action('admin_init', 'my_admin');
+
+function my_admin(){
+	add_meta_box('post_meta_box',
+	'Banner',
+	'display_banner_metabox',
+	'post',
+	'normal',
+	'high');
+}
+
+function display_banner_metabox($ad_banner){
+	wp_nonce_field(basename(__FILE__), 'meta-box-nonce');
+
+$banner = esc_html(get_post_meta($ad_banner->ID, 'banner_input', true));
+
+	?>
+	<div>
+		<label>Add The Desktop Banner Here</label></br>
+		<textarea name="banner" type="text" rows="8" cols="80"><?php echo $banner ?></textarea>
+	</div>
+	<?php
+}
+
+add_action('save_post', 'add_banner_meta_box', 10,2);
+
+function allow_multisite_tags($multisite_tags){
+  $multisite_tags['iframe'] = [
+    'id' => true,
+    'src' => true,
+		'title' => true,
+		'style' => true,
+		'align' => true,
+    'width' => true,
+    'height' => true,
+    'frameborder' => true,
+    'scrolling' => true,
+		'longdesc' => true,
+		'marginheight' => true,
+		'marginwidth' => true,
+		'name' => true,
+  ];
+  return $multisite_tags;
+}
+
+
+add_filter('wp_kses_allowed_html', 'allow_multisite_tags');
+
+
+
+function add_banner_meta_box($ad_banner_id, $ad_banner){
+	if(!isset($_POST['meta-box-nonce']) || !wp_verify_nonce($_POST['meta-box-nonce'], basename(__FILE__)))
+		return $ad_banner_id;
+
+	if(!current_user_can('edit_post', $ad_banner_id))
+		return $ad_banner_id;
+
+	if(defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
+		return $ad_banner_id;
+
+
+	if($ad_banner->post_type == 'post'){
+		if(isset($_POST['banner']) && $_POST['banner'] != ''){
+      // This Santizes The Input Text Field
+      $mydata = sanitize_text_field($_POST['banner']);
+      // Then We Update The Post Meta
+      update_post_meta($ad_banner_id, 'banner_input', $_POST['banner'], $mydata);
+    }
+	}
+}
+
+?>

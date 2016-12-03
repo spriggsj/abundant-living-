@@ -47,6 +47,7 @@ function health_post(){
 		'high'
 	);
 }
+
 /* Taxonomy for catagories */
 //hook into the init action and call create_book_taxonomies when it fires
 add_action( 'init', 'js_health_taxonomy', 0 );
@@ -83,6 +84,8 @@ register_taxonomy('health', 'health_post', $args);
 
 }
 /* End of Taxonomy */
+
+
 
 
 function js_excerpt_length($length){

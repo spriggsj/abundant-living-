@@ -1,6 +1,14 @@
 /* Navigation Link */
 
 
+
+
+
+
+
+
+
+
 #Layer_1 {
    width: 51px !important;
 }
@@ -177,4 +185,13 @@
       .icon-bar {
          border: 1px solid #503838;
       }
+}
+
+@media(max-width: 1024px){
+  .main-nav ul li a{
+    font-size: 1em;
+  }
+  li#menu-item-260 {
+    margin-top: 5px;
+}
 }
