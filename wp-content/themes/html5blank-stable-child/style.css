@@ -9787,6 +9787,52 @@ tr.cart_item td.product-name {
   margin-left: 19px;
 }
 
+.blog__content {
+  padding: 75px 0;
+}
+
+.blog__content hr {
+  margin-bottom: 53px;
+  margin-top: 20px;
+  border: 1px solid #eee;
+}
+
+.blog__paragraph a h1 {
+  font-size: 2em !important;
+}
+
+.blog__paragraph a p {
+  font-size: 1.5em;
+}
+
+.blog__content h1 {
+  font-size: 2em;
+}
+
+.blog__content img {
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 0;
+}
+
+.blog__paragraph {
+  padding-top: 50px;
+  height: 350px;
+}
+
+.blog__content a span {
+  font-size: 44px;
+  font-weight: 100;
+  line-height: 15px;
+  float: right;
+  display: block;
+  margin-left: 0px;
+}
+
+.blog__paragraph a {
+  float: left;
+}
+
 .archive-post {
   padding: 3.5em 0;
 }

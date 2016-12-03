@@ -9,7 +9,32 @@
 	</header>
 
 	<section class="health-tip-post">
-		<?php echo do_shortcode( '[tip-custom-loop]' ); ?>
+		<?php
+			$args = [
+				'post_type' => 'post',
+				'posts_per_page' => 3,
+				'post_status' => 'publish',
+				'order' => 'DESC',
+				'orderby' => 'date',
+				'category_name' => 'health-tip'
+
+			];
+			?>
+			<div class="health-tip">
+				<h2>Health Tip of the Month</h2>
+			</div>
+			<?php
+			$third_query = new WP_Query($args);
+			if($third_query->have_posts()) : while($third_query->have_posts()) : $third_query->the_post();
+			?>
+				<h3><?php the_title();?></h3>
+				<span class="date"><?php the_time("F j, Y") ?></span>
+				<p><?php the_excerpt();?></p>
+
+		<?php endwhile; ?>
+		<?php wp_reset_postdata(); ?>
+		<?php endif; ?>
+		<a href="#" class="view-all-post"> View All</a>
 	</section>
 
 	<section class="recent-post">
@@ -20,7 +45,7 @@
 				'post_status' => 'publish',
 				'order' => 'DESC',
 				'orderby' => 'date',
-				'category_name' => 'meals',
+				'category_name' => 'health_post',
 
 			];
 
@@ -80,7 +105,7 @@
 				'post_status' => 'publish',
 				'order' => 'DESC',
 				'orderby' => 'date',
-				'category_name' => 'oils',
+				'category_name' => 'meal_post',
 
 			];
 			?>
