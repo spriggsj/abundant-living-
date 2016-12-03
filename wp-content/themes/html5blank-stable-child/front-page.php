@@ -13,7 +13,54 @@
 	</section>
 
 	<section class="recent-post">
-		<?php echo do_shortcode( '[custom-loop]' ); ?>
+		<?php
+			$args = [
+				'post_type' => 'post',
+				'posts_per_page' => 3,
+				'post_status' => 'publish',
+				'order' => 'DESC',
+				'orderby' => 'date',
+				'category_name' => 'meals',
+
+			];
+
+			$first_query = new WP_Query($args);
+			?>
+				<div class="container">
+			    <h2> Recent Thoughts</h2>
+			  <div class="row">
+	<?php
+			$i = 0;
+			if($first_query->have_posts()) : while($first_query->have_posts()) : $first_query->the_post();
+			if ($i == 0 ){
+	?>
+				<div class="col-sm-6 newest-recent-post">
+					<?php the_post_thumbnail('full')?>
+					<aside>
+						<h3><?php the_title(); ?></h3>
+						<span class="date"><?php the_time("F j, Y"); ?></span>
+						<p><?php the_excerpt($post_id); ?></p>
+					</aside>
+				</div>
+				<?php   } else { ?>
+				<div class="col-sm-6 older-recent-post">
+					<div class="row older-post-container">
+							<?php the_post_thumbnail('medium'); ?>
+							<aside>
+								<h3><?php the_title(); ?></h3>
+								<span class="date"><?php the_time("F j, Y"); ?></span>
+								<p><?php the_excerpt(); ?><p>
+							</aside>
+						</div>
+					</div>
+						<?php } $i++;?>
+			<?php endwhile; ?>
+			<?php wp_reset_postdata(); ?>
+			<?php endif; ?>
+
+	</div>
+	</div>
+
 	</section>
 
 	<section id="buffer">
@@ -26,18 +73,50 @@
 	</section>
 
 	<section class="meal-post">
-		<div class="container">
-			<h2>Food Changes Everything</h2>
-			<div class="row">
-				<?php echo do_shortcode( '[meal-loop]' ); ?>
-				<div class="col-sm-4 wendy-front-page">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wendy4.jpg">
-					<p>As a wife, mommy, health coach, writer gourmet healthy cook and natural life enthusiast I've prepared a plan for you. Please join me in transforming your family's life.</p>
-					<a href="http://www.abundantlivingmommy.com/register/">Join me</a>
+		<?php
+			$args = [
+				'post_type' => 'post',
+				'posts_per_page' => 3,
+				'post_status' => 'publish',
+				'order' => 'DESC',
+				'orderby' => 'date',
+				'category_name' => 'oils',
+
+			];
+			?>
+			<div class="container">
+				<h2>Food Changes Everything</h2>
+				<div class="row">
+					<div class="col-sm-8 recipe-container">
+			<?php
+			$second_query = new WP_Query($args);
+			if($second_query->have_posts()) : while($second_query->have_posts()) : $second_query->the_post();
+			?>
+
+				<div class="col-sm-12 recipe">
+					<?php the_post_thumbnail('medium',['class'=>'img-responsive']);?>
+					<article>
+						<h3><?php the_title(); ?> </h3>
+						<span class="date"><?php the_time("F j, Y"); ?></span>
+						<p> <?php the_excerpt();?></p>
+					</article>
 				</div>
-			</div>
-		</div>
-	</section>
+
+		<?php endwhile; ?>
+		<?php wp_reset_postdata(); ?>
+		<?php endif; ?>
+	</div>
+	<div class="col-sm-4 wendy-front-page">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wendy4.jpg">
+		<p>As a wife, mommy, health coach, writer gourmet healthy cook and natural life enthusiast I've prepared a plan for you. Please join me in transforming your family's life.</p>
+		<a href="http://www.abundantlivingmommy.com/register/">Join me</a>
+	</div>
+</div>
+</div>
+</section>
+
+
+
 
 	<section class="affiliate">
 		<h2>What I Love</h2>

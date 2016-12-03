@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /*
 *Plugin Name: Meal Planner
@@ -151,7 +151,7 @@ function meal_loop_shortcode( $atts ) {
 			        		$output .= get_the_excerpt($post_id);
 			        	$output .= '</p>';
 		        	$output .= '</article>';
-		      	$output .= '</div>'; 
+		      	$output .= '</div>';
 		    endwhile;
 			$output .= '<a href="http://www.abundantlivingmommy.com/meal_post/" class="view-all-post">';
 				$output .= 'View all';

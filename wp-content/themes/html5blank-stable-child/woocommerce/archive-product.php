@@ -69,7 +69,7 @@ get_header( 'shop' ); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 
-							<div class="col-md-4">
+							<div class="col-sm-4">
 											<?php wc_get_template_part( 'content', 'product' ); ?>
 							</div>
 
