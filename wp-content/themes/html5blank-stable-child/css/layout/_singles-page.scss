@@ -3,7 +3,7 @@
 }
 
 .blog__content{
-	padding: 75px 0;
+	padding: 75px 0 0 0;
 
 }
 
@@ -56,4 +56,27 @@
 
 .blog__paragraph a{
 	float: left;
+}
+
+.screen-reader-text{
+  display: none;
+}
+
+.numbers{
+  text-align: right;
+}
+
+span.page-numbers.current{
+  color: #00a388;
+  font-size: 1.8em;
+  margin-left: 5px;
+}
+
+a.page-numbers{
+  font-size: 1.8em;
+  margin-left: 5px;
+}
+
+#buffer #books img:hover{
+  border: none;
 }
