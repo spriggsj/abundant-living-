@@ -298,10 +298,14 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart{
         background-color: red;
         &:hover{
           background: none !important;
-          color:blue !important;
+          color:red !important;
         }
       }
   }
+}
+
+.woocommerce-breadcrumb{
+  display: none;
 }
 
 thead{

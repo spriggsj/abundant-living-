@@ -9492,7 +9492,11 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 
 .cart_item .product-remove .remove:hover {
   background: none !important;
-  color: blue !important;
+  color: red !important;
+}
+
+.woocommerce-breadcrumb {
+  display: none;
 }
 
 thead {

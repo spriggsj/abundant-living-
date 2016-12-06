@@ -40,7 +40,9 @@
 
         <div class="login">
             <aside class="login-bar-menu">
-                <?php wp_nav_menu( array( 'theme_location' => 'login-menu' ) ); ?>
+                <?php wp_nav_menu( array(
+                  'theme_location' => 'login-menu',
+                ) ); ?>
             </aside>
 
             <aside class="login-pop-up">
