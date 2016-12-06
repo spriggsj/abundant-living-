@@ -1,3 +1,4 @@
+
 <?php get_header(); ?>
 
 	<header class="hero-banner">
@@ -12,7 +13,7 @@
 		<?php
 			$args = [
 				'post_type' => 'post',
-				'posts_per_page' => 3,
+				'posts_per_page' => 1,
 				'post_status' => 'publish',
 				'order' => 'DESC',
 				'orderby' => 'date',
@@ -31,10 +32,14 @@
 				<span class="date"><?php the_time("F j, Y") ?></span>
 				<p><?php the_excerpt();?></p>
 
+				<?php $categories = get_the_category();
+				if ( ! empty( $categories ) ) {
+    		echo '<a class="view-all-post "href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . 'View All' . '</a>';
+				}?>
 		<?php endwhile; ?>
 		<?php wp_reset_postdata(); ?>
 		<?php endif; ?>
-		<a href="#" class="view-all-post"> View All</a>
+
 	</section>
 
 	<section class="recent-post">
@@ -45,7 +50,7 @@
 				'post_status' => 'publish',
 				'order' => 'DESC',
 				'orderby' => 'date',
-				'category_name' => 'health_post',
+				'category_name' => 'health-post',
 
 			];
 
@@ -79,13 +84,16 @@
 						</div>
 					</div>
 						<?php } $i++;?>
+
 			<?php endwhile; ?>
+			<?php $categories = get_the_category();
+			if ( ! empty( $categories ) ) {
+			echo '<a class="view-all-post "href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . 'View All' . '</a>';
+			}?>
 			<?php wp_reset_postdata(); ?>
 			<?php endif; ?>
-
+		</div>
 	</div>
-	</div>
-
 	</section>
 
 	<section id="buffer">
@@ -105,7 +113,7 @@
 				'post_status' => 'publish',
 				'order' => 'DESC',
 				'orderby' => 'date',
-				'category_name' => 'meal_post',
+				'category_name' => 'meals',
 
 			];
 			?>
@@ -128,14 +136,23 @@
 				</div>
 
 		<?php endwhile; ?>
+		<?php $categories = get_the_category();
+		if ( ! empty( $categories ) ) {
+		echo '<a class="view-all-post "href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . 'View All' . '</a>';
+		}?>
 		<?php wp_reset_postdata(); ?>
 		<?php endif; ?>
+
 	</div>
 	<div class="col-sm-4 wendy-front-page">
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wendy4.jpg">
 		<p>As a wife, mommy, health coach, writer gourmet healthy cook and natural life enthusiast I've prepared a plan for you. Please join me in transforming your family's life.</p>
 		<a href="http://www.abundantlivingmommy.com/register/">Join me</a>
 	</div>
+	<?php $categories = get_the_category();
+	if ( ! empty( $categories ) ) {
+	echo '<a class="view-all-post "href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . 'View All' . '</a>';
+	}?>
 </div>
 </div>
 </section>
