@@ -51,13 +51,14 @@ Template Name: Archives Posts
       ?>
 
     </div>
-  </div>
+
+
+    <?php wp_reset_postdata(); ?>
+
+  <?php else:  ?>
+    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+  <?php endif; ?>
 </div>
-
-<?php wp_reset_postdata(); ?>
-
-<?php else:  ?>
-  <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-<?php endif; ?>
+</div>
 
 <?php get_footer(); ?>
