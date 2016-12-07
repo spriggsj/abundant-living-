@@ -272,6 +272,7 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
 
 
 
+
 function custom_ppp( $query ) {
     if ( !is_admin() && $query->is_category() && $query->is_main_query() ) {
         $query->set( 'posts_per_page', '10' );
