@@ -42,6 +42,7 @@ function woocommerce_support() {
 
 // removing the woocommerce sorriting
 	remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+	remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 
 	/** Remove Showing results functionality site-wide */
 	function woocommerce_result_count() {
@@ -64,6 +65,7 @@ function woo_hide_page_title() {
 	return false;
 
 }
+
 
 
 
